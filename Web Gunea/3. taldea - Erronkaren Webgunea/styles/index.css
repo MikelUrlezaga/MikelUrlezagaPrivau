@@ -1,0 +1,309 @@
+body {
+    /* display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: repeat(3, auto); */
+    gap: 10px;
+
+    margin: 15px 200px;
+
+    background-color: #EECF6D;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.formularioa, header img{
+    display: block;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 60px;
+}
+
+a{
+    color: #0D0630;
+}
+
+a:hover{
+    background-color: #8B6220;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.titulu, footer{
+    text-align: center;
+}
+
+.video-responsive {
+    overflow:hidden;
+    padding-bottom: 650px; 
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+main {
+    grid-column: 1 / 4;
+    grid-row: 2;
+}
+
+footer {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    /* FROGA  */
+    width: 90%;
+    margin: auto;   
+    font-family: arial;
+    background-color:#8B6220;
+    padding: 20px 20px;
+    border-radius: 10px;
+    list-style: none;
+    word-spacing: 4vw;
+    text-align: center;
+    max-width: 70%;
+
+    align-items: center;
+}
+
+nav a:hover{
+    background-color: #D5AC4E;
+    border-radius: 100px ;
+}
+
+nav a{
+    text-decoration: none;
+    transition: all 0.5s ease;   
+    color: white;
+    flex-basis: 10%;
+    padding: 10px; 
+    /* border: 5px solid; */
+}
+
+
+.txapel{
+    text-align: center;
+}
+
+.txapelinfo p{
+    text-align: justify;
+}
+
+.partehartzaile-grid{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    /* border: 5px solid; */
+    justify-content: center;
+
+    /* background-color: #D5AC4E; */
+    /* border-radius: 10px; */
+}
+.partehartzaile-grid img{
+    width: 50%;
+}
+
+.partehartzaile{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.berriak p, .gaming-espazioa p{
+    text-align: justify;
+}
+
+.grid-berriak{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.berriak{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.gaming-espazioa{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.cookies{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: #0D0630;
+    color: white;
+}
+
+.cookies a{
+    background-color: #D5AC4E;
+    border-radius: 100px ;
+}
+
+.berriak-row{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    background-color: #D5AC4E;
+    padding: 20px;
+    /* grid-gap: 5px; */
+    border-radius: 25px;
+
+}
+
+.berri-nagusi{
+    padding-bottom: 20px;
+}
+
+.berri-nagusi p{
+    font-size: 20px;
+}
+
+.berriak img, .berri-nagusi img{
+    float: left;
+    margin-right: 10px;
+}
+
+.berriak-row div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.berriak-row div img {
+    /* Arriba | Derecha | Abajo | Izquierda */
+    flex: 1;
+    margin: 0 10px 0 10px;
+
+}
+.berriak-row div article {
+    flex: 1;
+   
+}
+
+section{
+    
+    float: left;
+
+}
+
+.berri-txiki article{
+
+    display: grid;
+
+    text-align: left;
+    /* background-color: white; */
+    border-radius: 5px;
+    margin: 35px 40px 50px 20px;
+    /* margin-top: 35px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 40px; */
+}
+
+footer img{
+    float: right;
+    margin: 10px;
+}
+
+.taula1{
+    width: 100%;
+    
+    margin: 5 30px auto;
+    display: grid;
+    grid-template-areas: 
+    "col-1-1 col-1 col2 colw1 colz1 colw2 col1 col-2 col-2-1"
+    "col-1-2 col-1 col2 colw1 colz1 colw2 col1 col-2 col-2-2"
+    "col-3-1 col-3 col4 colw3 colz3 colw4 col3 col-4 col-4-1"
+    "col-3-2 col-3 col4 colw3 colz3 colw4 col3 col-4 col-4-2"
+    "col-5-1 col-5 col6 colw5 colz5 colw6 col5 col-6 col-6-1"
+    "col-5-2 col-5 col6 colw5 colz5 colw6 col5 col-6 col-6-2"
+    "col-7-1 col-7 col8 colw7 colz7 colw8 col7 col-8 col-8-1"
+    "col-7-2 col-7 col8 colw7 colz7 colw8 col7 col-8 col-8-2";
+
+    gap: 10px;
+
+}
+.taula1 div{
+    text-align: center;
+    border: 3px solid ;
+}
+
+.oct{
+    background-color: #97A7B3;
+}
+
+.cuar{
+    background-color: #A882DD;
+}
+
+.semi{
+    background-color: #E08D79;
+
+}
+
+.final{
+    background-color: #DE7C5A;
+}
+
+.champ{
+    background-color: #32965D;
+}
+
+.grid-sailkapena{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    width: 100%;
+    margin: 5 30px auto;
+    gap: 10px;
+
+    font-size: 20px;
+
+}
+
+.zortzi{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.lau{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.bi{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.bat{
+    grid-column: 5;
+    grid-row: 1;
+}
