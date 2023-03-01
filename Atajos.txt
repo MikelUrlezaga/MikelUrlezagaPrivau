@@ -1,0 +1,14 @@
+Ctrl + A (seleccionar todo el texto)
+s
+WINDOWS + D (miniminar todo)
+
+WINDOWS + FLECHA ARRIBA O ABAJO (pantalla completa y ventanad)
+
+CONTROL + F (buscar texto)
+
+WINDOWS + I (configuracion de windows)
+
+WINDOWS + S (buscador de windows)
+
+
+
