@@ -1,0 +1,10 @@
+
+
+
+disparadore(trigger)
+
+biltegiratutako (funtzioak/prozedurak)
+
+PL/SQL
+
+bloke anonimoa
