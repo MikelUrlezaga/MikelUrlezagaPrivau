@@ -39,6 +39,7 @@ public class TEORIA{
    hasNext()    Boolear bat (beste tokenik geratzen den ala ez)
    hasNextXXX   Boolear bat (beste tokenik geratzen den ala ez adierazten du,baina datu mota jakinekoa)
    
+   /*IF*/
    if (adierazpen logikoa){
       sententzia 1;
       sententzia N;
@@ -48,7 +49,7 @@ public class TEORIA{
       sententzia N;
    }
    
-   
+   /*SWITCH*/
    switch (adierazpen logikoa){
    case balioa1:
       sententzia 1;
@@ -65,18 +66,21 @@ public class TEORIA{
    default:
       sententzia def;
    }
-   
+
+   /*FOR*/
    for (i=1;i<=x;i++){
       sententzia 1;
       sententzia N;
    }
    
+   /*WHILE*/
    /*Kontuan izan ez sartzea inoiz*/
    while (baldintza){
       sententzia 1;
       sententzia N;
    }
    
+   /*DO-WHILE*/
    /*Sartu eta gero baldintza egiaztatu*/
    do {
       sententzia 1;
@@ -114,6 +118,21 @@ public class File{
    }
 }
 
+FileWriter f = new FileWriter ("bidea fitxategira"); // new FileWriter ("bidea fitxategira", true / false); //aukera ematen du editatzeko 
+PrintWriter pw= null; // Salbuespenetik kanpo sortu, erabilgarri egoteko
+try {
+	PrintWriter pw = new PrintWriter (f); // sortzen dugu fitxategiarekin
+// idazteko aukera desberdinak	
+pw.println ("Fitxategian idazten");
+pw.printf ("Idaztern %d lerroa formatuarekin eta lerro saltoa \n",2);
+pw.flush();
+pw.close();
+f.close();
+} catch  (IOException ex) {
+	Salbuespena kudeatzeko lerroak
+}
+
+
 
 
 //canRead();         (Tests whether the file is readable or not)
@@ -128,9 +147,9 @@ public class File{
 //mkdir();           (Creates a directory)
    
    
-   
+   /*TRY-CATCH*/
    Salbuespenak:
-   (try(sententzia)-catch(harrapatuko duen blokea)-finally(exekutatuko den kodea))
+   /*(try(sententzia)-catch(harrapatuko duen blokea)-finally(exekutatuko den kodea))*/
    
    try {
       salbuespena;
@@ -143,7 +162,8 @@ public class File{
       sententzia_finally;
    }
    
-   Array-ak:
+
+   /*Array-ak:*/
    
    Estatikoa edo Dinamikoa
    
@@ -155,12 +175,32 @@ public class File{
    
    public static int[][](short[] array1, int[] array2, int[] array3, byte [][][] array4){
       //...
-      int[][]ItzuleraArraya= new int[4][2];
+      int [][] ItzuleraArraya= new int[4][2]; /*Array baten zelan idazten den*/
+      int [][] izena = {{5,4,3},{4,3,2}};
       //...
       return itzuleraArraya;
    }
    
+   /*OBJETOS*/
+
+   /* main() metodoa, programan, behin bakarrik jartzen da, klase nagusian. Metodo horretatik hasten da programa exekutatzen. 
+   Sortzen ari garen klasea ez bada klase nagusia, metodo hori ez da agertuko. */
+   
+   //Klasearen burua 
+   public class Pertsona {
+      //Klasearen gorputza 
+      String izena;
+      String abizenak; 
+      int adina; 
+      double garaiera; 
+      double pisua;
+      public Pertsona() {}
+      public static void main(String[] args) {
+      // TODO Auto-generated method stub
+      }
    }
    
+
+
    }
 }
