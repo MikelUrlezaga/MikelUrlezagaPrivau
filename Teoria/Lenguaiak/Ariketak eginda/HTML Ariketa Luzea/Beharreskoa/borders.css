@@ -1,0 +1,39 @@
+body {
+    font-family: DauphinPlain;
+}
+header {
+    border: 1px solid gray;
+}
+main {
+    border: 1px solid gray;
+}
+aside {
+    border: 1px solid gray;
+}
+footer {
+    border: 1px solid gray;
+}
+nav {
+    border: 1px solid gray;    
+}
+img {
+    border: 1px solid gray;
+}
+header {
+    border: 1px solid gray;
+}
+main {
+    border: 1px solid gray;
+}
+section {
+    border: 1px solid gray;
+}
+article {
+    border: 1px solid gray;
+}
+a {
+    border: 1px solid gray;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}

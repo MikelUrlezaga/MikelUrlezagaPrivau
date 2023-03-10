@@ -1,0 +1,83 @@
+        body {
+            /* Orrialdearen atzeko planoari #f0f0c9 RGB kolorea ezarri */
+            background: #f0f0c9;
+            /* Herentziaren bitartez testu eduki guztia erdialdean lerrokatu */
+            text-align: center;            
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        hr {
+            /* HR elemetuari:
+                 #f2bb05 RGB kolorea ezarri 
+                 ertza estiloa puntuduna izatera aldatu 
+            */
+            color: #f2bb05;
+            border-style: dashed;
+        }
+
+        h1 {
+            /* Goiburuaren izenburuaren testuari #124e78 RGB kolorean */
+            color: #124e78;
+        }
+
+        /* Ekarrizketa guztiak 12 pixeleko tamainan.
+            - Ipuinlariarenak #666666 RGB kolorean
+            - Printze txikiarenak #6e0e0a RGB kolorean
+            - Azeriarenak #d74e09 RGB kolorean
+        */ 
+        p, span {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .printzea {
+            color: #6e0e0a;
+        }
+
+        .azeria {
+            color: #d74e09;
+        }
+
+        /* Ipuinaren inguruko goiko eta beheko deskribapenak:
+            Atzeko planoa #124e78 RGB kolorearekin
+            Testua zurizko kolorearekin
+            Testu mota "italic" moduan
+            Testuaren tamaina 14 pixelekoa
+            Ertzak biribildutak
+            Barruko espazio (padding) bat izan behar du
+        */
+        .desc {
+            background: #124e78;
+            color: white;
+            font-style: italic;
+            font-size: 14px;
+            border-radius: 14px;
+            padding: 5px;
+        }
+
+        img {
+            float: left;
+        }
+
+        /* esteka 
+            Azpimarratu gabea
+            Atzeko planoa #6e0e0a RGB kolorearekin
+            Testua #f2bb05 RGB kolorearekin
+            Ertzak biribilduta
+            Barruko espazioa (padding), baina soilik alboetan
+            -------------------------------------------------
+            Sagua honen gainetik pasatzerakoan koloreak alderantzikatu.
+        */
+        a {
+            background: #6e0e0a;
+            color: #f2bb05;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 0 5px;
+        }
+
+        a:hover {
+            color: #6e0e0a;
+            background: #f2bb05;
+        }

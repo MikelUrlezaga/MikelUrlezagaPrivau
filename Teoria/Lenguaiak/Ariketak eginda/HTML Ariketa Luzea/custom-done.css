@@ -1,0 +1,55 @@
+body {
+    background: #eee;
+    font-family: DauphinPlain;
+}
+header {
+    padding: 0.5em;
+}
+main {
+    padding: 0.5em;
+    background: gray;
+    color: white;
+    border-radius: 10px;
+}
+article {
+    padding: 0.5em;
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 5px;
+}
+article span {
+    color: darkcyan;
+    background-color: rgba(222,222,222,0.3);
+}
+aside a {
+    background-color: white;  
+    border: 1px solid #eee;   
+    padding: 0.5em;         
+}
+.articles-grid {
+    padding: 0.5em 0;
+}
+figure {
+    margin: 1em;
+}
+figcaption {
+    font-size: 0.75em;
+}
+.italic {
+    font-style: italic;
+}
+a {
+    text-decoration: none;
+    color: crimson;
+}
+a:hover {
+    background-color: gray;
+    color: white;
+}
+header a {
+    padding: 5px;
+    border-radius: 5px;
+}
+ul {
+    font-size: 0.75em;
+}

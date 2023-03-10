@@ -1,0 +1,211 @@
+-- Sail guztien kodea eta izena
+SELECT KODEA, IZENA
+FROM SAILAK;
+
+-- �1� kodea duen langileari dagozkion nomina egiaztagirien hilabetea eta urtea
+SELECT HILABETEA, URTEA
+FROM NOMINAK
+WHERE LANGILE_KODEA=1;
+
+-- Ehuneko 10eko atxikipena edo handiagoa duten langileen kontu-zenbakia eta izena
+SELECT KONTUA, IZENA
+FROM LANGILEAK
+WHERE ATXIKIPENA >= 10;
+
+-- Langileen kodea eta izena, izenaren arabera ordenatuta
+SELECT KODEA, IZENA
+FROM LANGILEAK
+ORDER BY IZENA;
+
+-- 2 seme-alaba baino gehiago dituzten langileen izena
+SELECT IZENA
+FROM LANGILEAK
+WHERE SEMEALABAK > 2;
+
+-- Izena 'A' edo 'J' hizkiz hasten zaien langileen kodea eta kontu-zenbakia
+SELECT KODEA, KONTUA
+FROM LANGILEAK
+WHERE IZENA LIKE 'A%' OR IZENA LIKE 'J%';
+-- Datu-basean dauden langileen kopurua
+SELECT COUNT(KODEA) 
+FROM LANGILEAK;
+-- Lehen eta azken langileen izena, termino alfabetikoetan
+SELECT MAX(IZENA), MIN(IZENA)
+FROM LANGILEAK;
+
+SELECT IZENA FROM LANGILEAK ORDER BY IZENA;
+-- Ehuneko 8, 10 edo 12ko atxikipena duten langileen izena eta seme-alaba kopurua.
+SELECT IZENA, SEMEALABAK
+FROM LANGILEAK
+WHERE ATXIKIPENA = 8 OR ATXIKIPENA = 10 OR ATXIKIPENA = 12;
+
+SELECT IZENA, SEMEALABAK
+FROM LANGILEAK
+WHERE ATXIKIPENA IN (8,10,12);
+
+-- Ehuneko 8 eta 12 tarteko atxikipena duten langileen izena eta seme-alaba kopurua.
+SELECT IZENA, SEMEALABAK
+FROM LANGILEAK
+WHERE ATXIKIPENA BETWEEN 8 AND 12;
+
+SELECT IZENA, SEMEALABAK
+FROM LANGILEAK
+WHERE ATXIKIPENA >= 8 AND ATXIKIPENA <=12;
+
+-- Seme-alaba kopurua eta langile kopurua seme-alaben arabera multzokatuta, seme-alaba bat baino gehiago dituzten taldeak bakarrik erakutsiz.
+SELECT SEMEALABAK, COUNT(SEMEALABAK)
+FROM LANGILEAK
+WHERE SEMEALABAK>1
+GROUP BY SEMEALABAK;
+
+-- Langileen seme-alaba kopurua, gehieneko atxikipena, gutxienekoa atxikipena eta bataz-besteko atxikipena, seme-alaben arabera taldekatuta.
+SELECT SEMEALABAK, COUNT(SEMEALABAK) AS LANGILE_KOPURUA, MAX(ATXIKIPENA) AS ATXIKIPEN_MAXIMOA, MIN(ATXIKIPENA), AVG(ATXIKIPENA)
+FROM LANGILEAK
+GROUP BY SEMEALABAK
+HAVING SEMEALABAK=2;
+
+-- �1� kodea duen sailean lan egin duten langileen izena eta eginkizuna
+
+SELECT L.IZENA, LA.EGINKIZUNA
+FROM LANGILEAK L, LANEAN LA
+WHERE L.KODEA = LA.LANGILE_KODEA
+AND LA.SAIL_KODEA = 1;
+
+-- Seme-alaba bat duten langileen izena, 
+--lan egiten duten sailaren izena eta beraien eginkizuna
+
+SELECT S.IZENA, LA.EGINKIZUNA, L.IZENA
+FROM SAILAK S, LANEAN LA, LANGILEAK L
+WHERE L.SEMEALABAK=1
+AND S.KODEA = LA.SAIL_KODEA
+AND LA.LANGILE_KODEA = L.KODEA;
+
+-- Seme-alabarik ez duten langileen izena eta
+--lan egiten duten sailaren izena
+SELECT L.IZENA, S.IZENA
+FROM LANGILEAK L, SAILAK S, LANEAN LA
+WHERE L.SEMEALABAK=0
+AND LA.SAIL_KODEA = S.KODEA
+AND L.KODEA = LA.LANGILE_KODEA;
+
+
+-- �1� kodea duen langilearen izena, 
+--bere nomina egiaztagirien hilabete eta urtea, 
+--lerro zenbakia eta kantitatea
+SELECT L.IZENA, N.URTEA, N.HILABETEA, LE.ZENBAKIA, LE.KANTITATEA
+FROM LANGILEAK L, NOMINAK N, LERROAK LE
+WHERE N.LANGILE_KODEA = L.KODEA
+AND N.URTEA = LE.URTEA
+AND LE.LANGILE_KODEA = L.KODEA
+AND LE.HILABETEA = N.HILABETEA
+AND L.KODEA = 1;
+-- Salmenta sailean lan egin duten langileen izena,
+--eta bere nomina egiaztagirien hilabetea eta urtea
+SELECT L.IZENA, N.HILABETEA, N.URTEA
+FROM LANGILEAK L, NOMINAK N, SAILAK S, LANEAN LA
+WHERE L.KODEA = LA.LANGILE_KODEA
+AND LA.SAIL_KODEA = S.KODEA
+AND L.KODEA = N.LANGILE_KODEA
+AND S.IZENA = 'Salmentak';
+-- Langilearen izena eta jasotako diru sarrera guztiak, 
+--langilearen izenaren arabera multzokatuta
+SELECT L.IZENA, (SUM(N.DIRUSARRERA)-SUM(N.DESKONTUA)) AS DIRU_SARRERA
+FROM LANGILEAK L, NOMINAK N
+WHERE L.KODEA = N.LANGILE_KODEA
+GROUP BY L.IZENA;
+-- 2006. urtean 2800� baino gehiago irabazi duten langileen izena
+
+SELECT L.IZENA
+FROM LANGILEAK L, LERROAK LE
+WHERE L.KODEA = LE.LANGILE_KODEA
+AND LE.URTEA = 2006
+GROUP BY L.KODEA, L.IZENA
+HAVING SUM(KANTITATEA)>2800;
+
+-- Langileen seme-alaba kopuruaren batez bestekoa baino seme-alaba gehiago dituzten langile kopurua
+SELECT COUNT(*)
+FROM LANGILEAK
+WHERE SEMEALABAK > (SELECT AVG(SEMEALABAK)FROM LANGILEAK);
+
+SELECT AVG(SEMEALABAK)FROM LANGILEAK;
+
+-- Seme-alaba gehien edo gutxien dituzten langileen izena
+SELECT IZENA, SEMEALABAK
+FROM LANGILEAK
+WHERE SEMEALABAK = (SELECT MIN(SEMEALABAK) FROM LANGILEAK)
+OR SEMEALABAK = (SELECT MAX(SEMEALABAK) FROM LANGILEAK)
+
+-- Nominen egiaztagiririk ez duten langileen izena
+SELECT IZENA 
+FROM LANGILEAK
+WHERE KODEA NOT IN (SELECT LANGILE_KODEA FROM NOMINAK);
+
+-- Langile guztien izena eta jaioteguna
+SELECT IZENA, TO_CHAR(JAIOTZEDATA,'DD/MM/YYYY') FROM LANGILEAK;
+
+-- Langile guztien izena eta jaioteguna, "2000ko urtarrilaren 1a" formatuarekin, eta zutabea �data� gisa etiketatuta
+SELECT IZENA,JAIOTZEDATA, TO_CHAR(JAIOTZEDATA,'YYYY') || 'KO ' ||  RTRIM(TO_CHAR(JAIOTZEDATA,'MONTH','NLS_DATE_LANGUAGE = BASQUE')) || 'REN ' || TO_CHAR(JAIOTZEDATA,'DD') || 'A' AS DATA FROM LANGILEAK;
+
+ALTER SESSION SET NLS_DATE_LANGUAGE='BASQUE';
+
+ALTER SESSION SET NLS_DATE_FORMAT='YYYY/MM/DD';
+
+ALTER SESSION SET NLS_DATE_FORMAT='DD/MM/YY';
+
+SELECT IZENA,JAIOTZEDATA, TO_CHAR(JAIOTZEDATA,'YYYY'), TO_CHAR(JAIOTZEDATA,'MONTH'), TO_CHAR(JAIOTZEDATA,'DD') FROM LANGILEAK;
+SELECT IZENA,JAIOTZEDATA, TO_CHAR(JAIOTZEDATA,'YYYY"ko" FMmonth DD"a"') FROM LANGILEAK;
+
+-- Langileen izena, lan egin duten sailen izena eta sail bakoitzean egindako eginkizuna (letra larriz)
+SELECT L.IZENA, S.IZENA AS SAILA, UPPER(LA.EGINKIZUNA) AS EGINKIZUNA
+FROM LANGILEAK L, SAILAK S, LANEAN LA
+WHERE L.KODEA = LA.LANGILE_KODEA
+AND S.KODEA = LA.SAIL_KODEA;
+
+-- Langile guztien izena, jaioteguna eta jaiotegunaren asteko egunaren izena
+SELECT IZENA, JAIOTZEDATA, TO_CHAR(JAIOTZEDATA, 'DAY')
+FROM LANGILEAK;
+
+-- Langileen izena eta adina
+SELECT IZENA, TRUNC(MONTHS_BETWEEN(SYSDATE,JAIOTZEDATA)/12)
+FROM LANGILEAK;
+
+SELECT IZENA, TRUNC((SYSDATE-JAIOTZEDATA)/365.25)
+FROM LANGILEAK;
+
+-- 50 urte baino gutxiago izan eta seme-alabak dituzten langileen izena, adina eta seme-alaba kopurua
+SELECT IZENA, TRUNC(MONTHS_BETWEEN(SYSDATE,JAIOTZEDATA)/12) AS ADINA, SEMEALABAK
+FROM LANGILEAK
+WHERE TRUNC(MONTHS_BETWEEN(SYSDATE,JAIOTZEDATA)/12) < 50
+AND SEMEALABAK > 0;
+
+-- Sail batean baino gehiagotan lan egin duten langileen izena, adina eta sailaren izena
+SELECT L.IZENA, TRUNC(MONTHS_BETWEEN(SYSDATE,JAIOTZEDATA)/12) AS ADINA, S.IZENA AS SAILA
+FROM LANGILEAK L, SAILAK S, LANEAN LA
+WHERE L.KODEA = LA.LANGILE_KODEA
+AND S.KODEA = LA.SAIL_KODEA
+AND L.KODEA IN (SELECT LANGILE_KODEA
+FROM LANEAN
+GROUP BY LANGILE_KODEA
+HAVING COUNT(*)>1);
+
+-- Adina 3ren multiploa duten langileen izena, adina eta kontu-zenbakia
+SELECT IZENA, TRUNC(MONTHS_BETWEEN(SYSDATE,JAIOTZEDATA)/12) AS ADINA, KONTUA
+FROM LANGILEAK
+WHERE MOD(TRUNC(MONTHS_BETWEEN(SYSDATE,JAIOTZEDATA)/12),3) = 0;
+
+-- Langile gazteenaren eta nagusienaren izena eta jasotako diru sarrerak
+SELECT L.IZENA, SUM(N.DIRUSARRERA)
+FROM LANGILEAK L, NOMINAK N
+WHERE L.KODEA = N.LANGILE_KODEA
+AND (L.JAIOTZEDATA = (SELECT MIN(JAIOTZEDATA) FROM LANGILEAK)
+    OR L.JAIOTZEDATA = (SELECT MAX(JAIOTZEDATA) FROM LANGILEAK))
+GROUP BY L.KODEA, L.IZENA
+
+-- Diru sarrera gehien eduki dituen langilearean izena eta jasotako diru sarrerak
+SELECT L.IZENA, SUM(N.DIRUSARRERA)
+FROM LANGILEAK L, NOMINAK N
+WHERE L.KODEA = N.LANGILE_KODEA
+GROUP BY L.KODEA, L.IZENA
+HAVING SUM(N.DIRUSARRERA) =any (SELECT MAX(SUM(DIRUSARRERA))
+FROM NOMINAK 
+GROUP BY LANGILE_KODEA)

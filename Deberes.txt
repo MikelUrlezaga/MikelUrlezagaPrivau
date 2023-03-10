@@ -1,4 +1,5 @@
 SISTEMAS
 - Ariketa para hacer
-BASE DE DATOS
-- Acabar y entregar la ariketa
+Prog
+- Examen para entregar
+- Ariketa

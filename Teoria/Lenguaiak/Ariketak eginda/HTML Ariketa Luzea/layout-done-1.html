@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/042ce9ef8f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/borders.css">
+        <link rel="stylesheet" href="css/layout-done.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body>
+        <header id="top">
+            <h1>HTML + CSS</h1>
+            <p><abbr title="Hypertext Markup Languaje">HTML</abbr> and 
+                <abbr title="Cascading Style Sheets">CSS</abbr> are two of the core 
+                technologies for buildinmg Web pages.</p>
+            <p>Html provides the strcuture of a page, CSS the visual and aural design
+                for a variety of designs.</p>
+            <nav>
+                <a href="#html-section">Html5</a>
+                <a href="#css-section">Css3</a>
+                <a href="#">Others</a>
+                <a href="#">Others</a>
+                <a href="#">Others</a>
+                <a href="#">Others</a>
+                <a href="#">Others</a>
+                <a href="#">Others</a>
+                <a href="#contact-form">Contact</a>
+            </nav>   
+        </header>
+        <aside>
+            <figure>
+                <img src="img/w3c.png" alt="W3C" style="width:100%">
+                <figcaption>World Wide Web Consortium</figcaption>
+            </figure>
+            <h2>HTML</h2>
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank">Home</a>
+            <a href="https://www.w3schools.com/html/html_basic.asp" target="_blank">Basics</a>
+            <a href="https://www.w3schools.com/tags/default.asp" target="_blank">Tags</a>
+            <a href="https://www.w3schools.com/tags/ref_attributes.asp" target="_blank">Atributes</a>
+            <a href="https://www.w3schools.com/html/html_examples.asp" target="_blank">Examples</a>
+            <a href="https://www.w3schools.com/html/exercise.asp" target="_blank">Exercises</a>
+            <h2>CSS</h2>
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank">Home</a>
+            <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">Introduction</a>
+            <a href="https://www.w3schools.com/css/css_syntax.asp" target="_blank">Syntax</a>
+            <a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">Selectors</a>
+            <a href="https://www.w3schools.com/css/css_examples.asp" target="_blank">Examples</a>
+            <a href="https://www.w3schools.com/css/css_exercises.asp" target="_blank">Exercises</a>
+        </aside>
+        <main>
+            <section id="html-section">
+                <header>
+                    <img src="img/image.png" style="width:10%">
+                    <h1>HTML Semantic Elements</h1>
+                    <p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+                    <p>According to the W3C: "A semantic Web allows data to be shared and reused across applications, enterprises, and communities."</p>    
+                </header>
+                <div class="articles-grid html-articles">
+                    <article>
+                        <h3>HTML &lt;header&gt; Tag</h3>
+                        <p>The <span>&lt;header&gt;</span> element represents a container for introductory content or a set of navigational links.</p>
+                        <p>You can have several <span>&lt;header&gt;</span> elements in one HTML document. However, cannot 
+                            be placed within a &lt;footer&gt;, &lt;address&gt; or another &lt;header&gt; element.</p>
+                        <a href="https://www.w3schools.com/tags/tag_header.asp" target="_blank" class="reference">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>
+                    <article>
+                        <h3>HTML &lt;section&gt; Tag</h3>
+                        <p>The <span>&lt;section&gt;</span> tag defines a section in a document.</p>
+                        <a href="https://www.w3schools.com/tags/tag_section.asp" target="_blank" class="reference">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>
+                    <article>
+                        <h3>HTML &lt;time&gt; Element</h3>
+                        <p>The <span>&lt;time&gt;</span> tag defines a specific time (or datetime).</p>
+                        <p>The <b>datetime</b> attribute of this element is used translate the time into a machine-readable format so that 
+                            browsers can offer to add date reminders through the user's calendar, and search engines can 
+                            produce smarter search results.</p>
+                        <a href="https://www.w3schools.com/tags/tag_time.asp" target="_blank" class="reference">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>
+                    <article>
+                        <h3>HTML &lt;article&gt; Element</h3>
+                        <p>The <span>&lt;article&gt;</span> element specifies independent, 
+                            self-contained content.</p>
+                        <p>An article should make sense on its own, 
+                            and it should be possible to distribute it 
+                            independently from the rest of the web site.</p>
+                        <a href="https://www.w3schools.com/tags/tag_article.asp" target="_blank" class="reference">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>
+                    <article>
+                        <h3>HTML &lt;figure&gt; Element</h3>
+                        <p>The <span>&lt;figure&gt;</span> tag specifies self-contained content, 
+                            like illustrations, diagrams, photos, code listings, etc..</p>
+                        <p>While the content of the element is related to the main flow, 
+                            its position is independent of the main flow, and if removed it should 
+                            not affect the flow of the document.</p>
+                        <a href="https://www.w3schools.com/tags/tag_figure.asp" target="_blank" class="reference">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>
+                    <article>
+                        <h3>HTML &lt;figcaption&gt; Element</h3>
+                        <p>The <span>&lt;figcaption&gt;</span> tag defines a caption for a 
+                            &lt;figure&gt; element.</p>
+                        <p>The element can be placed as the first or last 
+                            child of the &lt;figure&gt; element.</p>
+                        <a href="https://www.w3schools.com/tags/tag_figcaption.asp" target="_blank" class="reference">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>                    
+                    <article>
+                        <h3>HTML &lt;details&gt; Element</h3>
+                        <p>The <span>&lt;details&gt;</span> tag specifies additional details that the user can open and close on demand.</p>
+                        <p>Is often used to create an interactive widget that the user can open and close. By default, the widget is closed. 
+                            When open, it expands, and displays the content within.</p>
+                        <a href="https://www.w3schools.com/tags/tag_details.asp" target="_blank" class="reference">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>                            
+                    </article>
+                    <article>
+                        <h3>HTML &lt;summary&gt; Element</h3>
+                        <p>The <span>&lt;summary&gt;</span> tag defines a visible heading for the <span>&lt;details&gt;</span> element.</p>
+                        <p>The heading can be clicked to view/hide the details.</p>
+                        <a href="https://www.w3schools.com/tags/tag_summary.asp" target="_blank" class="reference">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>  
+                    </article>
+                </div>
+                <footer><a href="#top">top</a></footer>
+            </section>  
+            <section id="css-section">
+                <header>
+                    <h1>CSS v3</h1>
+                    <p>CSS is the language we use to style an HTML document. It describes how HTML 
+                        elements should be displayed.</p>
+                    <p><a href="https://www.w3.org/TR/css-syntax-3/">CSS Syntax Module Level 3</a> in a date on 
+                        <time datetime="2021-12-24 00:00">24 December 2021</time></p>
+                </header>
+                <div class="articles-grid css-articles">
+                    <article>
+                        <h3>CSS Grid</h3>
+                        <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, 
+                            making it easier to design web pages without having to use floats and positioning.</p>
+                        <a href="https://www.w3schools.com/css/css_grid.asp" target="_blank" class="reference">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article> 
+                    <article>
+                        <h3>CSS Flexbox</h3>
+                        <p>The Flexible Box Layout Module, makes it easier to design flexible responsive layout 
+                            structure without using float or positioning.</p>
+                        <a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank" class="reference">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>                                       
+                    <article>
+                        <h3>CSS Units</h3>
+                        <p>MCSS has several different units for expressing a length.</p>
+                        <p>Many CSS properties take "length" values, 
+                            such as <span>width</span>, <span>margin</span>, <span>padding</span>, 
+                            <span>font-size</span>, etc.</p>
+                        <a href="https://www.w3schools.com/css/css_units.asp" target="_blank" class="reference">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>
+                    <article>
+                        <h3>CSS Media Queries</h3>
+                        <p>The <span>@media</span> rule, introduced in CSS2, made it possible to 
+                            define different style rules for different media types.</p>
+                        <p>Media queries in CSS3 extended the CSS2 media types idea: Instead of looking 
+                            for a type of device, they look at the capability of the device.</p>
+                        <a href="https://www.w3schools.com/css/css3_mediaqueries.asp" target="_blank" class="reference">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>
+                    <article>
+                        <h3>CSS Colors</h3>
+                        <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+                        <a href="https://www.w3schools.com/css/css_colors.asp" target="_blank" class="reference">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>
+                    <article>
+                        <h3>CSS Reference</h3>
+                        <a href="https://www.w3schools.com/cssref/index.php" target="_blank" class="reference">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>  
+                    </article>
+                    <article>
+                        <h3>CSS Selectors</h3>
+                        <p>A CSS selector selects the HTML element(s) you want to style.</p>
+                        <p>We can divide CSS selectors into five categories:</p>
+                        <ul>
+                            <li>Simple selectors (select elements based on name, id, class)</li>
+                            <li>
+                                <a href="https://www.w3schools.com/css/css_combinators.asp" target="_blank">Combinator selectors</a>
+                                 (select elements based on a specific relationship between them)
+                            </li>
+                            <li>
+                                <a href="https://www.w3schools.com/css/css_combinators.asp" target="_blank">Pseudo-class selectors</a>
+                                 (select elements based on a certain state)
+                            </li> 
+                            <li>
+                                <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudo-elements selectors</a>
+                                 (select and style a part of an element)
+                            </li>   
+                            <li>
+                                <a href="https://www.w3schools.com/css/css_attribute_selectors.asp" target="_blank">Attribute selectors</a>
+                                 (select elements based on an attribute or attribute value)
+                            </li>                                                                                  
+                        </ul>
+                        <a href="https://www.w3schools.com/css/css_combinators.asp" target="_blank" class="reference">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>                         
+                    </article>                    
+                    <article>
+                        <h3>CSS Combinators</h3>
+                        <p>A CSS selector can contain more than one simple selector.</p>
+                        <p>Between the simple selectors, we can include a combinator.</p>
+                        <a href="https://www.w3schools.com/css/css_combinators.asp" target="_blank" class="reference">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>                         
+                    </article>
+                </div>
+                <footer><a href="#top">top</a></footer>
+            </section>          
+        </main>
+        <footer>
+            <p>Contact</p>
+            <form id="contact-form">
+            </form>
+        </footer>
+    </body>
+</html>
