@@ -1,0 +1,11 @@
+Kotxea [] k = new Kotxea [5]
+
+for (int i = 0; i < 5; i++)
+ tablaPuntos[i] = new Punto();
+tablaPuntos[i]= new Punto();
+
+Punto punto1 = new Punto(2,5);
+punto1.setX(4);
+int x = punto1.getX();
+double d = punto1.modulo();
+punto1.setX(punto1.getX() + 1); // suma en una unidad el valor de x

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liburuak>
+    <liburua mota="elektronikoa">
+        <izenburua>The Art of Computer Programming</izenburua>
+        <egilea>Donald E. Knuth</egilea>
+        <argitaletxea>Addison-Wesley Professional</argitaletxea>
+        <argitaratzeData>1997</argitaratzeData>
+        <prezioa>85,50</prezioa>
+        <tamaina>13,5</tamaina>
+        <formatua>PDF</formatua>
+    </liburua>
+    <liburua mota="elektronikoa">
+        <izenburua>The Elements of Computing Systems: Building a Modern Computer from First Principles</izenburua>
+        <egilea>Noam Nisan, Shimon Schocken</egilea>
+        <argitaletxea>MIT Press</argitaletxea>
+        <argitaratzeData>2005</argitaratzeData>
+        <prezioa>39,98</prezioa>
+        <tamaina>3,2</tamaina>
+        <formatua>EPUB</formatua>
+    </liburua>
+    <liburua mota="elektronikoa">
+        <izenburua>The Pragmatic Programmer: From Journeyman to Master</izenburua>
+        <egilea>Andrew Hunt, David Thomas</egilea>
+        <argitaletxea>Addison-Wesley Professional</argitaletxea>
+        <argitaratzeData>1999</argitaratzeData>
+        <prezioa>29,95</prezioa>
+        <tamaina>5,6</tamaina>
+        <formatua>MOBI</formatua>
+    </liburua>
+</liburuak>
