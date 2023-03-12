@@ -3,3 +3,6 @@ Prog
 - Ariketa
 Garapen
 - Ariketa
+
+Dudas
+- Como saber mi ruta en Visual o jGrasp
