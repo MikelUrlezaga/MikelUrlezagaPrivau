@@ -1,7 +1,7 @@
-/* Sortu programa bat javan “Datuak” karpetatik “langile.txt” 
+package Ariketa1;
+/* Sortu programa bat javan ï¿½Datuakï¿½ karpetatik ï¿½langile.txtï¿½ 
 fitxategia irakurtzen duena eta sortzen duena xml dokumentu bat ondorengo formatuarekin 
 (xml dokumentua Datuak karpetan gordeko da):*/
-
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller; //beharrezkoa idazteko
@@ -14,42 +14,35 @@ public class Ariketa1Azterketa{
       Langile l = null;
       Langileak lk = new Langileak();
       
-      Telefonoak tk = null;
       
       
       try{
       
-         File f = new File("datuak\\langileak.txt");
+         File f = new File("Ariketa1/langileak.txt");
          Scanner sc = new Scanner(f);
          
          int id;
-         String nombre;
-         String apellido;
-         int edad;
-         String ciudad;
-         String email;
-         int telefono;
-         //int [] telefono = new int [2];
+         String izena;
+         String abizena;
+         int adina;
+         String herrialdea;
+         String mail;
+         int [] telefono = new int [2];
          
          sc.nextLine();
       
 
          while(sc.hasNext()){
-            tk = new Telefonoak();
             id=sc.nextInt();
-            nombre=sc.next();
-            apellido=sc.next();
-            edad=sc.nextInt();
-            ciudad=sc.next();
-            email=sc.next();
-            telefono=sc.nextInt();
-            tk.addTelefonoa(telefono);
-            telefono=sc.nextInt();
-            tk.addTelefonoa(telefono);
-            //telefono[0]=sc.nextInt();
-            //telefono[1]=sc.nextInt();
+            izena=sc.next();
+            abizena=sc.next();
+            adina=sc.nextInt();
+            herrialdea=sc.next();
+            mail=sc.next();
+            telefono[0]=sc.nextInt();
+            telefono[1]=sc.nextInt();
             
-            l = new Langile(id, nombre, apellido, edad, ciudad, email, tk);
+            l = new Langile(id, izena, abizena, adina, herrialdea, mail, telefono);
             lk.addLangile(l);
          }
     
@@ -67,7 +60,7 @@ public class Ariketa1Azterketa{
          c = JAXBContext.newInstance (Langileak.class);
          Marshaller m = c.createMarshaller();
          m.setProperty (Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-         m.marshal (lk,new File ("langileak.xml"));
+         m.marshal (lk,new File ("Ariketa1/langileak.xml"));
       }catch (Exception e){
          System.out.println("Errorea irakurtzerakoan "+e);
       }

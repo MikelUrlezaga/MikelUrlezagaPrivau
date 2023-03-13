@@ -1,4 +1,6 @@
+package Ariketa1;
 import javax.xml.bind.annotation.*;
+
 import java.util.Arrays;
 @XmlRootElement (name = "langileak")
 @XmlAccessorType (XmlAccessType.FIELD)
@@ -11,9 +13,9 @@ public class Langileak{
    
    }
    
-   public void addLangile(Langile la){
+   public void addLangile(Langile l){
       this.lk = Arrays.copyOf(this.lk, this.lk.length+1);
-      this.lk[this.lk.length-1] = la;
+      this.lk[this.lk.length-1] = l;
    }
    
 }
