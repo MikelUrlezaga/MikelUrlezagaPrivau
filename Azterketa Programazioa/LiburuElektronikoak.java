@@ -1,5 +1,5 @@
 import javax.xml.bind.annotation.*;
-import java.util.Arrays;
+
 @XmlRootElement (name="liburuak")
 
 public class LiburuElektronikoak{

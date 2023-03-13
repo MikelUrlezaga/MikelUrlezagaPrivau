@@ -1,11 +1,10 @@
-/*Behean duzuen klase diagraman oirrituta; irakurri “Datuak” karpetan dagoen “liburuak.xml” fitxategia. 
-Bertan liburu elektronikoak bakarrik egongo dira. Sortu beharko duzue “LiburuElektronikoak.java” klasea 
-gordetzen dituena liburu digitalak array batean. Ondoren, bi funtzio sortu behar dira “toString” eta “prezioaIgo”. 
+/*Behean duzuen klase diagraman oirrituta; irakurri ï¿½Datuakï¿½ karpetan dagoen ï¿½liburuak.xmlï¿½ fitxategia. 
+Bertan liburu elektronikoak bakarrik egongo dira. Sortu beharko duzue ï¿½LiburuElektronikoak.javaï¿½ klasea 
+gordetzen dituena liburu digitalak array batean. Ondoren, bi funtzio sortu behar dira ï¿½toStringï¿½ eta ï¿½prezioaIgoï¿½. 
 Lehenengoak pantailatik aterako du liburuElektroniko bat eta bigarrenak ehuneko bat jasoko du eta prezio igoera aplikatuko du liburuari.
-Bukatzeko, igoko diozue %10 30€ baino gehiago balio duten liburuei eta pantailatik aterako dituzue liburu guztiak */
+Bukatzeko, igoko diozue %10 30ï¿½ baino gehiago balio duten liburuei eta pantailatik aterako dituzue liburu guztiak */
 
 import java.io.File;
-import java.util.Scanner;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller; //beharrezkoa irakurtzeko
@@ -20,7 +19,7 @@ public class MainLiburu{
       try{
          c = JAXBContext.newInstance(LiburuElektronikoak.class);
          Unmarshaller um = c.createUnmarshaller();
-         LiburuElektronikoak l = (LiburuElektronikoak) um.unmarshal (new File("datuak\\liburuak.xml")); //hemen sortzen da objektua
+         LiburuElektronikoak l = (LiburuElektronikoak) um.unmarshal (new File("datuak\\liburuak.xml"));
          
          l.inprimatu();
          l.igoPrezioa();

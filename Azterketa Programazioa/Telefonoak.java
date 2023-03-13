@@ -3,16 +3,19 @@ import java.util.Arrays;
 @XmlAccessorType (XmlAccessType.FIELD)
 
 public class Telefonoak{
+   
    @XmlElement (name="telefonoa")
-   private int [] tk;
+   private int [] tf;
    
    public Telefonoak(){
-      this.tk = new int [0];
+
+      this.tf = new int [0];
+
    }
    
-   public void addTelefonoa(int t){
-      this.tk = Arrays.copyOf(this.tk, this.tk.length+1);
-      this.tk[this.tk.length-1] = t;
+   public void addTelefonoa(int tk){
+      this.tf = Arrays.copyOf(this.tf, this.tf.length+1);
+      this.tf[this.tf.length-1] = tk;
    }
 
 

@@ -1,4 +1,3 @@
-import javax.xml.bind.annotation.*;
 public class LiburuElektronikoa extends Liburu{
     private double tamaina;
     private String formatua;
@@ -32,16 +31,11 @@ public class LiburuElektronikoa extends Liburu{
          this.formatua=formatua;
      }
      
-     //toString metodoa ateratzeko pantailatik datuak
-     
      @Override
      
      public String toString(){
          return this.mota + " " +  this.izenburua + " " + this.egilea + " " + this.argitaletxea + " " + this.argitaratzeData + " " + this.prezioa + " " + this.tamaina + " " + this.formatua;
      }
-     
-     
-     //prezioaIgo metodoa 
      
      public void prezioaIgo(int x){
         if(this.prezioa > 30){
