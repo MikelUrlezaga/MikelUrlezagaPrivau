@@ -10,5 +10,6 @@ WINDOWS + I (configuracion de windows)
 
 WINDOWS + S (buscador de windows)
 
+WINDOWS + T (pestaña nueva en chrome)
 
-
+WINDWOS + N (ventana nueva)
