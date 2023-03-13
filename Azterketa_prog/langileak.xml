@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<langileak>
+    <langile id="1">
+        <izena>Juan</izena>
+        <apellido>Perez</apellido>
+        <edad>25</edad>
+        <ciudad>Madrid</ciudad>
+        <email>juan.perez@email.com</email>
+        <telefonoak>
+            <telefonoa>123456789</telefonoa>
+            <telefonoa>987654321</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="2">
+        <izena>Maria</izena>
+        <apellido>Garcia</apellido>
+        <edad>31</edad>
+        <ciudad>Barcelona</ciudad>
+        <email>maria.garcia@email.com</email>
+        <telefonoak>
+            <telefonoa>987654321</telefonoa>
+            <telefonoa>123456789</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="3">
+        <izena>Pedro</izena>
+        <apellido>Lopez</apellido>
+        <edad>28</edad>
+        <ciudad>Valencia</ciudad>
+        <email>pedro.lopez@email.com</email>
+        <telefonoak>
+            <telefonoa>555666777</telefonoa>
+            <telefonoa>444333222</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="4">
+        <izena>Laura</izena>
+        <apellido>Gomez</apellido>
+        <edad>24</edad>
+        <ciudad>Sevilla</ciudad>
+        <email>laura.gomez@email.com</email>
+        <telefonoak>
+            <telefonoa>111222333</telefonoa>
+            <telefonoa>444555666</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="5">
+        <izena>Carlos</izena>
+        <apellido>Rodriguez</apellido>
+        <edad>27</edad>
+        <ciudad>Bilbao</ciudad>
+        <email>carlos.rodriguez@email.com</email>
+        <telefonoak>
+            <telefonoa>777888999</telefonoa>
+            <telefonoa>666777888</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="6">
+        <izena>Lucia</izena>
+        <apellido>Fernandez</apellido>
+        <edad>29</edad>
+        <ciudad>Malaga</ciudad>
+        <email>lucia.fernandez@email.com</email>
+        <telefonoak>
+            <telefonoa>333444555</telefonoa>
+            <telefonoa>555666777</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="7">
+        <izena>Javier</izena>
+        <apellido>Sanchez</apellido>
+        <edad>35</edad>
+        <ciudad>Zaragoza</ciudad>
+        <email>javier.sanchez@email.com</email>
+        <telefonoak>
+            <telefonoa>666777888</telefonoa>
+            <telefonoa>777888999</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="8">
+        <izena>Ana</izena>
+        <apellido>Martinez</apellido>
+        <edad>26</edad>
+        <ciudad>Murcia</ciudad>
+        <email>ana.martinez@email.com</email>
+        <telefonoak>
+            <telefonoa>222333444</telefonoa>
+            <telefonoa>111222333</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="9">
+        <izena>Alberto</izena>
+        <apellido>Alonso</apellido>
+        <edad>30</edad>
+        <ciudad>Cadiz</ciudad>
+        <email>alberto.alonso@email.com</email>
+        <telefonoak>
+            <telefonoa>555444333</telefonoa>
+            <telefonoa>444333222</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="10">
+        <izena>Elena</izena>
+        <apellido>Diaz</apellido>
+        <edad>33</edad>
+        <ciudad>Valencia</ciudad>
+        <email>elena.diaz@email.com</email>
+        <telefonoak>
+            <telefonoa>333222111</telefonoa>
+            <telefonoa>111222333</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="11">
+        <izena>Fernando</izena>
+        <apellido>Gutierrez</apellido>
+        <edad>27</edad>
+        <ciudad>Malaga</ciudad>
+        <email>fernando.gutierrez@email.com</email>
+        <telefonoak>
+            <telefonoa>999000111</telefonoa>
+            <telefonoa>111222333</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="12">
+        <izena>Gabriela</izena>
+        <apellido>Hernandez</apellido>
+        <edad>29</edad>
+        <ciudad>Barcelona</ciudad>
+        <email>gabriela.hernandez@email.com</email>
+        <telefonoak>
+            <telefonoa>666111222</telefonoa>
+            <telefonoa>111222333</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="13">
+        <izena>Hugo</izena>
+        <apellido>Jimenez</apellido>
+        <edad>24</edad>
+        <ciudad>Granada</ciudad>
+        <email>hugo.jimenez@email.com</email>
+        <telefonoak>
+            <telefonoa>888777666</telefonoa>
+            <telefonoa>777666555</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="14">
+        <izena>Ines</izena>
+        <apellido>Lago</apellido>
+        <edad>28</edad>
+        <ciudad>Murcia</ciudad>
+        <email>ines.lago@email.com</email>
+        <telefonoak>
+            <telefonoa>111333222</telefonoa>
+            <telefonoa>222333444</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="15">
+        <izena>Jorge</izena>
+        <apellido>Marquez</apellido>
+        <edad>31</edad>
+        <ciudad>Sevilla</ciudad>
+        <email>jorge.marquez@email.com</email>
+        <telefonoak>
+            <telefonoa>222444555</telefonoa>
+            <telefonoa>444555666</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="16">
+        <izena>Karla</izena>
+        <apellido>Navarro</apellido>
+        <edad>25</edad>
+        <ciudad>Zaragoza</ciudad>
+        <email>karla.navarro@email.com</email>
+        <telefonoak>
+            <telefonoa>777222444</telefonoa>
+            <telefonoa>888333222</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="17">
+        <izena>Luis</izena>
+        <apellido>Ortiz</apellido>
+        <edad>32</edad>
+        <ciudad>Valencia</ciudad>
+        <email>luis.ortiz@email.com</email>
+        <telefonoak>
+            <telefonoa>888999000</telefonoa>
+            <telefonoa>999000111</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="18">
+        <izena>Marta</izena>
+        <apellido>Perez</apellido>
+        <edad>26</edad>
+        <ciudad>Barcelona</ciudad>
+        <email>marta.perez@email.com</email>
+        <telefonoak>
+            <telefonoa>111000999</telefonoa>
+            <telefonoa>222111333</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="19">
+        <izena>Nicolas</izena>
+        <apellido>Quintero</apellido>
+        <edad>29</edad>
+        <ciudad>Bilbao</ciudad>
+        <email>nicolas.quintero@email.com</email>
+        <telefonoak>
+            <telefonoa>444666777</telefonoa>
+            <telefonoa>777888999</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="20">
+        <izena>Olivia</izena>
+        <apellido>Ramirez</apellido>
+        <edad>27</edad>
+        <ciudad>Malaga</ciudad>
+        <email>olivia.ramirez@email.com</email>
+        <telefonoak>
+            <telefonoa>555777888</telefonoa>
+            <telefonoa>888999000</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="21">
+        <izena>Pablo</izena>
+        <apellido>Sanchez</apellido>
+        <edad>30</edad>
+        <ciudad>Madrid</ciudad>
+        <email>pablo.sanchez@email.com</email>
+        <telefonoak>
+            <telefonoa>222555666</telefonoa>
+            <telefonoa>555444333</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="22">
+        <izena>Quirino</izena>
+        <apellido>Torres</apellido>
+        <edad>28</edad>
+        <ciudad>Valencia</ciudad>
+        <email>quirino.torres@email.com</email>
+        <telefonoak>
+            <telefonoa>777444111</telefonoa>
+            <telefonoa>111333222</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="23">
+        <izena>Raquel</izena>
+        <apellido>UreÃ±a</apellido>
+        <edad>26</edad>
+        <ciudad>Barcelona</ciudad>
+        <email>raquel.urena@email.com</email>
+        <telefonoak>
+            <telefonoa>999111222</telefonoa>
+            <telefonoa>222333444</telefonoa>
+        </telefonoak>
+    </langile>
+    <langile id="24">
+        <izena>Santiago</izena>
+        <apellido>Valencia</apellido>
+        <edad>31</edad>
+        <ciudad>Murcia</ciudad>
+        <email>santiago.valencia@email.com</email>
+        <telefonoak>
+            <telefonoa>222111333</telefonoa>
+            <telefonoa>111222333</telefonoa>
+        </telefonoak>
+    </langile>
+</langileak>
