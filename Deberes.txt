@@ -1,8 +1,13 @@
 Prog
-- Examen para entregar
-- Ariketa
+- Acabar el repaso de la teoria
+- Ariketa (Kalkulagailua)
 Garapen
 - Ariketa
-
+Datu-Base
+- Preparar dudas para mañana
+- Apuntes de PL
+- Ariketa
+Lenguaiak
+- Teoria Mirar
 Dudas
-- Como saber mi ruta en Visual o jGrasp
+
