@@ -1,0 +1,29 @@
+Microsoft Windows [Versión 10.0.19045.2364]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\Alba>sqlplus SYS/ as SYSDBA
+
+SQL*Plus: Release 21.0.0.0.0 - Production on Dom Ene 15 17:36:49 2023
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle.  All rights reserved.
+
+Introduzca la contrase±a:
+
+Conectado a:
+Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production
+Version 21.3.0.0.0
+
+SQL> ALTER SESSION SET CONTAINER = XEPDB1;
+
+Sesi¾n modificada.
+
+SQL> CREATE USER ALBA IDENTIFIED BY ALBA;
+
+Usuario creado.
+
+SQL> GRANT ALL PRIVILEGES TO ALBA;
+
+Concesi¾n terminada correctamente.
+
+SQL>
