@@ -1,4 +1,5 @@
 Prog
+- Acabar el repaso de la teoria
 - Ariketa (Kalkulagailua)
 Garapen
 - Ariketa
@@ -7,6 +8,6 @@ Datu-Base
 - Apuntes de PL
 - Ariketa
 Lenguaiak
-- Ariketa
+- Teoria Mirar
 Dudas
 
