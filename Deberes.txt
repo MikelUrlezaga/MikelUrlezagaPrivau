@@ -11,3 +11,5 @@ Lenguaiak
 - Teoria Mirar
 Dudas
 
+Datu Base: 
+
