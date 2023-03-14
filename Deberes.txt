@@ -4,6 +4,7 @@ Garapen
 - Ariketa
 Datu-Base
 - Preparar dudas para mañana
+- Apuntes de PL
 - Ariketa
 
 Dudas
