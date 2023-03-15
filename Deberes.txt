@@ -9,6 +9,7 @@ Datu-Base
 - Ariketa
 Lenguaiak
 - Teoria Mirar
+- Ariketa (Instalar maquina virtual)
 Dudas
 
 Datu Base: 
