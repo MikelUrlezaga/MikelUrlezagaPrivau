@@ -12,5 +12,5 @@ Lenguaiak
 - Ariketa (Instalar maquina virtual)
 Dudas
 
-Datu Base: 
+
 
