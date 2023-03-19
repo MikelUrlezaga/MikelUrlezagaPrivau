@@ -1,8 +1,6 @@
 Prog
 - Acabar el repaso de la teoria
 - Ariketa (Kalkulagailua)
-Garapen
-- Ariketa
 Datu-Base
 - Preparar dudas para mañana
 - Apuntes de PL
@@ -10,6 +8,8 @@ Datu-Base
 Lenguaiak
 - Teoria Mirar
 - Ariketa (Instalar maquina virtual)
+Sistemak
+- Ariketa Indibiduala
 Dudas
 
 
