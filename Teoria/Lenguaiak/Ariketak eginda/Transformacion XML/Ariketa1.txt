@@ -1,0 +1,43 @@
+Hurrengo informazioa aukeratzeko XML dokumentuan egin behar diren adierazpenak adierazi:
+Langile guztien izenak:
+/langileak/langilea/izena
+//langilea/izena
+Langile guztien izenen testuak:
+/langileak/langilea/izena/text()
+//langilea/izena/text()
+"Summer" deitutako langilearen informazio guztia:
+/langileak/langilea[izena="Summer"]
+//langilea[izena="Summer"]
+//langilea[izena/text()="Summer"]
+"Summer" deitutako langilearen izena:
+//langilea[izena="Summer"]/izena
+//langilea/izena[.="Summer"]
+//langilea/izena[text()="Summer"]
+"Summer" deitutako langilearen abizena
+//langilea[izena="Summer"]/abizena
+//langilea/izena[.="Summer"]/../abizena
+Telefono zenbakia 515.123.4565 eta 515.123.4570 bitartean dituzten langileen informazioa:
+//langilea[telefonoa <= "515.123.4570" and telefonoa >= "515.123.4565"]
+//langilea[telefonoa <= "515.123.4570"][telefonoa >= "515.123.4565"]
+Lehenengo langilearen elementu osoa:
+//langilea[1]
+Bigarren langilearen elementu osoa:
+//langilea[2]
+Azken langilearen elementu osoa:
+//langilea[last()]
+Azken langilearen izena:
+//langilea[last()]/izena
+Azken langilearen id atributoa:
+//langilea[last()]/@id
+Lehenengo langilearen id_nagusia elementuaren testua:
+//langilea[1]/id_nagusi/text()
+langilearen id atributoak "1" balioa duen langilea:
+//langilea[@id = "1"]
+//langilea[@id = 1]
+Lehenengo langilearen nagusiaren informazio osoa:
+//langilea[@id=//langilea[1]/id_nagusi]
+ID bitartez aukeratutako langile bat: //langilea[@id=?]
+Lehenengo langilearen nagusiaren IDa: //langilea[1]/id_nagusi
+Nagusirik ez duten langileen informazio osoa:
+//langilea[id_nagusi=""]
+//langilea[not(id_nagusi/text())]
