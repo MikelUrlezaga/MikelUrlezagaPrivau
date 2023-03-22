@@ -1,5 +1,10 @@
-public class LiburuElektronikoa extends Liburu{
+import javax.xml.bind.annotation.*;
+
+@XmlAccessorType(XmlAccessType.FIELD)
+public class LiburuElektronikoa extends Liburu {
+    @XmlElement
     private double tamaina;
+    @XmlElement
     private String formatua;
     
     public LiburuElektronikoa(){}
@@ -31,16 +36,10 @@ public class LiburuElektronikoa extends Liburu{
          this.formatua=formatua;
      }
      
-     @Override
-     
-     public String toString(){
-         return this.mota + " " +  this.izenburua + " " + this.egilea + " " + this.argitaletxea + " " + this.argitaratzeData + " " + this.prezioa + " " + this.tamaina + " " + this.formatua;
+     //toString metodoa ateratzeko pantailatik datuak
+     public String toString (){
+      return (this.mota+" "+this.izenburua+" "+this.egilea+" "+this.argitaletxea);
      }
      
-     public void prezioaIgo(int x){
-        if(this.prezioa > 30){
-           this.prezioa = (this.prezioa + (this.prezioa * x)/100);
-           System.out.println(this.prezioa);
-        }
-     }
+     //prezioaIgo metodoa 
 }

@@ -13,6 +13,8 @@ public class LiburuFisikoa extends Liburu {
         this.esteka = esteka;
     }
 
+    // Getter eta setter metodoak
+
     public int getOrrialdeKopurua() {
         return orrialdeKopurua;
     }

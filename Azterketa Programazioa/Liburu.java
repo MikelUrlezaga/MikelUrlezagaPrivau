@@ -1,11 +1,18 @@
 import javax.xml.bind.annotation.*;
+
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Liburu {
    @XmlAttribute (required=true)
    protected String mota;
+   @XmlElement
    protected String izenburua;
+   @XmlElement
    protected String egilea;
+   @XmlElement
    protected String argitaletxea;
+   @XmlElement
    protected int argitaratzeData;
+   @XmlElement
    protected double prezioa;
 
    public Liburu(){}
@@ -20,7 +27,7 @@ public class Liburu {
    }
 
    // Getter eta setter metodoak
-   
+
    public String getIzenburua() {
        return izenburua;
    }
