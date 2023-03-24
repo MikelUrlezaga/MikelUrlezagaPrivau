@@ -6,7 +6,7 @@ BASE DE DATOS:
 - EXCEPTION
     WHEN DUP_VAL_ON_INDEX THEN DBMS_OUTPUT.PUT_LINE('Produktu kode hori dagoeneko datu-basean dago');
 2.Ariketa Amaieran
-
+(primary key dagoen lekuan sartzerakoan datu bat)
 
 EXECUTE PROZEDURARENIZENA;
 
