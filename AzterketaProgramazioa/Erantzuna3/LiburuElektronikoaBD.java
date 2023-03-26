@@ -28,7 +28,7 @@ public class LiburuElektronikoaBD {
       try{
          JAXBContext context= JAXBContext.newInstance(LiburuElektronikoaBD.class);
          Unmarshaller um = context.createUnmarshaller();
-         le=(LiburuElektronikoaBD) um.unmarshal(new File ("Azterketa Programazioa//Erantzuna 3//liburuak.xml"));
+         le=(LiburuElektronikoaBD) um.unmarshal(new File ("AzterketaProgramazioa\\Erantzuna3\\liburuak.xml"));
          le.liburuELektronikoaToString();
       }catch(Exception e){
          System.out.println("Error "+e);
