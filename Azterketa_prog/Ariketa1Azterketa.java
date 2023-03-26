@@ -46,7 +46,7 @@ public class Ariketa1Azterketa{
             tk.addTelefonoa(telefono);
             telefono=sc.nextInt();
             tk.addTelefonoa(telefono);
-            //telefono[0]=sc.nextInt();
+            telefono[0]=sc.nextInt();
             //telefono[1]=sc.nextInt();
             
             l = new Langile(id, nombre, apellido, edad, ciudad, email, tk);

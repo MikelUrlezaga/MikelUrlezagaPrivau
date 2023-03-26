@@ -3,9 +3,12 @@ BASE DE DATOS:
 - UPDATE AZALPENEAN
 - BILTEGIRAPEN FUNTZIOA
 - PLS_INTEGER   solo pa enteros
+- EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN DBMS_OUTPUT.PUT_LINE('Produktu kode hori dagoeneko datu-basean dago');
+2.Ariketa Amaieran
+(primary key dagoen lekuan sartzerakoan datu bat)
 
-
-
+EXECUTE PROZEDURARENIZENA;
 
 
 CREATE OR REPLACE TRIGGER ORDAINKETAKAUDITATU

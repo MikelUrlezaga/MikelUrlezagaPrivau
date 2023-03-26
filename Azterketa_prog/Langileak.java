@@ -2,7 +2,7 @@ import javax.xml.bind.annotation.*;
 import java.util.Arrays;
 @XmlRootElement (name = "langileak")
 @XmlAccessorType (XmlAccessType.FIELD)
-public class Langileak{
+public class Ariketa{
    @XmlElement (name="langile")
    private Langile [] lk;
    
