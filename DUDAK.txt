@@ -18,3 +18,11 @@ BEFORE INSERT ON ORDAINKETAK
 INSERT INTO AUDITORETZA VALUES (SYSDATE, 'Ordainketa datan datuak txertatu dira')
 
 AFTER INSERT OR UPDATE OF KOPURUA OR DELETE ON ORDAINKETAK
+
+
+
+
+PROGRAMAZIOA:
+
+- 1.Ariketa tamaina aldaketa
+- jtf.setText(""+zbk); ???? 

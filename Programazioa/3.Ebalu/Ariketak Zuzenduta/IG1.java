@@ -10,6 +10,8 @@ public class IG1 {
       JButton jb2 = new JButton ("2");
       JButton jb3 = new JButton ("3");
       jb1.setPreferredSize(new Dimension(80, 80));
+      jb2.setPreferredSize(new Dimension(80, 80));
+      jb3.setPreferredSize(new Dimension(80, 80));
       
       //panel sortu eta elementuak gehitu
       JPanel jp = new JPanel ();

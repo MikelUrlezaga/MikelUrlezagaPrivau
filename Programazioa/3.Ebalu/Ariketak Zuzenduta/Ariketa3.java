@@ -19,7 +19,7 @@ public class Ariketa3 {
       //jf.getContentPane().add(jp);  
       jf.setLayout(new GridLayout(1,3));    
       jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      jf.setSize(200,100);
+      jf.setSize(400,200);
       jf.setVisible(true);
    }
    

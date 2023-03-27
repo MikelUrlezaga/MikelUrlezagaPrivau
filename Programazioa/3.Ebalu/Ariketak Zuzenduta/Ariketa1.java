@@ -5,7 +5,6 @@ public class Ariketa1 {
    public static void main (String [] args){
       JFrame jf = new JFrame("Ariketa1");
       JTextField jtf = new JTextField ("Idatzi...");
-      jtf.setSize(10,20);
       JButton jb = new JButton ("Klikatu");
       jb.addActionListener (e -> testua(jtf));
       JPanel jp = new JPanel();
@@ -13,7 +12,7 @@ public class Ariketa1 {
       jp.add(jtf);
       jf.getContentPane().add(jp);      
       jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      
+      jtf.setSize(10,20);
       jf.setSize(400,200);
       jf.setVisible(true);
    }
