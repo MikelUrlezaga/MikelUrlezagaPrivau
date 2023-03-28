@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.Dimension;
 
 public class Ariketa1 {
 
@@ -12,7 +13,7 @@ public class Ariketa1 {
       jp.add(jtf);
       jf.getContentPane().add(jp);      
       jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      jtf.setSize(10,20);
+      jtf.setPreferredSize(new Dimension(60,50));
       jf.setSize(400,200);
       jf.setVisible(true);
    }
