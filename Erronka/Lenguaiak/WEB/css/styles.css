@@ -1,0 +1,12 @@
+img {
+    width: 25px;
+}
+
+tr.even {
+    background-color: #DDD;
+}
+
+tr.first,
+tr.odd {
+    background-color: #CCC;
+}
