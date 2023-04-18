@@ -330,3 +330,56 @@ BEGIN
     ELSE DBMS_OUTPUT.PUT_LINE('Berdinak dira');
     END IF;
 END;
+
+SET SERVEROUTPUT ON;
+SET VERIFY OFF;
+
+/* 1. Parametro gisa bi zenbaki pasatuta, handiena zein den edo berdinak diren 
+      esango digun prozedura bat sortu */
+CREATE OR REPLACE PROCEDURE ZEIN_DA_HANDIENA (X NUMBER, Y NUMBER) AS
+BEGIN
+    IF X > Y THEN DBMS_OUTPUT.PUT_LINE(X || ' HANDIAGOA DA');
+    ELSIF X < Y THEN DBMS_OUTPUT.PUT_LINE(Y || ' HANDIAGOA DA');
+    ELSE DBMS_OUTPUT.PUT_LINE('Berdinak dira');
+    END IF;
+END;
+
+EXECUTE ZEIN_DA_HANDIENA(5,9);
+
+
+SET SERVEROUTPUT ON;
+SET VERIFY OFF;
+
+/* 2. Entregatu ez diren eskaerak bistaratzen dituen prozedura garatu. Bistaratu 
+      beharreko datuak: Bezeroaren izena, eskaera kodea eta eskaera data (23-12-04 formatuan) */
+
+CREATE OR REPLACE PROCEDURE ENTREGATU_GABEKO_ESKAERAK AS
+		CURSOR CUR_ESKAERAK IS
+	SELECT B.BEZEROIZENA, E.ESKAERAKODEA, TO_CHAR(E.ESKAERADATA, 'YY/MM/DD') AS DATA
+	FROM BEZEROAK B, ESKAERAK E
+	WHERE B.BEZEROKODEA = E.BEZEROKODEA
+	AND E.ENTREGADATA IS NULL;
+BEGIN
+    FOR ESKAERA IN CUR_ESKAERAK
+    LOOP
+         DBMS_OUTPUT.PUT_LINE(ESKAERA.BEZEROIZENA || ' - ' || ESKAERA.ESKAERAKODEA || ' - ' || ESKAERA.DATA);
+    END LOOP;
+END;
+
+SET SERVEROUTPUT ON;
+SET VERIFY OFF;
+
+/* 3. Prozedura bat garatu bezero bakoitzaren izena eta egindako eskaera kopurua 
+      bistaratzen duena, eskaera kopuruarengatik beheranzko noranzkoan ordenatuta. */
+CREATE OR REPLACE PROCEDURE BEZEROEN_ESKAERA_KOPURUA AS
+	CURSOR CUR_ESKAERAK IS 
+    SELECT B.BEZEROIZENA, COUNT(E.ESKAERAKODEA) AS KOPURUA
+    FROM BEZEROAK B LEFT JOIN ESKAERAK E
+    ON B.BEZEROKODEA = E.BEZEROKODEA
+    GROUP BY B.BEZEROKODEA, B.BEZEROIZENA;
+BEGIN
+    FOR ESKAERA IN CUR_ESKAERAK
+    LOOP
+         DBMS_OUTPUT.PUT_LINE(ESKAERA.BEZEROIZENA || ' - ' || ESKAERA.KOPURUA);
+    END LOOP;
+END;
