@@ -1,0 +1,32 @@
+DATU-BASE:
+
+	- Arietak erantzunekin egin (DENAK)
+	- Errepaso Ariketak egin
+
+PROGRAMAZIOA:
+
+	- Ariketak erantzunekin egin (DENAK)
+	- Errepaso Ariketak egin
+
+LENGUAIAK:
+
+	- HTML / CSS / XML / DTD / XSD
+	- XPath
+	- XSLT
+	- Erronka Eredua ulertzen saiatu
+
+SISTEMAK:
+
+	- Teoria guztia irakurri
+
+GARAPEN:
+
+	- Proba (Kasuak / Faseak) / Kutxa Zuria / Kutxa Beltza
+	- Proba automatikoak (JUnit)
+	- Depurazioa (Akatsak zuzendu)
+	- Birfaktorizatu
+	- Kodea analizatu (PMD)
+
+FOL:
+
+	- Egindako Ariketa begiratu
