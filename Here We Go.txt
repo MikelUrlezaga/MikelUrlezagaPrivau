@@ -30,3 +30,8 @@ GARAPEN:
 FOL:
 
 	- Egindako Ariketa begiratu
+
+CASA:
+
+	- Ordenar Cuarto
+	- Cosas para llevar
