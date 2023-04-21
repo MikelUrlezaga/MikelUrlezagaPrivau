@@ -2,6 +2,7 @@ DATU-BASE:
 
 	- Arietak erantzunekin egin (DENAK)
 	- Errepaso Ariketak egin
+	- 3. PENULTIMA
 
 PROGRAMAZIOA:
 

@@ -244,9 +244,9 @@ ez dago datu-basean" mezua erakutsiko du. Guzti hau egiteko salbuespenak erabili
 behar dituzue */
 
 DECLARE
-    KODEA PRODUKTUAK.PRODUKTUKODEA%TYPE := '&kodea';   
-    IZENA PRODUKTUAK.PRODUKTUKODEA%TYPE := '&izena';
-    GAMA PRODUKTUAK.PRODUKTUKODEA%TYPE := '&gama';       
+    KODEA PRODUKTUAK.PRODUKTUKODEA%TYPE := '&Kodea';   
+    IZENA PRODUKTUAK.PRODUKTUKODEA%TYPE := '&Izena';
+    GAMA PRODUKTUAK.PRODUKTUKODEA%TYPE := '&Gama';       
     FKPRODUKTUMOTAEXCEPTION EXCEPTION;
     KODEFORMATUOKERRAEXCEPTION EXCEPTION;
     PRAGMA EXCEPTION_INIT (FKPRODUKTUMOTAEXCEPTION,-02291);
@@ -262,3 +262,151 @@ EXCEPTION
     WHEN KODEFORMATUOKERRAEXCEPTION THEN DBMS_OUTPUT.PUT_LINE('Produktuaren kodearen formatua ez da zuzena');
     WHEN FKPRODUKTUMOTAEXCEPTION THEN DBMS_OUTPUT.PUT_LINE('Produktu mota hori ez dago datu-basean');
 END;
+/
+/* PL/SQL erabiliz bloke anonimo bat idatzi, teklatu bidez jasotako produktu mota
+baten produktuen kodea, izena eta hornitzailea bistaratzen dituena. */
+
+SET SERVEROUTPUT ON;
+SET VERIFY OFF;
+
+DECLARE
+    MOTA PRODUKTUAK.GAMA%TYPE:='&Mota';
+    CURSOR CPRODUKTUAK IS SELECT * FROM PRODUKTUAK WHERE MOTA = GAMA;
+BEGIN
+    FOR PRODUKTU IN CPRODUKTUAK
+    LOOP
+        DBMS_OUTPUT.PUT_LINE('PRODUKTU KODEA: ' || PRODUKTU.PRODUKTUKODEA || ' IZENA: ' || PRODUKTU.IZENA || ' HORNITZAILEA: ' || PRODUKTU.HORNITZAILEA);
+    END LOOP;
+END;
+/
+
+/* PL/SQL erabiliz bloke anonimo bat idatzi, teklatu bidez bezero kodea jasotzen 
+duena eta bezero horren izena, kontaktu izena eta kontaktu abizena (bi datu hauek
+konkatenatuta eta espazio batekin banatuta) eta herria (letra larriz) bistaratzen 
+dituena. Honetaz gain, bezero horrek egindako eskaeran zerrenda nahi dugu: kodea,
+eskaera data (2023/03/09 formatuan, egoera eta azalpena (azalpenik ez badu, “Ez 
+du azalpenik” adierazi). */
+
+DECLARE
+    KODEA BEZEROAK.BEZEROKODEA%TYPE := &KODEA;
+    IZENA BEZEROAK.BEZEROIZENA%TYPE;
+    KONTAKTUA VARCHAR2(61);
+    HERRIA BEZEROAK.HERRIA%TYPE;
+    CURSOR CESKAERAK IS SELECT ESKAERAKODEA, TO_CHAR(ESKAERADATA,'YYYY/MM/DD') AS DATA, EGOERA, NVL(AZALPENA,'Ez du azalpenik') AS AZALPENA FROM ESKAERAK WHERE BEZEROKODEA = KODEA;
+BEGIN
+    SELECT BEZEROIZENA, KONTAKTUIZENA || ' ' || KONTAKTUABIZENA AS KONTAKTUA, UPPER(HERRIA) INTO IZENA, KONTAKTUA, HERRIA FROM BEZEROAK WHERE BEZEROKODEA = KODEA;
+    DBMS_OUTPUT.PUT_LINE('BEZERO KODEA: ' || KODEA);
+    DBMS_OUTPUT.PUT_LINE('BEZERO IZENA: ' || IZENA);
+    DBMS_OUTPUT.PUT_LINE('KONTAKTUA: ' || KONTAKTUA);
+    DBMS_OUTPUT.PUT_LINE('HERRIA: ' || HERRIA);
+    DBMS_OUTPUT.PUT_LINE('***********************************');
+    DBMS_OUTPUT.PUT_LINE('ESKAERAK');
+    FOR ESKAERA IN CESKAERAK
+    LOOP
+        DBMS_OUTPUT.PUT_LINE('***********************************');
+        DBMS_OUTPUT.PUT_LINE('ESKAERA KODEA: ' || ESKAERA.ESKAERAKODEA);
+        DBMS_OUTPUT.PUT_LINE('ESKAERA DATA: ' || ESKAERA.DATA);
+        DBMS_OUTPUT.PUT_LINE('ESKAERA EGOERA: ' || ESKAERA.EGOERA);
+        DBMS_OUTPUT.PUT_LINE('ESKAERA AZALPENA: ' || ESKAERA.AZALPENA);
+    END LOOP;    
+END;
+/
+/* Pl/SQL erabiliz produktuen salmenta prezioa eguneratzen duen bloke anonimo bat 
+idatzi. “Frutales” motako produktuei %10a igo. “Aromaticas” motako produktuei %15a 
+igo baldin eta 20 ale baino gehiago badaude stockean, bestela %12a. “Ornamentales”
+motako produktuei %20 igo eta gainontzekoei %5a. */ 
+DECLARE
+    CURSOR CPRODUKTU IS SELECT * FROM PRODUKTUAK FOR UPDATE;
+    GEHIKUNTZA NUMBER;
+BEGIN
+	FOR PRODUKTU IN CPRODUKTU
+	LOOP
+		CASE PRODUKTU.GAMA
+			WHEN 'Frutales' THEN GEHIKUNTZA := 1.1;
+			WHEN 'Aromáticas' THEN 
+				IF PRODUKTU.STOCKKOPURUA > 20 THEN
+					GEHIKUNTZA := 1.15;
+				ELSE
+					GEHIKUNTZA := 1.12;
+				END IF;
+			WHEN 'Ornamentales' THEN GEHIKUNTZA := 1.2;
+			ELSE GEHIKUNTZA := 1.05;
+		END CASE;
+		--DBMS_OUTPUT.PUT_LINE('PRODUKTU: ' || PRODUKTU.PRODUKTUKODEA || ' GAMA: ' || PRODUKTU.GAMA || ' STOCK: ' || PRODUKTU.STOCKKOPURUA ||' GEHIKUNTZA: ' || GEHIKUNTZA);
+		UPDATE PRODUKTUAK SET SALMENTAPREZIOA = SALMENTAPREZIOA * GEHIKUNTZA WHERE CURRENT OF CPRODUKTU;
+	END LOOP;
+    COMMIT;
+END;
+/
+/* 1. Parametro gisa bi zenbaki pasatuta, handiena zein den edo berdinak diren 
+esango digun prozedura bat sortu */
+
+SET SERVEROUTPUT ON;
+SET VERIFY OFF;
+
+CREATE OR REPLACE PROCEDURE ZENBAKI_HANDIENA_BERDIN (X NUMBER,A NUMBER) AS
+BEGIN
+    IF X < A THEN DBMS_OUTPUT.PUT_LINE(A || ' da handiena');
+    ELSIF X > A THEN DBMS_OUTPUT.PUT_LINE(X || 'da handiena');
+    ELSE DBMS_OUTPUT.PUT_LINE('Berdinak dira');
+    END IF;
+END;
+/
+EXECUTE ZENBAKI_HANDIENA_BERDIN(4,5);
+/
+/* 2. Entregatu ez diren eskaerak bistaratzen dituen prozedura garatu. Bistaratu 
+beharreko datuak: Bezeroaren izena, eskaera kodea eta eskaera data (23-12-04 formatuan) */
+
+CREATE OR REPLACE PROCEDURE ENTREGATU_GABEKO_ESKAERAK AS
+	CURSOR CUR_ESKAERAK IS 
+    SELECT B.BEZEROIZENA, E.ESKAERAKODEA, TO_CHAR(E.ESKAERADATA,'YY/MM/DD') AS DATA
+    FROM BEZEROAK B, ESKAERAK E
+    WHERE B.BEZEROKODEA = E.BEZEROKODEA
+    AND E.ENTREGADATA IS NULL;
+BEGIN
+    FOR ESKAERA IN CUR_ESKAERAK
+    LOOP
+         DBMS_OUTPUT.PUT_LINE(ESKAERA.BEZEROIZENA || ' - ' || ESKAERA.ESKAERAKODEA || ' - ' || ESKAERA.DATA);
+    END LOOP;
+END;
+/
+EXECUTE ENTREGATU_GABEKO_ESKAERAK;
+/
+/* 3. Prozedura bat garatu bezero bakoitzaren izena eta egindako eskaera kopurua 
+bistaratzen duena, eskaera kopuruarengatik beheranzko noranzkoan ordenatuta. */
+
+CREATE OR REPLACE PROCEDURE BEZERO_ESKAERA_KOPURUA AS
+        CURSOR CUR_ESKAERAK IS
+    SELECT B.BEZEROIZENA, COUNT(E.ESKAERAKODEA) AS KOPURUA
+    FROM BEZEROAK B LEFT JOIN ESKAERAK E
+    ON B.BEZEROKODEA = E.BEZEROKODEA
+    GROUP BY B.BEZEROKODEA, B.BEZEROIZENA;
+BEGIN
+    FOR ESKAERA IN CUR_ESKAERAK
+    LOOP
+        DBMS_OUTPUT.PUT_LINE(ESKAERA.BEZEROIZENA || ' - ' || ESKAERA.KOPURUA);
+    END LOOP;
+END;
+/
+EXECUTE BEZERO_ESKAERA_KOPURUA;
+/
+/* 4. Egin ezazu aurreko prozedura berdina, baina orain bezeroaren kodea jasoko
+du parametro bezala. */
+
+CREATE OR REPLACE PROCEDURE BEZERO_ESKAERA_KOPURUA(KODEA BEZEROAK.BEZEROKODEA%TYPE) AS
+	BEZEROIZENA BEZEROAK.BEZEROIZENA%TYPE;
+    KOPURUA NUMBER;
+BEGIN
+    SELECT B.BEZEROIZENA, COUNT(E.ESKAERAKODEA) AS KOPURUA INTO BEZEROIZENA, KOPURUA
+    FROM BEZEROAK B LEFT JOIN ESKAERAK E
+    ON B.BEZEROKODEA = E.BEZEROKODEA
+    WHERE B.BEZEROKODEA = KODEA
+    GROUP BY B.BEZEROKODEA, B.BEZEROIZENA;
+    DBMS_OUTPUT.PUT_LINE(BEZEROIZENA || ' - ' || KOPURUA);
+END;
+/
+EXECUTE BEZERO_ESKAERA_KOPURUA(6);
+/
+/* 5. Bost produktu garestienak bistaratzen dituen prozedura garatu. Erakutsi 
+beharreko datuak: produktu kodea, produktuaren izena, salneurria. */
+
