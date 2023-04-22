@@ -191,7 +191,7 @@ BEGIN
 END;
 /
 
-/* PL/SQL erabiliz bloke anonimo bat sortu “Flores Marivi” eta “Aloha” bezeroen
+/* PL/SQL erabiliz bloke anonimo bat sortu ?Flores Marivi? eta ?Aloha? bezeroen
 kreditu muga trukatzeko */
 
 DECLARE
@@ -225,12 +225,12 @@ BEGIN
     IF ORDAINKETA_MINIMOA IS NULL THEN
         RAISE_APPLICATION_ERROR(-20001,'Ez dago bezero horren ordainketei buruzko informaziorik');
     END IF;
-    DBMS_OUTPUT.PUT_LINE('Ordainketa mínimoa: ' || ORDAINKETA_MINIMOA);
+    DBMS_OUTPUT.PUT_LINE('Ordainketa m?nimoa: ' || ORDAINKETA_MINIMOA);
     DBMS_OUTPUT.PUT_LINE('Ordainketa maximoa: ' || ORDAINKETA_MAXIMOA);
     DBMS_OUTPUT.PUT_LINE('Bien arteko diferentzia: ' || (ORDAINKETA_MAXIMOA - ORDAINKETA_MINIMOA));
 EXCEPTION
     WHEN no_data_found THEN
-    RAISE_APPLICATION_ERROR(-20001, 'No existe información de salario en ese departamento');
+    RAISE_APPLICATION_ERROR(-20001, 'No existe informaci?n de salario en ese departamento');
 END;
 /
 
@@ -284,8 +284,8 @@ END;
 duena eta bezero horren izena, kontaktu izena eta kontaktu abizena (bi datu hauek
 konkatenatuta eta espazio batekin banatuta) eta herria (letra larriz) bistaratzen 
 dituena. Honetaz gain, bezero horrek egindako eskaeran zerrenda nahi dugu: kodea,
-eskaera data (2023/03/09 formatuan, egoera eta azalpena (azalpenik ez badu, “Ez 
-du azalpenik” adierazi). */
+eskaera data (2023/03/09 formatuan, egoera eta azalpena (azalpenik ez badu, ?Ez 
+du azalpenik? adierazi). */
 
 DECLARE
     KODEA BEZEROAK.BEZEROKODEA%TYPE := &KODEA;
@@ -312,8 +312,8 @@ BEGIN
 END;
 /
 /* Pl/SQL erabiliz produktuen salmenta prezioa eguneratzen duen bloke anonimo bat 
-idatzi. “Frutales” motako produktuei %10a igo. “Aromaticas” motako produktuei %15a 
-igo baldin eta 20 ale baino gehiago badaude stockean, bestela %12a. “Ornamentales”
+idatzi. ?Frutales? motako produktuei %10a igo. ?Aromaticas? motako produktuei %15a 
+igo baldin eta 20 ale baino gehiago badaude stockean, bestela %12a. ?Ornamentales?
 motako produktuei %20 igo eta gainontzekoei %5a. */ 
 DECLARE
     CURSOR CPRODUKTU IS SELECT * FROM PRODUKTUAK FOR UPDATE;
@@ -323,7 +323,7 @@ BEGIN
 	LOOP
 		CASE PRODUKTU.GAMA
 			WHEN 'Frutales' THEN GEHIKUNTZA := 1.1;
-			WHEN 'Aromáticas' THEN 
+			WHEN 'Arom?ticas' THEN 
 				IF PRODUKTU.STOCKKOPURUA > 20 THEN
 					GEHIKUNTZA := 1.15;
 				ELSE
@@ -409,4 +409,81 @@ EXECUTE BEZERO_ESKAERA_KOPURUA(6);
 /
 /* 5. Bost produktu garestienak bistaratzen dituen prozedura garatu. Erakutsi 
 beharreko datuak: produktu kodea, produktuaren izena, salneurria. */
+
+CREATE OR REPLACE PROCEDURE PRODUKTU_GARESTIENAK AS
+	CURSOR CUR_PRODUKTUAK IS SELECT PRODUKTUKODEA, IZENA, SALMENTAPREZIOA FROM PRODUKTUAK ORDER BY SALMENTAPREZIOA DESC FETCH FIRST 5 ROWS ONLY;
+BEGIN
+    FOR PRODUKTU IN CUR_PRODUKTUAK
+    LOOP
+        DBMS_OUTPUT.PUT_LINE(PRODUKTU.PRODUKTUKODEA || ' ' || PRODUKTU.IZENA || ' ' || PRODUKTU.SALMENTAPREZIOA);         
+    END LOOP;   
+END;
+/
+SET SERVEROUTPUT ON;
+SET VERIFY OFF;
+
+EXECUTE PRODUKTU_GARESTIENAK;
+/
+CREATE OR REPLACE PROCEDURE PRODUKTU_GARESTIENAK AS
+	CURSOR CUR_PRODUKTUAK IS SELECT PRODUKTUKODEA, IZENA, SALMENTAPREZIOA FROM PRODUKTUAK ORDER BY SALMENTAPREZIOA DESC;
+BEGIN
+    FOR PRODUKTU IN CUR_PRODUKTUAK
+    LOOP
+         DBMS_OUTPUT.PUT_LINE(PRODUKTU.PRODUKTUKODEA || ' ' || PRODUKTU.IZENA || ' ' || PRODUKTU.SALMENTAPREZIOA);
+         IF CUR_PRODUKTUAK%ROWCOUNT = 5 THEN
+            EXIT;
+         END IF;
+    END LOOP;   
+END;
+/
+/* 6. Sortu prozedura bat bezeroen kreditu muga eguneratzen duena. Bezero baten 
+kreditu muga 10.000 baino handiagoa bada, gehitu 5.000 bere kreditu mugari, eta
+txikiagoa bada, gehitu 1.000. */
+
+CREATE OR REPLACE PROCEDURE KRERDITU_MUGA AS
+        CURSOR CBEZEROAK IS SELECT * FROM BEZEROAK FOR UPDATE;
+    GEHIKUNTZA NUMBER;
+BEGIN
+    FOR BEZERO IN CBEZEROAK
+    LOOP
+        IF BEZERO.KREDITUMUGA > 10000 THEN
+            GEHIKUNTZA:= 5000;
+        ELSE
+            GEHIKUNTZA:= 1000;
+        END IF;
+        UPDATE BEZEROAK SET KREDITUMUGA = KREDITUMUGA + GEHIKUNTZA WHERE CURRENT OF CBEZEROAK;
+    END LOOP;
+    COMMIT;
+END;
+/
+
+SET SERVEROUTPUT ON;
+SET VERIFY OFF;
+
+EXECUTE KRERDITU_MUGA;
+/
+/* 7. Sortu prozedura bat sarrera parametro bezala herri bat, zenbatekoa eta 
+ehunekoa jasotzen dituena eta herri horretako bezero guztien kreditu muga
+igotzen duena. Igoera adierazitako ehunekoa edo zenbatekoa izango da
+(kasu bakoitzean bezeroarentzat onuragarriena dena). */
+
+CREATE OR REPLACE PROCEDURE BEZERO_KREDITUMUGA_EGUNERATU(HERRIAPARAM BEZEROAK.HERRIA%TYPE, ZENBATEKOA NUMBER, EHUNEKOA NUMBER) AS
+	CURSOR CUR_BEZEROAK IS SELECT * FROM BEZEROAK WHERE HERRIA = HERRIAPARAM FOR UPDATE;
+    KOPURUA NUMBER;
+BEGIN
+    FOR BEZERO IN CUR_BEZEROAK
+    LOOP        
+         UPDATE BEZEROAK SET KREDITUMUGA = GREATEST(BEZERO.KREDITUMUGA+ZENBATEKOA,BEZERO.KREDITUMUGA+BEZERO.KREDITUMUGA*EHUNEKOA/100) WHERE CURRENT OF CUR_BEZEROAK;         
+    END LOOP;   
+    COMMIT;
+END;
+/
+EXECUTE BEZERO_KREDITUMUGA_EGUNERATU('Sydney',15000,10);
+/
+/* 8. BEZa kalkulatzeko funtzio bat sortu, honako ezaugarri hauekin:
+/* 	  Funtzioari aplikatu beharreko kopurua eta BEZ mota pasatuko zaizkio. Honako hauek izan daitezke:
+		1: Tasa orokorra % 21
+		2: Tasa murriztua % 10
+		3: Tasa supermurriztua % 4
+	  Funtzioak zenbateko totala itzuliko du (zenbatekoa + aplikatutako BEZaren %) */
 
