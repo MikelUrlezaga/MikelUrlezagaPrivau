@@ -13,7 +13,7 @@ public class Ariketa1 {
       jp.add(jtf);
       jf.getContentPane().add(jp);      
       jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      jtf.setPreferredSize(new Dimension(60,50));
+      jtf.setPreferredSize(new Dimension(200,50));
       jf.setSize(400,200);
       jf.setVisible(true);
    }
