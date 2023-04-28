@@ -1,0 +1,20 @@
+Prog:
+
+	- Arreglar mis apuntes desde un inicio y probar con ariketas
+
+Datu-Baseak:
+
+	-
+
+Sistemak:
+
+	- Preparar en examen
+	- Buenos apuntes de Linux
+
+Lenguajes:
+
+	- Preparar examenes
+
+Garapen:
+
+	- Entender lo que tenemos que hacer y preparar apuntes para ello
