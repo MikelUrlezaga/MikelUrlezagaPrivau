@@ -39,7 +39,7 @@ public class DB {
       return conn;
    }
 
-   ///HEMEN kontsultak, metedo bat kontsulta bakoitzeko, gogoratu konexioak itxi behar direla   
+   ///HEMEN kontsultak, metodo bat kontsulta bakoitzeko, gogoratu konexioak itxi behar direla   
    public Produktuak produktuak (){
       Produktuak pDB = new Produktuak();
       try {

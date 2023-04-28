@@ -3,11 +3,11 @@ import java.util.Scanner;
 import java.io.File;
 
 
-public class PertsonaUI extends JFrame{
+public class PersonaUI extends JFrame{
 
    private PersonaDB pDB = new PersonaDB ();
    
-   public PertsonaUI (){
+   public PersonaUI (){
    
       //sortu textfield
       /*JTextField jtfId = new JTextField ();
@@ -43,7 +43,7 @@ public class PertsonaUI extends JFrame{
    }
    
    public static void main (String [] args){
-      PertsonaUI pUI = new PertsonaUI ();     
+      PersonaUI pUI = new PersonaUI ();     
    }
    
    public void datuakIrakurri(JComboBox jcbPertsonak){
