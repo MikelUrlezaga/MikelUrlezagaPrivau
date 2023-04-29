@@ -8,29 +8,14 @@ public class PersonaUI extends JFrame{
    private PersonaDB pDB = new PersonaDB ();
    
    public PersonaUI (){
-   
-      //sortu textfield
-      /*JTextField jtfId = new JTextField ();
-      JTextField jtfTeam = new JTextField ();
-      JTextField jtfCountry = new JTextField ();
-      JTextField jtfNameF = new JTextField ();
-      JTextField jtfNameL= new JTextField ();*/
       
       //sortu textArea
       JComboBox <String> jcbPertsonak = new JComboBox<> ();
       datuakIrakurri(jcbPertsonak);
-      
-      //sartu scrollPane batean
-      //JScrollPane jsp = new JScrollPane(jtaPertsonak);
 
       //sortu panela
       JPanel p = new JPanel();
       p.add(jcbPertsonak);
-      /*p.add(jtfId);
-      p.add(jtfTeam);
-      p.add(jtfCountry);
-      p.add(jtfNameF);
-      p.add(jtfNameL);*/
       
       //sortu JFrame
       setTitle("Jokalariak");
