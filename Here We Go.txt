@@ -1,9 +1,3 @@
-DATU-BASE:
-
-	- Arietak erantzunekin egin (DENAK)
-	- Errepaso Ariketak egin
-	- 3. PENULTIMA
-
 PROGRAMAZIOA:
 
 	- Ariketak erantzunekin egin (DENAK)
@@ -27,10 +21,6 @@ GARAPEN:
 	- Depurazioa (Akatsak zuzendu)
 	- Birfaktorizatu
 	- Kodea analizatu (PMD)
-
-FOL:
-
-	- Egindako Ariketa begiratu
 
 CASA:
 

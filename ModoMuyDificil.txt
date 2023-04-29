@@ -8,13 +8,21 @@ Datu-Baseak:
 
 Sistemak:
 
-	- Preparar en examen
+	- Preparar el examen
 	- Buenos apuntes de Linux
 
 Lenguajes:
 
 	- Preparar examenes
+	- HTML / CSS / XML / DTD / XSD
+	- XPath
+	- XSLT
 
 Garapen:
 
 	- Entender lo que tenemos que hacer y preparar apuntes para ello
+	- Proba (Kasuak / Faseak) / Kutxa Zuria / Kutxa Beltza
+	- Proba automatikoak (JUnit)
+	- Depurazioa (Akatsak zuzendu)
+	- Birfaktorizatu
+	- Kodea analizatu (PMD)
