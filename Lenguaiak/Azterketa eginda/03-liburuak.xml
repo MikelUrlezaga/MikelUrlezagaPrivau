@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<!DOCTYPE liburuak SYSTEM "03-liburuak.dtd">
+<liburuak>
+	<liburua isbn="9788481362596">
+		<izenburua>Eraztunen jauna</izenburua>
+		<egilea>J.R.R. Tolkien</egilea>
+		<editoriala>Minotauro</editoriala>
+		<kategoria>Fikzioa</kategoria>
+		<urtea>1954</urtea>
+		<orrialdeak>542</orrialdeak>
+		<hizkuntza lang="eus"></hizkuntza>
+	</liburua>
+	<liburua isbn='9780140173154'>
+		<izenburua>Maus</izenburua>
+		<egilea>Art Spiegelman</egilea>
+		<editoriala>Reservoir Books</editoriala>
+		<kategoria>Drama</kategoria>
+		<kategoria>Autobiografikoa</kategoria>
+		<kategoria>Komikia</kategoria>
+		<urtea>1991</urtea>
+		<hizkuntza lang='en'/>
+	</liburua>
+	<liburua isbn="9881155173127">
+		<izenburua>1984</izenburua>
+		<egilea>George Orwell</egilea>
+		<editoriala>Secker and Warburg</editoriala>
+		<urtea>1949</urtea>
+		<hizkuntza lang="en" />
+	</liburua>
+</liburuak>

@@ -1,0 +1,18 @@
+<!ELEMENT liburuak (liburua+)>
+<!ELEMENT liburua (
+    izenburua, 
+    egilea, 
+    editoriala, 
+    kategoria*,
+    urtea, 
+    orrialdeak?, 
+    hizkuntza)>
+<!ATTLIST liburua isbn CDATA #REQUIRED>
+<!ELEMENT izenburua (#PCDATA)>
+<!ELEMENT egilea (#PCDATA)>
+<!ELEMENT editoriala (#PCDATA)>
+<!ELEMENT kategoria (#PCDATA)>
+<!ELEMENT urtea (#PCDATA)>
+<!ELEMENT orrialdeak (#PCDATA)>
+<!ELEMENT hizkuntza EMPTY>
+<!ATTLIST hizkuntza lang (en|es|eus) #REQUIRED>

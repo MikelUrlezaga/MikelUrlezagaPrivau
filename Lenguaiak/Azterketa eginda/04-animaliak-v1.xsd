@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!-- Erro elementua -->
+    <xsd:element name="animaliak" type="TAnimaliak" />
+
+    <xsd:complexType name="TAnimaliak">
+        <xsd:sequence>
+            <!-- Hurrengoak behin baino gehiagotan agertu daitezke -->
+            <xsd:element name="hugaztuna" maxOccurs="unbounded" type="THugaztuna"/>
+            <xsd:element name="hegaztia" maxOccurs="unbounded" type="THegaztia" />
+            <xsd:element name="narrastia" maxOccurs="unbounded" type="TNarrastia" />
+            <!-- Arraina elementua ez da zertan agertu behar -->
+            <xsd:element name="arraina" minOccurs="0" maxOccurs="unbounded" type="TArraina"/>   
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="THugaztuna">
+        <xsd:sequence>
+            <xsd:element name="izena" type="xsd:string"/>
+            <xsd:element name="habitatea" type="xsd:string"/>
+            <xsd:element name="elikatzea" type="TElikatzea"/>
+            <xsd:element name="hanka_zenbakia" type="xsd:int" minOccurs="0" default="4"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="TId" use="required" />
+    </xsd:complexType>
+
+    <xsd:complexType name="THegaztia">
+        <xsd:sequence>
+            <xsd:element name="izena" type="xsd:string"/>
+            <xsd:element name="habitatea" type="xsd:string"/>
+            <xsd:element name="elikatzea" type="TElikatzea"/>
+            <xsd:element name="hegalaria" type="xsd:boolean" />
+        </xsd:sequence>
+        <xsd:attribute name="id" type="TId" use="required" />
+    </xsd:complexType>
+
+    <xsd:complexType name="TNarrastia">
+        <xsd:sequence>
+            <xsd:element name="izena" type="xsd:string"/>
+            <xsd:element name="habitatea" type="xsd:string"/>
+            <xsd:element name="elikatzea" type="TElikatzea"/>
+            <xsd:element name="pozoitsua" type="xsd:boolean" />
+        </xsd:sequence>
+        <xsd:attribute name="id" type="TId" use="required" />
+    </xsd:complexType>   
+    
+    <xsd:complexType name="TArraina">
+        <xsd:sequence>
+            <xsd:element name="izena" type="xsd:string"/>
+            <xsd:element name="habitatea" type="xsd:string"/>
+            <xsd:element name="elikatzea" type="TElikatzea"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="TId" use="required" />
+    </xsd:complexType>
+
+    <!-- Testu-kate mugatuak zehazten dituen datu mota -->
+    <xsd:simpleType name="TElikatzea">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Haragijalea" />
+            <xsd:enumeration value="Belarjalea" />
+            <xsd:enumeration value="Omniboroa" />
+            <!--
+            <xsd:pattern value="(Haragijalea|Belarjalea|Omniboroa)" />
+            -->
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Zenbaki mugatuak zehazten dituen datu mota -->
+    <xsd:simpleType name="TId">
+        <xsd:restriction base="xsd:int">
+            <!--
+            <xsd:minInclusive value="10"/>
+            <xsd:maxInclusive value="99"/>
+            -->
+            <xsd:pattern value="[0-9]{2}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

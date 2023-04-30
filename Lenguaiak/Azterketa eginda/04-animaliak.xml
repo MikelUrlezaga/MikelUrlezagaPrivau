@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animaliak 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="04-animaliak-v2.xsd">
+    <hugaztuna id="10">
+        <izena>Lehoia</izena>
+        <habitatea>Sabana</habitatea>
+        <elikatzea>Haragijalea</elikatzea>
+    </hugaztuna>
+    <hugaztuna id="11">
+        <izena>Kangurua</izena>
+        <habitatea>Eremi lehorrak</habitatea>
+        <elikatzea>Belarjalea</elikatzea>
+        <hanka_zenbakia>2</hanka_zenbakia>
+    </hugaztuna>
+    <hegaztia id="20">
+        <izena>Arranoa</izena>
+        <habitatea>Basoak eta mendiak</habitatea>
+        <elikatzea>Haragijalea</elikatzea>
+        <hegalaria>true</hegalaria>
+    </hegaztia>
+    <hegaztia id="21">
+        <izena>Ostruka</izena>
+        <habitatea>Sabana</habitatea>
+        <elikatzea>Omniboroa</elikatzea>
+        <hegalaria>false</hegalaria>
+    </hegaztia>        
+    <narrastia id="30">
+        <izena>Serpiente</izena>
+        <habitatea>Basoak eta mendiak</habitatea>
+        <elikatzea>Haragijalea</elikatzea>
+        <pozoitsua>true</pozoitsua>
+    </narrastia>     
+    <narrastia id="31">
+        <izena>Kokodriloa</izena>
+        <habitatea>Ibaiak eta zingirak</habitatea>
+        <elikatzea>Haragijalea</elikatzea>
+        <pozoitsua>false</pozoitsua>
+    </narrastia>            
+</animaliak>

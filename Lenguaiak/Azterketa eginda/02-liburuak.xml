@@ -1,0 +1,25 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<liburuak>
+	<liburua isbn="9788481362596">
+		<izenburua>Eraztunen jauna</izenburua>
+		<egilea>J.R.R. Tolkien</egilea>
+		<editoriala>Minotauro</editoriala>
+		<urtea>1954</Urtea><!-- </urtea> -->
+		<orrialdeak>542</orrialdeak>
+		<hizkuntza lang="eus"></hizkuntza>
+	</liburua>
+	<liburua isbn='9780140173154'>
+		<izenburua>Maus</izenburua>
+		<egilea>Art Spiegelman</egilea>
+		<editoriala>Reservoir Books</editoriala>
+		<urtea>1991</Urtea> <!-- </urtea> -->
+		<hizkuntza lang="en"> <!-- <hizkuntza lang="en" /> --> 
+	<!-- </liburua> -->
+	<liburua isbn=9881155173127> <!-- isbn=9881155173127 -->
+		</izenburua>1984<izenburua><!-- </izenburua>--> <!--<izenburua --> 
+		<egilea>George Orwell</egilea>
+		<editoriala>Secker and Warburg</editoriala>
+		<urtea>1949</Urtea><!-- </urtea> -->
+		<hizkuntza lang="en" />
+	</liburua>
+<liburuak><!-- </liburuak> -->
