@@ -1,0 +1,168 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "JComboBoxAriketa1",
+            "request": "launch",
+            "mainClass": "JComboBoxAriketa1",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "EjemploJTextField",
+            "request": "launch",
+            "mainClass": "EjemploJTextField",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "EjemploJTextArea",
+            "request": "launch",
+            "mainClass": "EjemploJTextArea",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "JTextFieldAriketa",
+            "request": "launch",
+            "mainClass": "JTextFieldAriketa",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "JPanelAriketa",
+            "request": "launch",
+            "mainClass": "JPanelAriketa",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "JButtonAriketa",
+            "request": "launch",
+            "mainClass": "JButtonAriketa",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "JComboBoxAriketa",
+            "request": "launch",
+            "mainClass": "JComboBoxAriketa",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "JMenuBarAriketa",
+            "request": "launch",
+            "mainClass": "JMenuBarAriketa",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "JDialogAriketa",
+            "request": "launch",
+            "mainClass": "JDialogAriketa",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "EjemploGridLayout",
+            "request": "launch",
+            "mainClass": "EjemploGridLayout",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "EjemploBorderLayout",
+            "request": "launch",
+            "mainClass": "EjemploBorderLayout",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "Ejemplo4",
+            "request": "launch",
+            "mainClass": "Ejemplo4",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "JLabelAriketa",
+            "request": "launch",
+            "mainClass": "JLabelAriketa",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "JFrameJPanelAriketa",
+            "request": "launch",
+            "mainClass": "JFrameJPanelAriketa",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "JFrameAriketa",
+            "request": "launch",
+            "mainClass": "JFrameAriketa",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Arrays",
+            "request": "launch",
+            "mainClass": "FitxategiaIdatzi.Arrays",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "FitxategiaIdatzi",
+            "request": "launch",
+            "mainClass": "FitxategiaIdatzi.FitxategiaIdatzi",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "FitxategiaIrakurri",
+            "request": "launch",
+            "mainClass": "FitxategiaIrakurri.FitxategiaIrakurri",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "Funciones",
+            "request": "launch",
+            "mainClass": "Funciones",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "Hasiera",
+            "request": "launch",
+            "mainClass": "Hasiera",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "OperadoresEjemplo",
+            "request": "launch",
+            "mainClass": "OperadoresEjemplo",
+            "projectName": "Apuntes_5143394f"
+        },
+        {
+            "type": "java",
+            "name": "ScannerEjemplo",
+            "request": "launch",
+            "mainClass": "ScannerEjemplo",
+            "projectName": "Apuntes_5143394f"
+        }
+    ]
+}
