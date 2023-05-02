@@ -1,0 +1,77 @@
+jon@jon-VirtualBox:~$ pwd
+/home/jon
+jon@jon-VirtualBox:~$ mkdir datos
+jon@jon-VirtualBox:~$ mkdir copia_datos
+jon@jon-VirtualBox:~$ touch datos/fichero1
+jon@jon-VirtualBox:~$ touch datos/fichero2
+jon@jon-VirtualBox:~$ mkdir datos/directorio1
+jon@jon-VirtualBox:~$ rsync -avz datos copia_datos
+sending incremental file list
+datos/
+datos/fichero1
+datos/fichero2
+datos/directorio1/
+
+sent 244 bytes  received 66 bytes  620,00 bytes/sec
+total size is 0  speedup is 0,00
+jon@jon-VirtualBox:~$ ls -l datos
+guztira 4
+drwxrwxr-x 2 jon jon 4096 api 24 08:29 directorio1
+-rw-rw-r-- 1 jon jon    0 api 24 08:29 fichero1
+-rw-rw-r-- 1 jon jon    0 api 24 08:29 fichero2
+jon@jon-VirtualBox:~$ ls -l copia_datos
+guztira 4
+drwxrwxr-x 3 jon jon 4096 api 24 08:29 datos
+jon@jon-VirtualBox:~$ ls -l copia_datos/datos
+guztira 4
+drwxrwxr-x 2 jon jon 4096 api 24 08:29 directorio1
+-rw-rw-r-- 1 jon jon    0 api 24 08:29 fichero1
+-rw-rw-r-- 1 jon jon    0 api 24 08:29 fichero2
+jon@jon-VirtualBox:~$ rm datos/fichero2
+jon@jon-VirtualBox:~$ ls datos
+directorio1  fichero1
+jon@jon-VirtualBox:~$ rsync -avz datos copia_datos
+sending incremental file list
+datos/
+
+sent 135 bytes  received 21 bytes  312,00 bytes/sec
+total size is 0  speedup is 0,00
+jon@jon-VirtualBox:~$ ls -l copia_datos/datos
+guztira 4
+drwxrwxr-x 2 jon jon 4096 api 24 08:29 directorio1
+-rw-rw-r-- 1 jon jon    0 api 24 08:29 fichero1
+-rw-rw-r-- 1 jon jon    0 api 24 08:29 fichero2
+jon@jon-VirtualBox:~$ rsync -avz --delete datos copia_datos
+sending incremental file list
+deleting datos/fichero2
+
+sent 128 bytes  received 32 bytes  320,00 bytes/sec
+total size is 0  speedup is 0,00
+jon@jon-VirtualBox:~$ ls -l copia_datos/datos
+guztira 4
+drwxrwxr-x 2 jon jon 4096 api 24 08:29 directorio1
+-rw-rw-r-- 1 jon jon    0 api 24 08:29 fichero1
+jon@jon-VirtualBox:~$ sudo nano datos/fichero1
+[sudo] jon(r)en pasahitza: 
+jon@jon-VirtualBox:~$ rsync -avz --delete datos copia_datos
+sending incremental file list
+datos/
+datos/fichero1
+
+sent 188 bytes  received 40 bytes  456,00 bytes/sec
+total size is 6  speedup is 0,03
+jon@jon-VirtualBox:~$ sudo nano datos/fichero1
+jon@jon-VirtualBox:~$ rsync -avz datos copia_datos
+sending incremental file list
+datos/
+datos/fichero1
+
+sent 196 bytes  received 40 bytes  472,00 bytes/sec
+total size is 14  speedup is 0,06
+jon@jon-VirtualBox:~$ rsync -az datos copia_datos
+jon@jon-VirtualBox:~$ rsync -avz datos copia_datos
+sending incremental file list
+
+sent 132 bytes  received 18 bytes  300,00 bytes/sec
+total size is 14  speedup is 0,09
+jon@jon-VirtualBox:~$ 
