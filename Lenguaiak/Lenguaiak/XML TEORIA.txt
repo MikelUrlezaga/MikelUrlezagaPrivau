@@ -1,0 +1,6 @@
+el <> principal a lo <html> y que todo vaya dentro
+azpizenetan sentsu duten izenak (PROG) edo KODEA moduan eta ezin dira errepikatu (id)
+erronka zenbakia=2
+prefijo edo atributua xmlns:zikl="http://sfhasfanhfkj" porque es mas dificil repetir este prefijo
+<?xml version="1.0" encoding="UTF-8"?>
+seme zuzena bakarrik xml ddt-an

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bezeroa>
+    <izena>Linus</izena>
+    <abizenak>Benedict Torvalds</abizenak>
+    <jaioteguna>1969-12-28</jaioteguna>
+    <jaioterria>Helsinki</jaioterria>
+    <herrialdea>Finlandia</herrialdea>
+    <hizkuntza>en</hizkuntza>
+    <telefonoa>699127865</telefonoa>
+    <telefonoa>676884453</telefonoa>
+</bezeroa>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:complexType name='bezeroa'>
+    <xs:element name='izena' type="xs:string"/> 
+    <xs:element name='abizenak' type="xs:string"/> 
+    <xs:element name='jaioteguna' type="xs:dateTime"/> 
+    <xs:element name='jaioterria' type="xs:string"/> 
+    <xs:element name='herrialdea' type="xs:string"/> 
+    <xs:element name='hizkuntza' type="xs:language"/> 
+    <xs:element name='telefonoa' type="xs:int" minOccurs="unbounded"/> 
+</xs:complexType>

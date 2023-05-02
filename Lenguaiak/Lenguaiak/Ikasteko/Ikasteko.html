@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="es"><!-- Nested Element -->
+<head>
+
+<title>IKASTEKO</title>
+
+<meta charset="utf-8"/>
+
+
+    [STYLE]
+
+
+<style>
+
+</style>
+
+<link rel="stylesheet" href="styles.css">
+<!--External style sheets can be referenced with a full URL or with a path relative to the current web page.-->
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"> -->
+
+
+    [FAVICON]
+
+
+<!--A favicon is a small image displayed next to the page title in the browser tab.-->
+<!--
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+-->
+</head>
+
+<p style="background-color: red;
+color: blue;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 150%;
+text-align: center;
+">
+</p>
+
+<body>
+
+
+    [BASIC]
+
+
+<h1 style="font-size: 50px;">LEHENENGO TITULUA</h1> <!-- Style erabili daiteke barruan baina hobeagoa da beste orri batean erabiltzea -->
+
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+
+<p title="HOLA">Hau esaldi <br> bat da.</p> <!-- <br> = LineBreak eta _title_ sagua pasatzerakoan ikusteko, kontuan izan barruan " erabiltzen bada, ' erabiliko dela kanpoan-->
+
+<hr> <!-- Separazio bat -->
+
+<a href="https://www.w3schools.com">Link-a Tutorialen Web Orrialdera</a>
+
+*******************************************************************************************************************************************************************************************
+
+
+    [TEXT]
+
+
+<pre> <!--Testua modu berean iksuteko erabiltzen da-->
+
+    Ja
+          Mon
+
+
+</pre>
+<!--FORMATUAK TEXTUAN-->
+<pre>
+    <b> - Bold text
+    <strong> - Important text
+    <i> - Italic text
+    <em> - Emphasized text
+    <mark> - Marked text
+    <small> - Smaller text
+    <del> - Deleted text
+    <ins> - Inserted text
+    <sub> - Subscript text
+    <sup> - Superscript text
+</pre>
+
+<p>Here is a quote from WWF's website:</p>
+<!--The HTML <blockquote> element defines a section that is quoted from another source.-->
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>
+
+<!--The HTML <q> tag defines a short quotation-->
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+<!--The HTML <abbr> tag defines an abbreviation or an acronym-->
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<!--The HTML <address> tag defines the contact information for the author/owner of a document or an article.-->
+<address>
+    Written by John Doe.<br>
+    Visit us at:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA
+</address>
+
+<!--The HTML <cite> tag defines the title of a creative work like a book or a movie-->
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+<!--The HTML <bdo> tag is used to override the current text direction-->
+<bdo dir="rtl">This text will be written from right to left</bdo>
+
+<!--The HTML <a> tag defines a hyperlink. It has the following syntax-->
+<a href="url">link text</a>
+**********************************************************************************************************************************************************************************************************
+<pre>
+The <strong>target</strong> attribute specifies where to open the linked document.
+
+The <strong>target</strong> attribute can have one of the following values:
+
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+
+<!-- <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a> -->
+</pre>
+
+
+    [NAVIGATION]
+
+
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+<!--
+Bookmarks can be useful if a web page is very long.
+
+To create a bookmark - first create the bookmark, then add a link to it.
+
+When the link is clicked, the page will scroll down or up to the location with the bookmark.
+-->
+
+<h2 id="C4">Chapter 4</h2>
+<a href="#C4">Jump to Chapter 4</a>
+
+
+    [COLOR]
+
+
+<style>
+
+    a:link, a:visited {
+      background-color: #f44336;
+      color: white;
+      padding: 15px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    a:hover, a:active {
+      background-color: red;
+    }
+
+</style>
+
+
+**************************************************************************************************************************************************************************************************************
+
+
+    [IMG]
+
+
+<img src="https://www.w3schools.com/images/img_girl.jpg" alt="W3Schools.com" width="104" height="142">
+<img src="/CSS Ariketa/img/azeria.png">
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+<a href="default.asp">
+    <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+<!--Use the CSS float property to let the image float to the right or to the left of a text-->
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+    
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+
+<!--The HTML <map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <area> tags-->
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+    <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+<p style="background-image: url('img_girl.jpg');"></p>
+
+
+<style>
+    p {
+      background-image: url('img_girl.jpg');
+    }
+</style>
+
+
+<!--If the background image is smaller than the element, the image will repeat itself, horizontally and vertically, until it reaches the end of the element-->
+
+
+<style>
+    body {
+      background-image: url('example_img_girl.jpg');
+      background-repeat: no-repeat;
+    }
+</style>
+
+
+<!--If you want the background image to cover the entire element, you can set the background-size property to cover.
+
+Also, to make sure the entire element is always covered, set the background-attachment property to fixed:
+
+This way, the background image will cover the entire element, with no stretching (the image will keep its original proportions)
+-->
+
+
+<style>
+    body {
+      background-image: url('img_girl.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+</style>
+
+
+<!--If you want the background image to stretch to fit the entire element, you can set the background-size property to 100% 100%-->
+
+<style>
+    body {
+      background-image: url('img_girl.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+</style>
+
+<!--The HTML <picture> element allows you to display different pictures for different devices or screen sizes-->
+
+<!--
+The HTML <picture> element gives web developers more flexibility in specifying image resources.
+
+The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device.
+
+Each <source> element has a media attribute that defines when the image is the most suitable.
+-->
+
+<picture>
+    <source media="(min-width: 650px)" srcset="img_food.jpg">
+    <source media="(min-width: 465px)" srcset="img_car.jpg">
+    <img src="img_girl.jpg">
+</picture>
+
+<!--
+1. Bandwidth
+If you have a small screen or device, it is not necessary to load a large image file. The browser will use the first <source> element with matching attribute values, and ignore any of the following elements.
+
+2. Format Support
+Some browsers or devices may not support all image formats. By using the <picture> element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements.
+-->
+
+************************************************************************************************************************************************************************************************************
+
+
+    [TABLE]
+
+
+<table>
+    <tr>
+    <!--Table Headers-->
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+    <!--Table Row-->
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+</table> 
+
+<!--
+When you add a border to a table, you also add borders around each table cell
+To add a border, use the CSS border property on table, th, and td elements
+-->
+
+<style>
+
+table, th, td {
+    border: 1px solid black;
+  }
+</style>
+
+<!--
+To avoid having double borders like in the example above, set the CSS border-collapse property to collapse.
+
+This will make the borders collapse into a single border
+-->
+
+<style>
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+</style>
+
+<!--
+HTML tables can have different sizes for each column, row or the entire table.
+Use the style attribute with the width or height properties to specify the size of a table, row or column.
+-->
+
+
+<table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+</table>
+
+<!--To set the size of a specific column, add the style attribute on a <th> or <td> element-->
+
+<table style="width:100%">
+    <tr>
+      <th style="width:70%">Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+       <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+</table>
+
+<!--To set the height of a specific row, add the style attribute on a table row element-->
+
+<table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr style="height:200px">
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+</table>
+
+<!--To use the first column as table headers, define the first cell in each row as a <th> element-->
+
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <td>Jill</td>
+      <td>Eve</td>
+    </tr>
+    <tr>
+      <th>Lastname</th>
+      <td>Smith</td>
+      <td>Jackson</td>
+    </tr>
+    <tr>
+      <th>Age</th>
+      <td>94</td>
+      <td>50</td>
+    </tr>
+</table>
+
+<!--You can have a header that spans over two or more columns.
+To do this, use the colspan attribute on the <th> element-->
+
+  <table>
+    <tr>
+      <th colspan="2">Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+</table>
+  
+<!--You can add a caption that serves as a heading for the entire table.
+To add a caption to a table, use the <caption> tag-->
+
+  <table style="width:100%">
+    <caption>Monthly savings</caption>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$50</td>
+    </tr>
+</table>
+
+th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+<!--Cell spacing is the space between each cell.
+By default the space is set to 2 pixels.
+To change the space between table cells, use the CSS border-spacing property on the table element-->
+
+table {
+  border-spacing: 30px;
+}
+
+<!--HTML tables can have cells that span over multiple rows and/or columns.
+To make a cell span over multiple columns, use the colspan attribute-->
+
+<table>
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>57</td>
+  </tr>
+</table>
+
+<!--To make a cell span over multiple rows, use the rowspan attribute-->
+
+<table>
+  <tr>
+    <th>Name</th>
+    <td>Jill</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>555-1234</td>
+  </tr>
+  <tr>
+    <td>555-8745</td>
+</tr>
+</table>
+
+<!--If you add a background color on every other table row, you will get a nice zebra stripes effect.
+To style every other table row element, use the :nth-child(even) selector like this-->
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+<!--To make vertical zebra stripes, style every other column, instead of every other row.
+Set the :nth-child(even) for table data elements like this-->
+
+td:nth-child(even), th:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+<!--You can combine the styling from the two examples above and you will have stripes on every other row and every other column.
+
+If you use a transparent color you will get an overlapping effect.
+Use an rgba() color to specify the transparency of the color-->
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+<!--If you specify borders only at the bottom of each table row, you will have a table with horizontal dividers.
+
+Add the border-bottom property to all tr elements to get horizontal dividers-->
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+<!--Use the :hover selector on tr to highlight table rows on mouse over-->
+
+tr:hover {background-color: #D6EEEE;}
+
+<!--The <colgroup> element is used to style specific columns of a table.-->
+
+<!--If you want to style the two first columns of a table, use the <colgroup> and <col> elements.
+The <colgroup> element should be used as a container for the column specifications.
+
+Each group is specified with a <col> element.
+
+The span attribute specifies how many columns that get the style.
+
+The style attribute specifies the style to give the columns.-->
+
+<table>
+  <colgroup>
+    <col span="2" style="background-color: #D6EEEE">
+  </colgroup>
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+...
+<!--The <colgroup> tag must be a child of a <table> element and should be placed before any other table elements, like <thead>, <tr>, <td> etc., but after the <caption> element, if present.-->
+
+There is only a very limited selection of CSS properties that are allowed to be used in the colgroup:
+
+width property
+visibility property
+background properties
+border properties
+  
+All other CSS properties will have no effect on your tables.
+
+<!--If you want to style more columns with different styles, use more <col> elements inside the <colgroup>-->
+
+<table>
+  <colgroup>
+    <col span="2" style="background-color: #D6EEEE">
+    <col span="3" style="background-color: pink">
+  </colgroup>
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+...
+
+<!--If you want to style columns in the middle of a table, insert a "empty" <col> element (with no styles) for the columns before-->
+
+<table>
+  <colgroup>
+    <col span="3">
+    <col span="2" style="background-color: pink">
+  </colgroup>
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+...
+
+<!--You can hide columns with the visibility: collapse property-->
+
+<table>
+  <colgroup>
+    <col span="2">
+    <col span="3" style="visibility: collapse">
+  </colgroup>
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+...
+
+
+    [LIST]
+
+
+<!--An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+The list items will be marked with bullets (small black circles) by default-->
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+<!--An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+
+The list items will be marked with numbers by default-->
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<!--HTML also supports description lists.
+
+A description list is a list of terms, with a description of each term.
+
+The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term-->
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+The CSS list-style-type property is used to define the style of the list item marker. It can have one of the following values:
+
+<pre>
+  "disc"	Sets the list item marker to a bullet (default)
+
+  <ul style="list-style-type:disc;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  "circle"	Sets the list item marker to a circle
+
+  <ul style="list-style-type:circle;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  "square"	Sets the list item marker to a square
+
+  <ul style="list-style-type:square;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  "none"	The list items will not be marked
+
+  <ul style="list-style-type:none;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+</pre>
+
+<!--Nested-->
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+<!--HTML lists can be styled in many different ways with CSS.
+
+One popular way is to style a list horizontally, to create a navigation menu-->
+
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
+-->
+
+
+Chapter Summary
+
+<ul>
+  <li>Use the HTML <ul> element to define an unordered list</li>
+  <li>Use the CSS list-style-type property to define the list item marker</li>
+  <li>Use the HTML <li> element to define a list item</li>
+  <li>Lists can be nested</li>
+  <li>List items can contain other HTML elements</li>
+  <li>Use the CSS property float:left to display a list horizontally</li>
+</ul>
+
+HTML List Tags
+
+<pre>
+
+  <ul>	Defines an unordered list
+  <ol>	Defines an ordered list
+  <li>	Defines a list item
+  <dl>	Defines a description list
+  <dt>	Defines a term in a description list
+  <dd>	Describes the term in a description list
+
+</pre>
+
+<pre>
+
+  Ordered HTML List - The Type Attribute
+The type attribute of the <ol> tag, defines the type of the list item marker:
+
+Type	Description
+type="1"	The list items will be numbered with numbers (default)
+type="A"	The list items will be numbered with uppercase letters
+type="a"	The list items will be numbered with lowercase letters
+type="I"	The list items will be numbered with uppercase roman numbers
+type="i"	The list items will be numbered with lowercase roman numbers
+
+</pre>
+
+<!--Number-->
+
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<!--Uppercase-->
+
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<!--Lowecase Letters-->
+
+<ol type="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<!--Uppercase Roman Number-->
+
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<!--Lowercase Roman Number-->
+
+<ol type="i">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<!--By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the start attribute-->
+
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<!--Nested-->
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea
+    <ol>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ol>
+  </li>
+  <li>Milk</li>
+</ol>
+
+HTML LIST TAG (Arriba)
+
+HTML Other Lists
+
+<!--A description list is a list of terms, with a description of each term.
+
+The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term-->
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<!--Every HTML element has a default display value, depending on what type of element it is.
+
+There are two display values: block and inline.
+
+-->
+
+
+      [BLOCK-LEVEL ELEMENTS]
+
+
+<!--
+
+A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+
+A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+
+Two commonly used block elements are: <p> and <div>.
+
+The <p> element defines a paragraph in an HTML document.
+
+The <div> element defines a division or a section in an HTML document.
+
+-->
+
+Block-level elements in html:
+
+<address>
+  <article>
+    <aside>
+      <blockquote>
+        <canvas>
+          <dd>
+            <div>
+              <dl>
+                <dt>
+                  <fieldset>
+                    <figcaption>
+                      <figure>
+                        <footer>
+                          <form>
+                            <h1>-<h6>
+                              <header>
+                                <hr>
+                                  <li>
+                                    <main>
+                                      <nav>
+                                        <noscript>
+                                          <ol>
+                                            <p>
+                                              <pre>
+                                                <section>
+                                                  <table>
+                                                    <tfoot>
+                                                      <ul>
+                                                        <video>                                               
+
+
+      [INLINE ELEMENTS]                                                          
+
+
+<!--
+
+An inline element does not start on a new line.
+
+An inline element only takes up as much width as necessary.
+
+This is a <span> element inside a paragraph.
+  
+-->
+
+
+<a>
+  <abbr>
+    <acronym>
+      <b>
+        <bdo>
+          <big>
+            <br>
+              <button>
+                <cite>
+                  <code>
+                    <dfn>
+                      <em>
+                        <i>
+                          <img>
+                            <input>
+                              <kbd>
+                                <label>
+                                  <map>
+                                    <object>
+                                      <output>
+                                        <q>
+                                          <samp>
+                                            <script>
+                                              <select>
+                                                <small>
+                                                  <span>
+                                                    <strong>
+                                                      <sub>
+                                                        <sup>
+                                                          <textarea>
+                                                            <time>
+                                                              <tt>
+                                                                <var>
+
+  
+                                                                  
+
+                                                                  
+                                                                  
+The <div> element is often used as a container for other HTML elements.
+
+The <div> element has no required attributes, but style, class and id are common.
+
+When used together with CSS, the <div> element can be used to style blocks of content
+
+
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+
+
+The <span> element is an inline container used to mark up a part of a text, or a part of a document.
+
+The <span> element has no required attributes, but style, class and id are common.
+
+When used together with CSS, the <span> element can be used to style parts of the text
+
+
+<p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+
+
+       [CLASS]
+
+
+<!--
+
+The HTML class attribute is used to specify a class for an HTML element.
+
+Multiple HTML elements can share the same class.
+
+-->
+
+
+<!--
+
+The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+
+-->
+
+
+In the following example we have three <div> elements with a class attribute with the value of "city". All of the three <div> elements will be styled equally according to the .city style definition in the head section
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div class="city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+</body>
+</html>
+
+<!--
+
+In the following example we have two <span> elements with a class attribute with the value of "note". Both <span> elements will be styled equally according to the .note style definition in the head section
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.note {
+  font-size: 120%;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+</body>
+</html>
+
+To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties within curly braces {}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+</body>
+</html>
+
+
+<!--
+
+HTML elements can belong to more than one class.
+
+To define multiple classes, separate the class names with a space, e.g. <div class="city main">. The element will be styled according to all the classes specified.
+
+In the following example, the first <h2> element belongs to both the city class and also to the main class, and will get the CSS styles from both of the classes
+  
+-->
+
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+
+<!--
+
+Different HTML elements can point to the same class name.
+
+In the following example, both <h2> and <p> point to the "city" class and will share the same style
+  
+-->
+
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France</p>
+
+
+Chapter Summary
+
+The HTML class attribute specifies one or more class names for an element
+Classes are used by CSS and JavaScript to select and access specific elements
+The class attribute can be used on any HTML element
+The class name is case sensitive
+Different HTML elements can point to the same class name
+
+
+
+        [ID]
+
+
+<!--
+  
+The HTML id attribute is used to specify a unique id for an HTML element.
+
+You cannot have more than one element with the same id in an HTML document.
+
+-->
+
+
+The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.
+
+The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.
+
+The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.
+
+In the following example we have an <h1> element that points to the id name "myHeader". This <h1> element will be styled according to the #myHeader style definition in the head section
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1 id="myHeader">My Header</h1>
+
+</body>
+</html>
+
+<!--A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page-->
+
+
+<!--
+  
+HTML bookmarks are used to allow readers to jump to specific parts of a webpage.
+
+Bookmarks can be useful if your page is very long.
+
+To use a bookmark, you must first create it, and then add a link to it.
+
+Then, when the link is clicked, the page will scroll to the location with the bookmark.
+
+-->
+
+
+Ejemplo
+
+<h2 id="C4">Chapter 4</h2>
+
+<a href="#C4">Jump to Chapter 4</a>
+
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+
+Chapter Summary
+
+The id attribute is used to specify a unique id for an HTML element
+The value of the id attribute must be unique within the HTML document
+The id attribute is used by CSS and JavaScript to style/select a specific element
+The value of the id attribute is case sensitive
+The id attribute is also used to create HTML bookmarks
+
+</body>
+
+</html>

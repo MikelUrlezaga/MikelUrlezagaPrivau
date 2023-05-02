@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE katalogoa [
+    <!-- idatzi XMLa baliozkotzen dituzten DTD deklarazioak -->
+    <!ELEMENT katalogoa (diska+)>
+    <!ELEMENT diska (d:izena,d:taldea,d:urtea,d:herrialdea,abestiak)>
+    <!ELEMENT d:izena (#PCDATA)>
+    <!ELEMENT d:taldea (#PCDATA)>
+    <!ELEMENT d:urtea (#PCDATA)>
+    <!ELEMENT d:herrialdea (#PCDATA)>
+    <!ELEMENT abestiak (a:izena+)>
+    <!ELEMENT a:izena (#PCDATA)>
+    <!ATTLIST katalogoa xmlns:d CDATA #FIXED "http://www.nire-musika/diskak">
+    <!ATTLIST katalogoa xmlns:a CDATA #FIXED "http://www.nire-musika/abestiak">
+    <!ATTLIST diska formatua (CD | kasetea | biniloa) #REQUIRED >
+    <!ATTLIST diska hizkuntza (euskara | gaztelania | ingelesa) #REQUIRED >
+    <!ATTLIST a:izena pista CDATA #IMPLIED >
+    <!-- Hurrengoak soilik hurrengo balioak izan ditzakete:
+            Disken formatua: CDa, kasetea edo bilinoa 
+            Disken hizkuntza: euskara, gaztelania, ingelesa    
+    -->
+    <!-- kontuan izan izen espazioak, eta nola hauek gabe <izena> elementuari ezin izango genizkiola deklarazio desberdinak ezarri --> 
+]>
+<katalogoa xmlns:d="http://www.nire-musika/diskak" xmlns:a="http://www.nire-musika/abestiak">
+    <diska formatua="kasetea" hizkuntza="euskara">
+        <d:izena>Dut</d:izena>
+        <d:taldea>Dut</d:taldea>
+        <d:urtea>1995</d:urtea>
+        <d:herrialdea>Euskal Herria</d:herrialdea>
+        <abestiak>
+            <a:izena pista="1">Ni Al Naiz Zure Ni?</a:izena>
+            <a:izena pista="2">Itxura Faltsuak</a:izena>
+            <a:izena pista="3">Hitz Hutsak</a:izena>
+            <a:izena pista="4">Zurrunbilo</a:izena>
+            <a:izena pista="5">Sexu Mugarik Ez</a:izena>
+            <a:izena pista="6">Ezjakintasunaren Kateak Suntsitu</a:izena>
+            <a:izena pista="7">Ertzarik Gageko Laukiak</a:izena>
+            <a:izena pista="8">Epilogoa</a:izena>
+            <a:izena pista="9">Legea Hil</a:izena>
+            <a:izena pista="10">Urtsua Uda</a:izena>		
+        </abestiak>
+    </diska>    
+    <diska formatua="kasetea" hizkuntza="euskara">
+        <d:izena>Jaiotze Basatia</d:izena>
+        <d:taldea>Su Ta Gar</d:taldea>
+        <d:urtea>1991</d:urtea>
+        <d:herrialdea>Euskal Herria</d:herrialdea>
+        <abestiak>
+            <a:izena pista="1">Begira</a:izena>
+            <a:izena pista="2">Sistematik Ihes</a:izena>
+            <a:izena pista="3">Mari</a:izena>
+            <a:izena pista="4">David Eta Goliath</a:izena>
+            <a:izena pista="5">Jaiotze Basatia</a:izena>
+            <a:izena pista="6">Zure Atztetik</a:izena>
+            <a:izena pista="7">Oinazearen Indarra</a:izena>
+            <a:izena pista="8">Zure Aurrean Makurtzen Naiz</a:izena>
+            <a:izena pista="9">Etsi Gabe</a:izena>
+            <a:izena pista="10">Jo Ta Ke</a:izena>
+            <a:izena pista="11">Diruaren Esklabu</a:izena>
+            <a:izena pista="12">Haika Mutil</a:izena>		
+        </abestiak>
+    </diska>
+    <diska formatua="biniloa" hizkuntza="ingelesa">
+        <d:izena>The Ionic Spell</d:izena>
+        <d:taldea>Standstill</d:taldea>
+        <d:urtea>2001</d:urtea>
+        <d:herrialdea>Catalunya</d:herrialdea>
+        <abestiak>
+            <a:izena pista="1">Supreme</a:izena>
+            <a:izena pista="2">Words</a:izena>
+            <a:izena pista="3">Treasure</a:izena>
+            <a:izena pista="4">The Farewell Notes</a:izena>
+            <a:izena pista="5">Angelica</a:izena>
+            <a:izena pista="6">Survive</a:izena>
+            <a:izena pista="7">Two Minutes Song</a:izena>
+            <a:izena pista="8">Let Them Burn</a:izena>
+            <a:izena pista="9">Naked Monkey</a:izena>
+            <a:izena pista="10">Sunrise People In Sunset Days</a:izena>
+            <a:izena pista="11">Accomplice</a:izena>
+            <a:izena pista="12">The Ionic Spell</a:izena>		
+        </abestiak>
+    </diska>    
+    <diska formatua="CD" hizkuntza="euskara">
+        <d:izena>Inoren Ero Ni</d:izena>
+        <d:taldea>Inoren Ero Ni</d:taldea>
+        <d:urtea>2004</d:urtea>
+        <d:herrialdea>Euskal Herria</d:herrialdea>
+        <abestiak>
+            <a:izena pista="1">Estruktura Hutsak</a:izena>
+            <a:izena pista="2">Aurrez Aurre</a:izena>
+            <a:izena pista="3">Tanger</a:izena>
+            <a:izena pista="4">Ohean Eta Lasai</a:izena>
+            <a:izena pista="5">Erbestean</a:izena>
+            <a:izena pista="6">Deabruarekin Jolasean</a:izena>
+            <a:izena pista="7">Ondo Bizitzeko Beldur</a:izena>
+            <a:izena pista="8">Gerra</a:izena>
+            <a:izena pista="9">Gezurrak</a:izena>
+            <a:izena pista="10">Bi Miloi Pixel</a:izena>
+            <a:izena pista="11">Basamortuan</a:izena>
+            <a:izena pista="12">Iparraldera</a:izena>		
+        </abestiak>
+    </diska>    
+    <diska formatua="kasetea" hizkuntza="gaztelania">
+        <d:izena>Toda La Puta Vida Igual</d:izena>
+        <d:taldea>La polla</d:taldea>
+        <d:urtea>1999</d:urtea>
+        <d:herrialdea>Euskal Herria</d:herrialdea>
+        <abestiak>
+            <a:izena pista="1">Ya No Quiero Ser Yo</a:izena>
+            <a:izena pista="2">Tumba 37</a:izena>
+            <a:izena pista="3">Deja A Los Niños</a:izena>
+            <a:izena pista="4">Shanti</a:izena>
+            <a:izena pista="5">Igual Para Todos</a:izena>
+            <a:izena pista="6">Puedes Ser Idiota</a:izena>
+            <a:izena pista="7">No Aburras</a:izena>
+            <a:izena pista="8">Mundo Cabrón</a:izena>
+            <a:izena pista="9">Basura</a:izena>
+            <a:izena pista="10">Pastelarium</a:izena>            
+            <a:izena pista="11">Maigenerasion</a:izena>
+            <a:izena pista="12">Guaschibo</a:izena>
+            <a:izena pista="13">Está Todo Muy Mal</a:izena>
+            <a:izena pista="14">Chisourray</a:izena>
+            <a:izena pista="15">Ingenua</a:izena>
+            <a:izena pista="16">Día Positivo</a:izena>
+            <a:izena pista="17">La Gamberra</a:izena>            
+            <a:izena pista="18">Nadie Llorará Por Ti</a:izena>
+            <a:izena pista="19">Qué Turututu, Ay Qué Tururu</a:izena>
+            <a:izena pista="20">Toda La Puta Vida Igual</a:izena>
+            <a:izena pista="21">La Loteria (Bonus Track)</a:izena>	
+        </abestiak>
+    </diska>   
+    <diska formatua="CD" hizkuntza="euskara">
+        <d:izena>Willis Drummond</d:izena>
+        <d:taldea>Willis Drummond</d:taldea>
+        <d:urtea>2008</d:urtea>
+        <d:herrialdea>Euskal Herria</d:herrialdea>
+        <abestiak>
+            <a:izena pista="1">-</a:izena>
+            <a:izena pista="2">Ez Da Izango</a:izena>
+            <a:izena pista="3">Haustura (Bizi Berri Bat)</a:izena>
+            <a:izena pista="4">--</a:izena>
+            <a:izena pista="5">Zenbat Gramo</a:izena>
+            <a:izena pista="6">1</a:izena>	
+            <a:izena pista="6">Nun Daude</a:izena>	
+            <a:izena pista="6">Lerroak</a:izena>	
+            <a:izena pista="6">Ta Garena</a:izena>	
+            <a:izena pista="6">Noiz</a:izena>	
+        </abestiak>
+    </diska> 
+    <diska formatua="CD" hizkuntza="euskara">
+        <d:izena>Epilogo bat</d:izena>
+        <d:taldea>Anari</d:taldea>
+        <d:urtea>2016</d:urtea>
+        <d:herrialdea>Euskal Herria</d:herrialdea>
+        <abestiak>
+            <a:izena pista="1">Intro</a:izena>
+            <a:izena pista="2">Laugarren Azalberritzea</a:izena>
+            <a:izena pista="3">Parentesian Arteak</a:izena>
+            <a:izena pista="4">Autodefinitua</a:izena>
+            <a:izena pista="5">Piromania</a:izena>
+            <a:izena pista="6">Epilogoa</a:izena>	
+        </abestiak>
+    </diska>    
+</katalogoa>

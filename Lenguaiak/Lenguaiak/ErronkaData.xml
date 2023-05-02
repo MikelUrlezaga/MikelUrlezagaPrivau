@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE zikl:zikloa [
+
+]>
+<zikl:zikloa zikl:kodea="WAG" xmlns:zikl="http://www.sj.com/zikloa">
+  <zikl:izena>Web Aplikazioen Garapena</zikl:izena>
+  <zikl:kurtsoa>2022-2023</zikl:kurtsoa>
+  <err:erronka err:zenbakia="2" xmlns:err="http://www.sj.com/erronka">
+    <ikas:ikasgaiak xmlns:ikas="http://www.sj.com/ikasgaia"
+      xmlns:irakas="http://www.sj.com/irakaslea" 
+    >
+      <ikas:ikasgaia ikas:kodea="LEN">
+        <ikas:izena>Markatzeko lengoaiak</ikas:izena>
+        <ikas:orduak>80</ikas:orduak>
+        <irakas:irakaslea>
+            <irakas:izena>Jon</irakas:izena>        
+            <irakas:abizena>Iturriondobeitia</irakas:abizena>
+        </irakas:irakaslea>
+      </ikas:ikasgaia>
+      <ikas:ikasgaia ikas:kodea="PROG">
+        <ikas:izena>Programazioa</ikas:izena>
+        <ikas:orduak>180</ikas:orduak>
+        <irakas:irakaslea>
+            <irakas:izena>Borja</irakas:izena>        
+            <irakas:abizena>Atutxa</irakas:abizena>
+        </irakas:irakaslea>
+      </ikas:ikasgaia>
+    </ikas:ikasgaiak>
+    <tld:taldea zenbakia="x" xmlns:tld="http://www.sj.com/erronka"></tld:taldea>
+  </err:erronka>
+</zikl:zikloa>

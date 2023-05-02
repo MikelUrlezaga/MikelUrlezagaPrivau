@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE txapelketak SYSTEM "txapelketak.dtd"(para linkear a un dtd que esta en la misma carpeta)[
+    <!ELEMENT txapelketak(txapelketa)>
+    <!ELEMENT txapelketa(izena,denboraldia,goleatzailea,taldeak,jardunaldiak)>
+    <!ATTLIST txapelketa mota (futbola|saskibaloia|eskupilota) CDATA #REQUIRED>
+    <!ELEMENT izena (#PCDATA)>
+    <!ELEMENT denboraldia (#PCDATA)>
+    <!ELEMENT goleatzailea (#PCDATA)>
+    <!ELEMENT taldeak (taldea)>
+    <!ELEMENT taldea (#PCDATA)>
+    <!ATTLIST taldea kodea ID #REQUIRED>
+    <!ELEMENT jardunaldiak (jardunaldia"(alde egon edo ez))>
+    <!ELEMENT jardunaldia (partida+(asko daude))>
+    <!ATTLIST jardunaldia zenbakia NMTOKEN CDATA #REQUIRED>
+    <!ATTLIST jardunaldia data CDATA #IMPLIED>
+    <!ELEMENT partida (#PCDATA)>
+    <!ATTLIST partida lokala IDREF #REQUIERED>
+    <!ATTLIST partida bisitaria IDREF #REQUIRED>
+]>
+<txapelketak>
+    <txapelketa mota="futbol">
+        <izena>Espainaki Liga</izena>
+        <denboraldia>2022-2023</denboraldia>
+        <goleatzailea>Aritz Aduriz</goleatzailea>
+        <taldeak>
+            <taldea kodea='ATHL'>Athletic Club</taldea>
+            <taldea kodea='BCN'>Bartzelona</taldea>
+            <taldea kodea='RM'>Real Madril</taldea>
+            <taldea kodea='RSOC'>Real Sociedad</taldea>
+            <taldea kodea='OSA'>Osasuna</taldea>
+            <taldea kodea='VLL'>Villareal</taldea>
+        </taldeak>
+    </txapelketa>
+    <jardunaldiak>
+        <jardunaldia zenbakia='1' data='01-01-2023'>
+            <partida lokala="ATHL" bisitaria="BCN">3-0</partida>
+            <partida lokala="RSOC" bisitaria="RM">2-1</partida>
+            <partida lokala="OSA" bisitaria="VLL">1-1</partida>
+        </jardunaldia>    
+    </jardunaldiak>    
+</txapelketak>    

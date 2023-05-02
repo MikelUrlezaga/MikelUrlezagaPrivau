@@ -1,0 +1,187 @@
+/**
+ * ------------------------------------------------------------------------------------
+ * Betetzeko estilo-orrialdea, iruzkinetako argibideei jarraitu estiloak sortzeko.
+ * Eskatu ahal dena: 
+ * - CSS selektorearen adierazpena.
+ * - CSS ezaugarriak eta haien baloreen adierazpenak
+ * - Biak batera. 
+ * Ordezkatu 3 puntuak (...) zuen adierazpenekin.
+ * ------------------------------------------------------------------------------------
+ */
+
+/**
+ * Orrialdearen esteka guztiak azpimarratu gabeak
+ */
+... {
+    text-decoration: none;
+}
+
+/**
+ * 'Header' elementuaren baita ere 'layout' ereduan agertzen denaren atzeko kolorea 
+ */
+... {
+    background-color: lightgreen;
+}
+
+/**
+ * 'Nav' elementuaren baita ere 'layout' ereduan agertzen denaren atzeko kolorea 
+ */
+... {
+    background-color: lightpink;
+}
+
+/**
+ * 'Main' elementuaren baita ere 'layout' ereduan agertzen denaren atzeko kolorea 
+ */
+... {
+    background-color: aliceblue;
+}
+
+/**
+ * 'Aside' elementuaren baita ere 'layout' ereduan agertzen denaren atzeko kolorea 
+ */
+... {
+    background-color: lightblue;
+}
+
+/**
+ * 'Footer' elementuaren baita ere 'layout' ereduan agertzen denaren atzeko kolorea 
+ */
+... {
+    background-color: mediumpurple;
+}
+
+/**
+ * Orrialdearen goiburu nagusia erdian
+ */
+... {
+    text-align: center;
+}
+
+/**
+ * Sekzio bakoitzaren goiburua 'italic' moduan
+ */
+... {
+    font-style: italic;
+}
+
+/**
+ * Eduki nagusia bi zutabeetan eta erdialdean kokatu 
+ */
+ main {
+    ...
+}
+
+/**
+ * Footer-rak: 
+ *  - Letra kolore txuriarekin
+ *  - 5px-eko barne espazioarekin gainean eta azpian, eta 15px-ekoa alboetan
+ *    (Adierazpena lerro bakarrean)
+ */
+footer {
+    ...
+}
+
+/**
+ * San Jorge-ko logoa eskubialdean
+ */
+... {
+    float: right;
+}
+
+/**
+ * Nabigazio nagusiaren zerrenda:
+ * - Estilorik gabe.
+ * - Barne espaziorik gabe 
+ */
+... { 
+    list-style: none;
+    padding: 0;
+}
+
+/**
+ * Nabigazio nagusiaren 'list item'-ak jarraian eta zabalera osoa betetzen
+ */ 
+nav ul {
+    ...
+}
+
+/**
+ * Nabigazio nagusiaren 'list item'-ak hauen gainean eta azpian 5px-eko kanpoko espazioarekin 
+ * (Adierazpena lerro bakarrean)
+ */ 
+nav ul li {
+    ...
+}
+
+/**
+ * Nabigazio nagusiaren esteken ezaugarriak
+ */
+... {
+    margin: 0 10px;
+    padding: 4px 8px;
+    color: #c85569;
+    background-color: pink;
+    border-radius: 5px;
+}
+
+/**
+ * Nabigazio nagusiaren esteka baten gainean sagua dagoenean
+ * edo esteka aktiboa dagoenean 
+ */
+... {
+    background-color: #fc6f88;
+    color: white;
+}
+
+/**
+ * Alboko nabigazioaren esteken ezaugarriak
+ */
+... {
+    padding: 4px 8px;
+    margin-top: 15px;
+    background-color: #bee3ef;
+}
+
+/**
+ * Alboko nabigazioaren esteka baten gainean sagua dagoenean
+ * edo esteka aktiboa dagoenean 
+ */
+... {
+    background: aliceblue;
+}
+
+/**
+ * Eduki nagusiaren bigarren zutabearen edukia altuera osoa betetzen
+ * eta testua bere erdialdean kokatuz
+ */
+... {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+
+/**
+ * Hurrengo atalean adierazi behar beste lerrotan behar dituzun selektoreak layout ereduaren laukia sortzeko
+ */
+ #layout-example {
+    padding-top: 1.5em;
+    margin: 0 10%;
+    ...
+}
+
+...
+
+...
+
+...
+
+
+/**
+ * Ikonoa ereduaren goiko eskubiko izkinean kokatu
+ */
+#layout-example a {
+    ...
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hhd [
+    <!ELEMENT hhd (katalogoa, gogokoenak)>
+    <!ELEMENT katalogoa (media+)>
+    <!ELEMENT media (izenburua, zuzendaria, urtea)>
+    <!ATTLIST media id ID #REQUIRED>
+    <!ATTLIST media mota (filma | seriea | kortoa) #REQUIRED>
+    <!ATTLIST media kategoria (akzioa | animazioa | belikoa | klasikoa | komedia | dokumentala | thriller | drama | ikara | fikzioa | musikala) #REQUIRED>
+    <!ELEMENT izenburua (#PCDATA)>
+    <!ELEMENT zuzendaria (#PCDATA)>
+    <!ELEMENT urtea (#PCDATA)>
+    <!ELEMENT gogokoenak (filma*, seriea*, kortoa*)>
+    <!ELEMENT filma (#PCDATA)>
+    <!ELEMENT seriea (#PCDATA)>
+    <!ELEMENT kortoa (#PCDATA)>
+    <!ATTLIST filma kodea IDREF #REQUIRED>
+    <!ATTLIST seriea kodea IDREF #REQUIRED>
+    <!ATTLIST kortoa kodea IDREF #REQUIRED>
+    <!ATTLIST filma puntuazioa NMTOKEN #REQUIRED>
+    <!ATTLIST seriea puntuazioa NMTOKEN #REQUIRED>
+    <!ATTLIST kortoa puntuazioa NMTOKEN #REQUIRED>
+]>
+<hhd>
+    <katalogoa>
+        <media id="A123" mota="filma" kategoria="akzioa">
+            <izenburua>BadBoys2</izenburua>
+            <zuzendaria>URLE</zuzendaria>
+            <urtea>2000</urtea>
+        </media>
+        <media id="A234" mota="kortoa" kategoria="animazioa">
+            <izenburua>JAJA</izenburua>
+            <zuzendaria>BAI</zuzendaria>
+            <urtea>2004</urtea>
+        </media>
+        <media id="A345" mota="filma" kategoria="belikoa">
+            <izenburua>JUJU</izenburua>
+            <zuzendaria>NEU</zuzendaria>
+            <urtea>2005</urtea>
+        </media>
+        <media id="A456" mota="kortoa" kategoria="klasikoa">
+            <izenburua>MickeyMouse</izenburua>
+            <zuzendaria>Juan</zuzendaria>
+            <urtea>2001</urtea>
+        </media>
+        <media id="A567" mota="filma" kategoria="komedia">
+            <izenburua>BOBOBO</izenburua>
+            <zuzendaria>MIYAZAKI</zuzendaria>
+            <urtea>2000</urtea>
+        </media>
+        <media id="A678" mota="seriea" kategoria="dokumentala">
+            <izenburua>Castle</izenburua>
+            <zuzendaria>TuPu</zuzendaria>
+            <urtea>2006</urtea>
+        </media>
+        <media id="A789" mota="filma" kategoria="thriller">
+            <izenburua>JUANMANUE</izenburua>
+            <zuzendaria>JUAN</zuzendaria>
+            <urtea>2003</urtea>
+        </media>
+        <media id="A890" mota="filma" kategoria="drama">
+            <izenburua>URTEAAAA</izenburua>
+            <zuzendaria>UGAITZ</zuzendaria>
+            <urtea>2004</urtea>
+        </media>
+        <media id="A901" mota="filma" kategoria="ikara">
+            <izenburua>PAYASO</izenburua>
+            <zuzendaria>AGIRRE</zuzendaria>
+            <urtea>2004</urtea>
+        </media>
+        <media id="A012" mota="seriea" kategoria="fikzioa">
+            <izenburua>FANTASMA</izenburua>
+            <zuzendaria>JONXA</zuzendaria>
+            <urtea>2004</urtea>
+        </media>
+        <media id="A111" mota="kortoa" kategoria="musikala">
+            <izenburua>UNAITXIKI</izenburua>
+            <zuzendaria>EÑAUT</zuzendaria>
+            <urtea>2004</urtea>
+        </media>
+    </katalogoa>
+    <gogokoenak>
+        <filma kodea="A123" puntuazioa=".-">BadBoys2</filma>
+        <seriea kodea="A678" puntuazioa=":-">Castle</seriea>
+        <kortoa kodea="A456" puntuazioa=":.">Mickeyouse</kortoa>
+    </gogokoenak>
+</hhd>

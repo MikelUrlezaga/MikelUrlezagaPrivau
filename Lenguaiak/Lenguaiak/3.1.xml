@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alfabetoa [
+    <!ELEMENT alfabetoa (hizkia+)>
+    <!ELEMENT hizkia EMPTY>
+    <!ATTLIST hizkia char ID #REQUIERED>
+    <!-- idatzi XMLa baliozkotzen dituzten DTD deklarazioak -->
+]>
+<alfabetoa>
+    <hizkia char="a" />
+    <hizkia char="b" />
+    <hizkia char="c" />
+    <hizkia char="d" />
+    <hizkia char="e" />
+    <hizkia char="f" />
+    <hizkia char="g" />
+    <hizkia char="h" />
+    <hizkia char="i" />
+    <hizkia char="j" />
+    <hizkia char="k" />
+    <hizkia char="l" />
+    <hizkia char="m" />
+    <hizkia char="n" />
+    <hizkia char="o" />
+    <hizkia char="p" />
+    <hizkia char="q" />
+    <hizkia char="r" />
+    <hizkia char="s" />
+    <hizkia char="t" />
+    <hizkia char="u" />
+    <hizkia char="v" />
+    <hizkia char="w" />
+    <hizkia char="x" />
+    <hizkia char="y" />
+    <hizkia char="z" />
+</alfabetoa>

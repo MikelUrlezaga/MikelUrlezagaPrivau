@@ -1,0 +1,95 @@
+body{
+
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+head{
+
+
+
+}
+
+h1{
+
+background-color: red;
+text-align: center;
+padding: 50px;
+
+}
+
+p{
+
+background-color: white;
+text-align:left;
+padding: 5px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+
+}
+
+a{
+
+    color:blueviolet;
+
+}
+
+.berriak-row{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    background-color: red;
+    padding: 20px;
+    grid-gap: 5px;
+    border-radius: 25px;
+
+}
+
+.berriak-row article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.berriak-row article img {
+    
+    flex: 1;
+
+}
+.berriak-row article aside {
+    flex: 1;
+   
+}
+
+
+section{
+    
+
+    float: left;
+    
+    
+
+}
+
+
+aside{
+
+    display: grid;
+
+    text-align: left;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 40px;
+
+}
+
+hr{
+
+    
+    
+    height: 60px;
+    background-color: blue;
+
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bezeroak>
+    <bezeroa>
+        <izena>Linus</izena>
+        <abizenak>Benedict Torvalds</abizenak>
+        <jaioteguna>1969-12-28</jaioteguna>
+        <jaioterria>Helsinki</jaioterria>
+        <herrialdea>Finlandia</herrialdea>
+        <hizkuntza>en</hizkuntza>
+        <kontaktuak>
+            <telefonoa>699127865</telefonoa>
+            <telefonoa>676884453</telefonoa>
+        </kontaktuak>
+    </bezeroa>
+    <bezeroa>
+        <izena>Richard</izena>
+        <abizenak>Matthew Stallman</abizenak>
+        <jaioteguna>1953-03-16</jaioteguna>
+        <jaioterria>Manhattan</jaioterria>
+        <herrialdea>Estatu Batuak</herrialdea>
+        <hizkuntza>en</hizkuntza>
+        <kontaktuak />
+    </bezeroa>
+</bezeroak>

@@ -1,0 +1,114 @@
+/**
+ * ---------------------------------------------------------------------------------------
+ * HTML-an txertatutako estiloetatik abiatuta sortutako estilo-orrialdea 
+ *
+ *     ***** Cntrl + F erabili 'style' atributu guztiak bilatzeko HTML orrialdean *****
+ * ---------------------------------------------------------------------------------------
+ */
+
+body{
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        font: .9em/1.2 Arial, Helvetica, sans-serif;   
+}
+
+header{
+        text-align: center;
+        background-color: greenyellow;
+        grid-column: 1/3; 
+        grid-row: 1
+        
+}
+
+.erdialdea{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px;
+}
+
+nav{
+        background-color: pink;
+        grid-column: 1/3; 
+        grid-row: 2 
+}
+
+aside{    
+        background-color: aquamarine;
+        display: grid;
+        
+        grid-column: 1; 
+        grid-row: 3       
+}
+
+.linka{
+    border-radius: 25px;
+    background-color: antiquewhite;
+    padding: 80px;
+}
+
+main{  
+    background-color: white;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 500px 1000px;
+    grid-column: 2; 
+    grid-row: 3;        
+}
+
+#main-column main-column-1{
+    padding: 0 5px;
+}
+
+em{
+    color:red"
+}
+
+#main-column main-column-2{
+    padding: 0 5px;
+}
+
+.example-box{
+    border: 1px solid;
+    min-height: 50px;
+    padding: 5px;
+}
+
+.em{
+    color:green
+}
+
+footer{
+    background-color: blueviolet;
+    grid-column: 1/3; 
+    grid-row: 4;
+}
+
+#sanjorgeirudia{
+    float: right;
+    width: 15%;
+}
+
+.lista{
+    border-radius: 5px;
+    background-color: palevioletred;
+    text-align: center;
+     
+}
+
+.footerra{
+
+
+
+}
+
+h3{
+
+    text-align: center;
+
+}
+
+.footertext{
+
+    text-align: center;
+
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- "Azterketa" izenburua eta dagokion karaktere kodifikazioa ezarri orrialdeari -->
+<meta charset="UTF-8">
+<html lang="es">
+    <head>
+        <script src="js/active-menu.js"></script>
+        <link href="C:\Users\Ikasle\Desktop\Mikel\Lenguaiak\Azterketa\TODO\css\from-html.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header id="header" class="green-bg">
+            <h1>HTML Semantikoa</h1>
+        </header>
+        <nav id="navigation" class="pink-bg">
+            <ul class="erdialdea">
+                <li class="lista">
+                    <!-- Orrialde nagusiarekin lotzeko esteka bete -->
+                    <!-- 'Home' testua agertu behar da sagua gainean dagoenean --> 
+                    <a href="index.html" class="active" title="Home">Etiketa semantikoak</a>
+                </li>
+                <li class="lista">
+                    <!-- Bigarren orrialdearekin lotzeko esteka bete -->
+                    <!-- 'Second page' testua agertu behar da sagua gainean dagoenean -->
+                    <a href="pages/secondary.html" title="Second page">Bigarren orrialdea</a>
+                </li>
+                <li class="lista">
+                    <!-- 'www.w3schools.com' webgunearekin lotzeko esteka bete -->
+                    <!-- Nabigatzailearen orrialde berri batean ireki behar da -->
+                    <!-- 'W3C' testua agertu behar da sagua gainean dagoenean -->
+                    <a href="https://www.w3schools.com/" target="_blank" title="W3C">W3Schools orrialdea</a>
+                </li>
+                <li class="lista">
+                    <!-- Orrialde honen 'footer' elementuarekin lotzeko esteka bete -->
+                    <!-- 'Contact' testua agertu behar da sagua gainean dagoenean -->
+                    <a href="footer" title="Contact">Jarri harremanetan</a>
+                </li>
+            </ul>
+        </nav>
+        <aside id="aside" class="blue-bg">
+            <!-- Esteka bakoitza bete dagokion edukiaren 'section' elementuekin lotzeko -->
+            <!-- Dagokion sekzioaren izenaren testua agertu behar da sagua gainean dagoenean-->
+            <a class= linka href="#header-tag" class="active" title="Header etiketa" style="display: block;">Header etiketa</a>
+            <a class= linka href="#nav-tag" title="Nav etiketa" style="display: block;">Nav etiketa</a>
+            <a class= linka href="#aside-tag" title="Aside etiketa" style="display: block;">Aside etiketa</a>
+            <a class= linka href="#main-tag" title="Main etiketa" style="display: block;">Main etiketa</a>
+            <a class= linka href="#footer-tag" title="Footer etiketa" style="display: block;">Footer etiketa</a>
+        </aside>
+        <main id="main" class="alice-bg">
+            <div class="main-column main-column-1">
+                <h2>Etiqueta semantikoak</h2>
+                <p>HTML Semantikoa HTML etiketak erabiltzea web orrietako informazioaren esanahia indartzeko da.</p> 
+                <article id="header-tag">
+                    <h1>&lt;header&gt;</h1>
+                    <p>Sarrerako eduki multzo bat errepresentatzen du.</p>
+                    <p>Hau <em>&lt;body&gt;</em> elementu baten "semea" bada, webgunearen sarrera nagusia izango da, baina <em>&lt;article&gt; <br>
+                        </em> elementu baten edo <em>&lt;section&gt;</em> elementu baten umea bada, orduan atal bakoitzaren goiburua <br>
+                        baino ez da izango.</p>
+                </article>
+                <article id="nav-tag">
+                    <h1>&lt;nav&gt;</h1>
+                    <p>Orriaren nabigazio funtzionalitate nagusia du. </p>
+                    <p>Bigarren mailako estekak, etab., ez dira nabigazioan sartuko.</p>
+                </article>
+                <article id="aside-tag">
+                    <h2>&lt;aside&gt;</h2>
+                    <p>eduki nagusiarekin zerikusi zuzena duten edukiak biltzen ditu, baita ekarpen osagarriak egin ditzaketenak <br>
+                        harekin zeharka erlazionatuta dagoen informazioarekin.</p>
+                    <p>Adibidez, laburpenak, egilearen biografiak, esteka erlazionatuak, etab.</p>
+                </article>
+                <article id="main-tag">
+                    <h1>&lt;main&gt;</h1>
+                    <p>Orrialde baten eduki partikularra biltzen du.</p>
+                    <p>Behin bakarrik erabiliko da orrialde bakoitzean, eta <em>&lt;body&gt;</em> elementuaren barruan jarriko da zuzenean.</p>
+                </article>
+                <article id="footer-tag">
+                    <h1>&lt;footer&gt;</h1>
+                    <p>Orri baten amaierako eduki-multzo bat ordezkatzen du.</p>
+                    <p><em>&lt;header&gt;</em> etiketa bezala <em>&lt;article&gt;</em> elementu baten edo <em>&lt;section&gt;</em> elementu baten barruan aurkitu daiteke.</p>
+                </article>
+            </div>
+            <div class="main-column main-column-2">
+                <h3>Layout eredua</h3>
+                <div id="layout-example">
+                    <!--<div id="header-box" class="green-bg example-box">
+                        &lt;header&gt;
+                    </div>
+                    <div id="nav-box" class="pink-bg example-box">
+                        &lt;nav&gt;
+                    </div>
+                    <div id="aside-box" class="blue-bg example-box">
+                        &lt;aside&gt;
+                    </div>
+                    <div id="main-box" class="alice-bg example-box">
+                        &lt;main&gt;
+                    </div>
+                    <div id="footer-box" class="purple-bg example-box">
+                        &lt;footer&gt;
+                    </div> -->
+
+                    <!-- Ikonoa hautatzerakoan 'layout' ereduaren irudia beste orrialde batean zabaltzen duen esteka sortu -->
+                    <img src="C:\Users\Ikasle\Desktop\Mikel\Lenguaiak\Azterketa\TODO\images\layout-example.png" target="_blank" alt="expand-icon" height="100%" width="100%">
+                </div>      
+                <div class="footertext">
+                    <p>Aurrekoan ikus daiteke <em class= em>Layout</em> semantiko baten eredua.</p> 
+                    <p>Ereduko <em class= em>Layout</em>-ak elementu nagusienak biltzen ditu.</p>
+                    <p>Elementu gehiago daude: <em class= em>&lt;article&gt;</em>, <em class= em>&lt;section&gt;</em>, etab.</p>
+                </div>          
+            </div> 
+        </main>
+        <footer id="contact" class="purple-bg">
+            <!-- Irudian 'San Jorge LHII' testua agertu behar da sagua gainean dagoenean !!!!!!!!!!!!!!!!!!!!-->
+            <!-- Irudia apurtzen bada 'San Jorge Logo' duen testua erakutsi -->
+            <img id=sanjorgeirudia src="images/sj-logo.png" title="San Jorge Logo">
+            <p>CIFP SAN JORGE LHII, Pajares 34 - 48980, Santurtzi (Vizcaya)</p>
+            <ul class="footerra">
+                <li>94 400 49 30</li>
+                <li>94 483 90 60</li>
+                <!-- Hurrengo helbidera email-a bidaltzeko aplikazio lehentsia zabalduko duen esteka sortu -->
+                <li><a href="mailto:sanjorge@fpsanjorge.com">sanjorge@fpsanjorge.com</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bezeroak>
+    <bezeroa>
+        <izena>Linus</izena>
+        <abizenak>Benedict Torvalds</abizenak>
+        <jaioteguna>1969-12-28</jaioteguna>
+        <jaioterria>Helsinki</jaioterria>
+        <herrialdea>Finlandia</herrialdea>
+        <hizkuntza>en</hizkuntza>
+        <telefonoa>699127865</telefonoa>
+        <telefonoa>676884453</telefonoa>
+    </bezeroa>
+    <bezeroa>
+        <izena>Richard</izena>
+        <abizenak>Matthew Stallman</abizenak>
+        <jaioteguna>1953-03-16</jaioteguna>
+        <jaioterria>Manhattan</jaioterria>
+        <herrialdea>Estatu Batuak</herrialdea>
+        <hizkuntza>en</hizkuntza>
+        <telefonoa>666722455</telefonoa>
+    </bezeroa>
+</bezeroak>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:element name='bezeroak'>
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="bezeroa"
+                        type="Tbezeroa"
+                        maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:complexType name='bezeroa'>
+    <xs:element name='izena' type="xs:string"/> 
+    <xs:element name='abizenak' type="xs:string"/> 
+    <xs:element name='jaioteguna' type="xs:dateTime"/> 
+    <xs:element name='jaioterria' type="xs:string"/> 
+    <xs:element name='herrialdea' type="xs:string"/> 
+    <xs:element name='hizkuntza' type="xs:language"/> 
+    <xs:element name='telefonoa' type="xs:int" minOccurs="unbounded"/> 
+</xs:complexType>

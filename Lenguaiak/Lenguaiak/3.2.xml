@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email [
+    <!-- idatzi XMLa baliozkotzen dituzten DTD deklarazioak -->
+    <!ELEMENT email (address,subject,message)>
+    <!ELEMENT address (from,to,cc)>
+    <!ELEMENT from (#PCDATA)>
+    <!ELEMENT to (#PCDATA)>
+    <!ELEMENT cc (#PCDATA)>
+    <!ELEMENT p (#PCDATA)>
+    <!ELEMENT signature (p+)>
+    <!ELEMENT message (p+,signature)>
+    <!ELEMENT subject (#PCDATA)>
+    <!ATTLIST p postdata CDATA #IMPLIED>
+    <!-- ** postaren sinadura EZ da beharrezkoa ** -->
+]>
+<email>
+    <address>
+        <from>jiturriondobeitia@fpsanjorge.com</from>
+        <to>301a-alumnos@fpsanjorge.com</to>
+        <cc>301a-profes@fpsanjorge.com</cc>
+    </address>
+    <subject>Jo Jo Jo!</subject>
+    <message>
+        <p>Kaixo ikasleok,</p>
+        <p>Gabon zoriontsuak opa dizuet, eta opari moduan ariketa erraz hauek prestatu dizkizuet.</p>
+        <p postdata="HTML-a errekuperatu ez duzuenok behintzat :(">
+            Egunean zehar egiten badituzue, LEN ikasgaia ahaztu ahalko duzue gabonetan zehar.
+        </p>
+        <p>Bueltan zuzenduko ditugu.</p>
+        <signature>
+            <p>Agur t'erdi,</p>
+            <p>Jon Iturriondobeitia.</p>
+        </signature>
+    </message>
+</email>

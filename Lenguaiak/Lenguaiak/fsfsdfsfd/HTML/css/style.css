@@ -1,0 +1,56 @@
+body {           
+    width: 80%;
+    margin: 0 auto;
+    background-color: #F0F0C9 ;
+    text-align: center;
+}
+
+p {
+    color:red;
+    font-size: 12px;
+}
+
+.printzea {
+    color: #6E0E0A;
+}
+
+.azeria {
+    color: #D74E09;
+
+}
+            
+hr {
+    border: 1px dashed #F2BB05; height: 0;
+}
+
+.desc {
+    color:#666666
+}
+
+#desc-1 {
+    background-color: #124E78;
+    font-size: 14px;
+    height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    font-style: italic;
+    border-radius: 25px;
+    padding: 5px;
+
+}
+
+a {
+    background-color: #6E0E0A;
+    color: #F2BB05;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    
+}
+
+img {
+    float: left;
+}
+
+.ipuinlaria {
+    color: #666666;
+}

@@ -1,0 +1,18 @@
+nav eta ul barruan
+nav ul{} style barruan
+display: flex; flexible izateko
+justify-content space between
+
+display:flex
+flex:1000
+
+display:flex
+align items: center
+justify-content : center
+
+display:flex
+flex-wrap: wrap;
+flex-flow: row wrap;
+
+flex basis auto
+flex grow: 1
