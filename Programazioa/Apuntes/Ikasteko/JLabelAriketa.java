@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class JLabelAriketa extends JFrame {
   public JLabelAriketa() {
