@@ -29,7 +29,6 @@ public class GehituKategoria extends JFrame {
 
 
         setJMenuBar(menuBar);
-        UIManager.put("MenuBar.background", Color.GREEN);
 
 
         setTitle("GEHITU KATEGORIA");
@@ -39,7 +38,7 @@ public class GehituKategoria extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
-    public static void main(String[] args) {
-        new GehituKategoria();
-    }
+    //public static void main(String[] args) {
+    //    new GehituKategoria();
+    //}
 }
