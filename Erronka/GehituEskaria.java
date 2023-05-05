@@ -29,7 +29,7 @@ public class GehituEskaria extends JFrame {
         jLabel1.setFont(fontNueva1);
         add(jLabel1);
 
-        jLabel2.setBounds(200,125,200,50);
+        jLabel2.setBounds(200,350,200,50);
         setLayout(null);
         Font fontActual2 = jLabel2.getFont();
         Font fontNueva2 = fontActual2.deriveFont(fontActual2.getSize()+10f);
@@ -56,7 +56,7 @@ public class GehituEskaria extends JFrame {
         jLabel4.setFont(fontNueva4);
         add(jLabel4);
 
-        jLabel5.setBounds(200,350,200,50);
+        jLabel5.setBounds(200,125,200,50);
         setLayout(null);
         Font fontActual5 = jLabel5.getFont();
         Font fontNueva5 = fontActual2.deriveFont(fontActual5.getSize()+10f);
