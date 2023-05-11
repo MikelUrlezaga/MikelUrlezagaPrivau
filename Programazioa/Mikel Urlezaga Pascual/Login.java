@@ -1,7 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
+import java.lang.Integer;
 
-public class Login extends JFrame {
+public class Login extends JDialog {
    
    private JTextField jtf1;
    private JTextField jtf2;
@@ -10,7 +11,7 @@ public class Login extends JFrame {
    private String [] erabiltzaileak = {"ALBA","ASIER","SERGIO","JON","IZASKUN","MIKEL","IMANOL","ERIK","XABIER","NATALIA","ANDER"};
    private int [] pasahitzak = {111,222,333,444,555,666,777,888,999,000,101};
    private String erabiltzailea;
-   private String pasahitza;
+   private int pasahitza;
 
    
    public Login () {
@@ -30,33 +31,25 @@ public class Login extends JFrame {
       setSize(200,100);
       setLocationRelativeTo(null);
       setVisible(true);
-      
-      erabiltzailea = jtf1.getText();
-      pasahitza = jtf2.getText();
-      button.addActionListener(e -> Sartu(erabiltzailea, pasahitza, erabiltzaileak, pasahitzak));     
+      button.addActionListener(e -> Sartu());   
 }
 
       public static void main (String[] args){
          Login l = new Login ();
       }
-      
-      public void Sartu (String erabiltzailea, String pasahitza, erabiltzaileak, pasahitzak) {
-         
-         int zein;
-         
-         for (int i=0; i<11;i++){
-            if (erabiltzaileak [i]=erabiltzailea){
-               zein = i;
+
+      public void Sartu(){
+         erabiltzailea = jtf1.getText();
+         pasahitza = Integer.parseInt(""+jtf2.getText());
+         for (int i=0 ; i<=erabiltzaileak.length-1 ; i++){
+            if (erabiltzailea == erabiltzaileak[i]){
+               if (pasahitza == pasahitzak [i]){
+                  System.out.println("Sartu zara");
+               }
+               else{
+                  JOptionPane.showMessageDialog(null, "Este es un mensaje de ejemplo", "Título del mensaje", JOptionPane.INFORMATION_MESSAGE);
+               }   
             }
-            else{
-            
-            }
-         }
-         if (erabiltzailea[zein]=pasahitzak[zein]){
-         
-         }
-         else{
-         
          }
       }
 }
