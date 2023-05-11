@@ -2,7 +2,7 @@
 
 SELECT KODEA, IZENA FROM SAILAK;
 
-/*“1” kodea duen langileari dagozkion nomina egiaztagirien hilabetea eta urtea*/
+/*?1? kodea duen langileari dagozkion nomina egiaztagirien hilabetea eta urtea*/
 
 SELECT HILABETEA, URTEA FROM NOMINAK WHERE LANGILE_KODEA = 1;
 
@@ -42,7 +42,7 @@ SELECT SEMEALABAK, COUNT(KODEA) AS LANGILE_KOPURUA FROM LANGILEAK WHERE SEMEALAB
 
 SELECT SEMEALABAK, MAX(ATXIKIPENA) AS MAXIMOA, MIN(ATXIKIPENA) AS MINIMOA, AVG(ATXIKIPENA) AS BATASBESTE FROM LANGILEAK GROUP BY SEMEALABAK;
 
-/*“1” kodea duen sailean lan egin duten langileen izena eta eginkizuna*/
+/*?1? kodea duen sailean lan egin duten langileen izena eta eginkizuna*/
 
 SELECT L.IZENA, LA.EGINKIZUNA FROM LANGILEAK L, LANEAN LA WHERE SAIL_KODEA = 1 AND LA.LANGILE_KODEA = L.KODEA;
 
@@ -54,7 +54,7 @@ SELECT L.IZENA, S.IZENA AS SAILA, LA.EGINKIZUNA FROM LANGILEAK L, SAILAK S, LANE
 
 SELECT L.IZENA, S.IZENA AS SAILA FROM LANGILEAK L, SAILAK S WHERE L.SEMEALABAK = 0;
 
-/*“1” kodea duen langilearen izena, bere nomina egiaztagirien hilabete eta urtea, lerro zenbakia eta kantitatea*/
+/*?1? kodea duen langilearen izena, bere nomina egiaztagirien hilabete eta urtea, lerro zenbakia eta kantitatea*/
 
 SELECT L.IZENA, N.HILABETEA, N.URTEA, LE.ZENBAKIA, LE.KANTITATEA FROM LANGILEAK L, NOMINAK N, LERROAK LE WHERE L.KODEA = 1;
 
@@ -64,12 +64,28 @@ SELECT L.IZENA, N.HILABETEA, N.URTEA FROM LANGILEAK L, NOMINAK N, LANEAN LA, SAI
 
 /*Langilearen izena eta jasotako diru sarrera guztiak, langilearen izenaren arabera multzokatuta ----------------------------------*/
 
-SELECT L.IZENA, N.DIRUSARRERA FROM LANGILEAK L, NOMINAK N GROUP BY IZENA;
+SELECT L.IZENA, SUM(N.DIRUSARRERA) FROM LANGILEAK L, NOMINAK N WHERE L.KODEA = N.LANGILE_KODEA GROUP BY L.IZENA;
 
-/*2006. urtean 2800€ baino gehiago irabazi duten langileen izena ---------------------------------*/
+/*2006. urtean 2800? baino gehiago irabazi duten langileen izena*/
 
 SELECT L.IZENA FROM LANGILEAK L, LERROAK LE WHERE L.KODEA = LE.LANGILE_KODEA AND LE.URTEA = 2006 GROUP BY L.KODEA, L.IZENA HAVING SUM(KANTITATEA)>2800; 
 
 /*Langileen seme-alaba kopuruaren batez bestekoa baino seme-alaba gehiago dituzten langile kopurua*/
 
-SELECT COUNT(KODEA) FROM LANGILEAK WHERE AVG(SEMEALABAK) < SEMEALABAK;
+SELECT COUNT(KODEA) AS ZENBAT FROM LANGILEAK WHERE SEMEALABAK > (SELECT AVG(SEMEALABAK)FROM LANGILEAK);
+
+/*Seme-alaba gehien edo gutxien dituzten langileen izena*/
+
+SELECT IZENA FROM LANGILEAK WHERE SEMEALABAK = (SELECT MAX(SEMEALABAK) FROM LANGILEAK) OR SEMEALABAK = (SELECT MIN(SEMEALABAK) FROM LANGILEAK);
+
+/*Nominen egiaztagiririk ez duten langileen izena*/
+
+SELECT L.IZENA FROM LANGILEAK L, NOMINAK N WHERE L.KODEA NOT IN (SELECT LANGILE_KODEA FROM NOMINAK);
+
+/*Langile guztien izena eta jaioteguna*/
+
+SELECT IZENA, TO_CHAR(JAIOTZEDATA, 'DD/MM/YY') AS DATA FROM LANGILEAK;
+
+/*Langile guztien izena eta jaioteguna, "2000ko urtarrilaren 1a" formatuarekin, eta zutabea “data” gisa etiketatuta*/
+
+
