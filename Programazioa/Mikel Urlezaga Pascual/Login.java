@@ -42,12 +42,12 @@ public class Login extends JDialog {
          erabiltzailea = jtf1.getText();
          pasahitza = Integer.parseInt(""+jtf2.getText());
          for (int i=0 ; i<=erabiltzaileak.length-1 ; i++){
-            if (erabiltzailea == erabiltzaileak[i]){
+            if (erabiltzailea.equals(erabiltzaileak[i])){
                if (pasahitza == pasahitzak [i]){
                   System.out.println("Sartu zara");
                }
                else{
-                  JOptionPane.showMessageDialog(null, "Este es un mensaje de ejemplo", "Título del mensaje", JOptionPane.INFORMATION_MESSAGE);
+                  JOptionPane.showMessageDialog(null, "PASAHITZA TXARTU SARTUTA", "Mu mal", JOptionPane.INFORMATION_MESSAGE);
                }   
             }
          }
