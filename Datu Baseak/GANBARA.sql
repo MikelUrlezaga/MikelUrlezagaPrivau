@@ -89,3 +89,29 @@ SELECT IZENA, TO_CHAR(JAIOTZEDATA, 'DD/MM/YY') AS DATA FROM LANGILEAK;
 /*Langile guztien izena eta jaioteguna, "2000ko urtarrilaren 1a" formatuarekin, eta zutabea “data” gisa etiketatuta*/
 
 
+
+/*Langileen izena, lan egin duten sailen izena eta sail bakoitzean egindako eginkizuna (letra larriz)*/
+
+
+
+/*Langile guztien izena, jaioteguna eta jaiotegunaren asteko egunaren izena*/
+
+
+
+/*Langileen izena eta adina*/
+
+
+
+/*50 urte baino gutxiago izan eta seme-alabak dituzten langileen izena, adina eta seme-alaba kopurua*/
+
+
+
+/*Sail batean baino gehiagotan lan egin duten langileen izena, adina eta sailaren izena*/
+
+
+
+/*Adina 3ren multiploa duten langileen izena, adina eta kontu-zenbakia*/
+
+
+
+/*Langile gazteenaren eta nagusienaren izena eta jasotako diru sarrerak.*/
