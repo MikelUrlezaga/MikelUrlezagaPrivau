@@ -11,8 +11,8 @@ public class AdibideDatuBase {
       Statement stnt = null;
       ResultSet rs = null;
       String url = "jdbc:oracle:thin:@localhost:1521/xepdb1";
-      String user = "LOREZAINTZA";
-      String pass = "LOREZAINTZA";
+      String user = "Mikel";
+      String pass = "MIKEL";
       try {
           conn = DriverManager.getConnection(url, user, pass);
           stnt = conn.createStatement();

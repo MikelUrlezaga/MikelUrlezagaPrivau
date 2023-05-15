@@ -15,9 +15,9 @@ public class DB {
    
    //zuen datuekin bete behar duzue
    public DB (){
-      this.url="";
-      this.user="";
-      this.pass="";
+      this.url="jdbc:oracle:thin:@localhost:1521/xepdb1";
+      this.user="Mikel";
+      this.pass="MIKEL";
    }
    
    //sortzailea parametroekin

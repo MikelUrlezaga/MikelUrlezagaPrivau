@@ -36,7 +36,8 @@ public class Login extends JDialog {
 
       public static void main (String[] args){
          /*Login l = new Login ();*/
-         Menu m = new Menu();
+         /*Menu m = new Menu();*/
+         Eguneratu e = new Eguneratu();
       }
 
       public void Sartu(){
