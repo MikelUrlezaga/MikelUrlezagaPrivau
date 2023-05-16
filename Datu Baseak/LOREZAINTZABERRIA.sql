@@ -48,11 +48,11 @@ ON L.NAGUSIKODEA = N.LANGILEKODEA
 WHERE N.IZENA='Alberto' 
 AND N.ABIZENA1='Soria';
 
--- "Representante Ventas" lanpostua ez duten langileen izen, abizen eta lanpostua. ????????????????????????????????????????????
+-- "Representante Ventas" lanpostua ez duten langileen izen, abizen eta lanpostua.
 
 SELECT IZENA, ABIZENA1, LANPOSTUA
 FROM LANGILEAK
-WHERE LANPOSTUA <> 'Representante Ventas';
+WHERE LANPOSTUA != 'Representante Ventas';
 
 -- "M" hizkitik hasten diren herrien bezero kopurua.
 

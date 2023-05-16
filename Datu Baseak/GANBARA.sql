@@ -1,4 +1,4 @@
-/*Sail guztien kodea eta izena*/
+ guztien kodea eta izena*/
 
 SELECT KODEA, IZENA FROM SAILAK;
 
