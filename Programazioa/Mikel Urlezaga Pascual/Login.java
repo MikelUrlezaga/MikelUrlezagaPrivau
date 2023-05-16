@@ -36,8 +36,7 @@ public class Login extends JDialog {
 
       public static void main (String[] args){
          /*Login l = new Login ();*/
-         /*Menu m = new Menu();*/
-         Eguneratu e = new Eguneratu();
+         DB d = new DB();
       }
 
       public void Sartu(){
@@ -46,7 +45,10 @@ public class Login extends JDialog {
          for (int i=0 ; i<=erabiltzaileak.length-1 ; i++){
             if (erabiltzailea.equals(erabiltzaileak[i])){
                if (pasahitza == pasahitzak [i]){
-                  System.out.println("Sartu zara");
+                  
+                  Menu m = new Menu();
+                  dispose();
+
                }
                else{
                   JOptionPane.showMessageDialog(null, "PASAHITZA TXARTU SARTUTA", "Mu mal", JOptionPane.INFORMATION_MESSAGE);

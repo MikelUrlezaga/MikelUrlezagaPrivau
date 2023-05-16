@@ -15,10 +15,13 @@ public class Menu extends JFrame {
 
         jmenu.setText("Zereginak");
         item.setText("Eguneratu");
+        item.addActionListener (e -> eguneratu());
+        
 
         jmenu.add(item);
         jmenubar.add(jmenu);
         setJMenuBar(jmenubar);
+
 
 
         setTitle("Menu Nagusia");
@@ -26,5 +29,10 @@ public class Menu extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);    
+    }
+
+    public void eguneratu(){
+        dispose();
+        Eguneratu e = new Eguneratu ();
     }
 }

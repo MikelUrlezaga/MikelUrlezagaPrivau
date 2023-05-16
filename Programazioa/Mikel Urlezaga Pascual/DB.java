@@ -16,8 +16,9 @@ public class DB {
    //zuen datuekin bete behar duzue
    public DB (){
       this.url="jdbc:oracle:thin:@localhost:1521/xepdb1";
-      this.user="Mikel";
-      this.pass="MIKEL";
+      this.user="LOREZAINTZA";
+      this.pass="LOREZAINTZA";
+      konexioa();
    }
    
    //sortzailea parametroekin
@@ -33,7 +34,8 @@ public class DB {
       Connection conn = null;
       try{
          conn = DriverManager.getConnection(url, user, pass);
-         return conn;
+         System.out.println("Konexio eginda");
+         return conn;  
       } catch (Exception e){
          System.out.println("Konexio errorea: "+e);
       }
