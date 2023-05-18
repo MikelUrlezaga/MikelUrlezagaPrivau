@@ -1,30 +1,34 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class Eguneratu extends JDialog {
+public class Eguneratu extends DB {
     
     private JButton boton;
-    private JComboBox combo;
+    private JComboBox <Integer> combo = new JComboBox<>();
     private JTextField textfield;
     private JPanel panel;
+    private JDialog jd;
 
     public Eguneratu(){
 
         boton=new JButton("Eguneratu");
-        combo=new JComboBox();
+        for (int j = 0; j < idak.length; j++) {
+            combo.addItem(idak[j]);
+        }
         textfield=new JTextField("tlfno");
         panel=new JPanel();
+        jd=new JDialog();
 
         panel.add(combo);
         panel.add(textfield);
         panel.add(boton);
-        add(panel);
+        jd.add(panel);
 
 
-        setTitle("Erabiltzailea eguneratu");
-        setSize(200,100);
-        setLocationRelativeTo(null);
-        setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-        setVisible(true);  
+        jd.setTitle("Erabiltzailea eguneratu");
+        jd.setSize(200,100);
+        jd.setLocationRelativeTo(null);
+        jd.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+        jd.setVisible(true);  
     }
 }

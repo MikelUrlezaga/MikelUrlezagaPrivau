@@ -35,8 +35,9 @@ public class Login extends JDialog {
 }
 
       public static void main (String[] args){
-         /*Login l = new Login ();*/
-         DB d = new DB();
+         //Login l = new Login ();
+         Eguneratu d = new Eguneratu();
+         
       }
 
       public void Sartu(){
@@ -51,7 +52,7 @@ public class Login extends JDialog {
 
                }
                else{
-                  JOptionPane.showMessageDialog(null, "PASAHITZA TXARTU SARTUTA", "Mu mal", JOptionPane.INFORMATION_MESSAGE);
+                  JOptionPane.showMessageDialog(null, "PASAHITZA TXARTO SARTUTA", "Mu mal", JOptionPane.INFORMATION_MESSAGE);
                }   
             }
          }
