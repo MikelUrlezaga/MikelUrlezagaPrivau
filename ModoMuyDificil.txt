@@ -1,28 +1,17 @@
 Prog:
 
-	- Arreglar mis apuntes desde un inicio y probar con ariketas
+	- Hacer lo que queda de examen
+	- Arreglar los apuntes
+	- Preparar el eraskina
 
 Datu-Baseak:
 
-	-
-
-Sistemak:
-
-	- Preparar el examen
-	- Buenos apuntes de Linux
+	- Mirar las ariketas y probar su funcionamineto
+	- Arreglar los apuntes
+	- Preparar el eraskina
 
 Lenguajes:
 
-	- Preparar examenes
-	- HTML / CSS / XML / DTD / XSD
+	- Preparar entorno para trabajar
 	- XPath
 	- XSLT
-
-Garapen:
-
-	- Entender lo que tenemos que hacer y preparar apuntes para ello
-	- Proba (Kasuak / Faseak) / Kutxa Zuria / Kutxa Beltza
-	- Proba automatikoak (JUnit)
-	- Depurazioa (Akatsak zuzendu)
-	- Birfaktorizatu
-	- Kodea analizatu (PMD)
