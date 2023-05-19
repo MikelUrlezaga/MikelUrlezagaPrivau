@@ -111,7 +111,7 @@ FROM ESKAERAZEHAZTAZUNAK;
 
 SELECT SUM(KOPURUA*PREZIOA) AS ZERGAOINARRIA, 0.21*SUM(KOPURUA*PREZIOA) AS BEZA, 1.21*SUM(KOPURUA*PREZIOA) AS TOTALA
 FROM ESKAERAZEHAZTAZUNAK;
--- Ordainketarik egin ez duten bezeroen izena, beraien salerosketa ordezkariaren izenarekin batera.
+--18. Ordainketarik egin ez duten bezeroen izena, beraien salerosketa ordezkariaren izenarekin batera.
 SELECT B.BEZEROKODEA, B.BEZEROIZENA, L.IZENA
 FROM BEZEROAK B INNER JOIN LANGILEAK L
 ON B.SALEROSKETALANGILEKODEA = L.LANGILEKODEA
@@ -272,7 +272,7 @@ USING (BEZEROKODEA)
 WHERE HERRIA LIKE 'M%'
 GROUP BY BEZEROIZENA, HERRIA;
 
--- 3000� baino gehiago fakturatu duten produktuen salmenta 
+-- 3000  baino gehiago fakturatu duten produktuen salmenta 
 -- kopuru totala. Produktuaren izena, saldutako unitate kopurua, 
 -- fakturatutako totala eta fakturatutako totala zergak barne (BEZ %21a)
 SELECT P.IZENA, SUM(E.KOPURUA*E.PREZIOA) AS FAKTURATOTALA, 

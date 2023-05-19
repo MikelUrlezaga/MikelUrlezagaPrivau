@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"CODE"},{"l":"CODE.Aldaketak"},{"l":"CODE.Funtzioak"},{"l":"CODE.Kontsultak"}];updateSearchResults();
