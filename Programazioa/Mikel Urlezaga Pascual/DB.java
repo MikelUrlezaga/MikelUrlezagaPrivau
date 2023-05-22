@@ -45,8 +45,6 @@ public class DB {
          statement=conn.createStatement();
 
 
-         System.out.println("Konexio eginda");
-
       } catch (Exception e){
          System.out.println("Konexio errorea: "+e);
       }
@@ -85,13 +83,13 @@ public class DB {
 
          dena [dena.length-1] = ""+rs.getInt("BEZEROKODEA") + " " +rs.getString("BEZEROIZENA") + " " + rs.getString("KONTAKTUIZENA") + " " + rs.getString("KONTAKTUABIZENA") + " " + rs.getString("TELEFONOA") + " " + rs.getString("FAX") + " " + rs.getString("HELBIDELERROA1") + " " + rs.getString("HELBIDELERROA2") + " " + rs.getString("HERRIA") + " " + rs.getString("ESKUALDEA") + " " + rs.getString("HERRIALDEA") + " " + rs.getString("POSTAKODEA") + " " + rs.getInt("SALEROSKETALANGILEKODEA") + " " + rs.getString("KREDITUMUGA"); 
 
-       
-      
 
       }
+
       conn.close();
       statement.close();
       rs.close();
+
       } catch (SQLException e) {
          System.out.println("ERROREA: " + e);
       }
@@ -146,7 +144,6 @@ public class DB {
 
       } catch(SQLException e){
         System.out.println("ERROREA: " + e);
-        e.printStackTrace();
       }
       
       Menu m = new Menu();
