@@ -1,7 +1,5 @@
 Prog:
 
-	- Pasar el programa a git
-	- Hacer lo que queda de examen
 	- Arreglar los apuntes
 	- Preparar el eraskina
 
