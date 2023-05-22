@@ -66,17 +66,6 @@ public class DB {
   }
 
 
-   protected void aldaketak() {
-
-      String aldaketa = "UPDATE BEZEROAK SET TELEFONOA = ? WHERE BEZEROKODEA = ?";
-
-      try {
-         rs = statement.executeQuery(aldaketa);
-      } catch (Exception e) {
-        System.out.println("ERROREA: " + e);
-      }
-
-   }
 
    // 1   SELECT * FROM BEZEROAK
    public String [] bezeroguztiak (){
@@ -138,18 +127,29 @@ public class DB {
       return idak;
    }
    // 3   UPDATE BEZEROAK SET TELEFONOA = ? WHERE BEZEROKODEA = ?
-   /*public aldaketa (String telefonoa){
+   public void aldaketa (String telefonoa, int id){
 
       String aldaketa = "UPDATE BEZEROAK SET TELEFONOA = ? WHERE BEZEROKODEA = ?";
 
+      konexioa();
 
-      try{
+     try{
 
-         konexioa();
-         aldaketak();
-         
+         PreparedStatement pS = conn.prepareStatement(aldaketa);
+         pS.setString(1, telefonoa);
+         pS.setInt(2, id);
+         pS.executeUpdate();
+         pS.close();
+         rs.close();
+         conn.close();
+
+
       } catch(SQLException e){
-
+        System.out.println("ERROREA: " + e);
+        e.printStackTrace();
       }
-   }*/
+      
+      Menu m = new Menu();
+      
+   }
 }
