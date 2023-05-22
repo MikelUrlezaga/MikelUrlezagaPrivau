@@ -35,13 +35,9 @@ public class Login extends JDialog {
 }
 
       public static void main (String[] args){
-<<<<<<< HEAD
+
          Login l = new Login ();
-         //Eguneratu d = new Eguneratu();
-=======
-         //Login l = new Login ();
-         Eguneratu d = new Eguneratu();
->>>>>>> 67770de223d7b9793e375955db30e768b94dee35
+
          
       }
 
