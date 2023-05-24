@@ -1,6 +1,5 @@
 Prog:
 
-	- Arreglar los apuntes
 	- Preparar el eraskina
 
 Datu-Baseak:
