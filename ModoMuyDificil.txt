@@ -1,12 +1,11 @@
 Prog:
 
-	- Preparar el eraskina
 
 Datu-Baseak:
 
 	- Mirar las ariketas y probar su funcionamineto
 	- Arreglar los apuntes
-	- Preparar el eraskina
+	- Preparar el eraskina (SQL - PL/SQL)
 
 Lenguajes:
 
