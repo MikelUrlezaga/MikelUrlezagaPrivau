@@ -1,0 +1,16 @@
+Laukia = entitatea
+Borobila = atributua
+borobil bikoitza = atributu multibalioa
+borobila hutsuneekin = atributu deribatua (jakin daiteke beste datuekin)
+Borobilean azpimarratuta = gako nagusia
+Erronboa = erlazioa
+
+
+flecha del minimo al que puede haber muchos
+con 1:N si hay posibilidades de cantitad por una parte
+- 1:N se pone en la parte contraria de las entidades, 1 al que es minimo y N al que puede ser muchos (x  1:N  y) siendo y minimo y x el que puede ser multi 
+(se escribe con mayus y sin parentesis)
+
+relaciones pequeñas son en la parte contraria dando a conocer minimo y max
+- puede ser 0 (como que haya 0 goles)
+(se escribe con minus y con parentesis)
