@@ -1,4 +1,5 @@
 Laukia = entitatea
+Laukia hutsuneekin = entitate deribatua (beharreskoa datu gehiago)
 Borobila = atributua
 borobil bikoitza = atributu multibalioa
 borobila hutsuneekin = atributu deribatua (jakin daiteke beste datuekin)
@@ -14,3 +15,4 @@ con 1:N si hay posibilidades de cantitad por una parte
 relaciones pequeñas son en la parte contraria dando a conocer minimo y max
 - puede ser 0 (como que haya 0 goles)
 (se escribe con minus y con parentesis)
+
