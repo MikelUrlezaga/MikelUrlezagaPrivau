@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="eskaria.xsl" type="text/xsl"?>
+<eskaria id="105">
+    <eskaera_data>Larunbata, Urriak 17, 2020</eskaera_data>
+    <egoera id="1">Zain</egoera>
+    <bezeroa id="1">
+        <izena>Flor</izena>
+        <abizena>Stone</abizena>
+        <helbidea>514 W Superior St, Kokomo, IN</helbidea>
+        <emaila>flor.stone@raytheon.com</emaila>
+        <abatar>thumb-6.png</abatar>
+        <telefonoak>
+            <zenbakia>+13171234104</zenbakia>
+        </telefonoak>
+    </bezeroa>
+    <saltzailea id="54">
+        <erabiltzailea>lfisher</erabiltzailea>
+        <pasahitza>lfisher</pasahitza>
+        <izena>Lily</izena>
+        <abizena>Fisher</abizena>
+        <emaila>lily.fisher@example.com</emaila>
+        <telefonoa>011.44.1344.498718</telefonoa>
+        <kontratazio_data>30/03/16</kontratazio_data>
+        <id_nagusi>15</id_nagusi>
+        <abatar>thumb-4.png</abatar>
+    </saltzailea>
+    <lerroak>
+        <item id="6">
+            <kopurua>79</kopurua>
+            <salneurria>899,99</salneurria>
+            <produktua id="183">
+                <izena>Asus GTX780TI-3GD5</izena>
+                <deskribapena>Chipset:GeForce GTX 780 Ti,Memory:3GBCore Clock:876MHz</deskribapena>
+                <irudia>product-183.jpeg</irudia>
+                <balioa>781.91</balioa>
+                <salneurria>899.99</salneurria>
+                <kategoria id="2">Video Card</kategoria>
+            </produktua>
+        </item>
+        <item id="1">
+            <kopurua>116</kopurua>
+            <salneurria>443,72</salneurria>
+            <produktua id="31">
+                <izena>Supermicro MBD-X10DAX</izena>
+                <deskribapena>CPU:LGA2011-3 x 2,Form Factor:EATX,RAM Slots:16,Max RAM:</deskribapena>
+                <irudia>product-31.jpeg</irudia>
+                <balioa>385.24</balioa>
+                <salneurria>443.72</salneurria>
+                <kategoria id="4">Mother Board</kategoria>
+            </produktua>
+        </item>
+        <item id="2">
+            <kopurua>67</kopurua>
+            <salneurria>1751,99</salneurria>
+            <produktua id="242">
+                <izena>Intel Xeon E5-1680 V3 (OEM/Tray)</izena>
+                <irudia>product-242.jpeg</irudia>
+                <deskribapena>Speed:3.2GHz,Cores:8,TDP:140W</deskribapena>
+                <balioa>1519.85</balioa>
+                <salneurria>1751.99</salneurria>
+                <kategoria id="1">CPU</kategoria>
+            </produktua>
+        </item>
+        <item id="3">
+            <kopurua>45</kopurua>
+            <salneurria>399,99</salneurria>
+            <produktua id="275">
+                <izena>MSI X99A GODLIKE GAMING</izena>
+                <irudia>product-275.jpeg</irudia>
+                <deskribapena>CPU:LGA2011-3,Form Factor:EATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+                <balioa>302.95</balioa>
+                <salneurria>399.99</salneurria>
+                <kategoria id="4">Mother Board</kategoria>
+            </produktua>
+        </item>
+        <item id="4">
+            <kopurua>80</kopurua>
+            <salneurria>645,99</salneurria>
+            <produktua id="138">
+                <izena>G.Skill Ripjaws V Series</izena>
+                <irudia>product-138.jpeg</irudia>
+                <deskribapena>Speed:DDR4-3000,Type:288-pin DIMM,CAS:14Module:4x16GBSize:64GB</deskribapena>
+                <balioa>499.09</balioa>
+                <salneurria>645.99</salneurria>
+                <kategoria id="5">Storage</kategoria>
+            </produktua>
+        </item>
+        <item id="5">
+            <kopurua>77</kopurua>
+            <salneurria>809,99</salneurria>
+            <produktua id="103">
+                <izena>EVGA 11G-P4-6598-KR</izena>
+                <irudia>product-103.jpeg</irudia>
+                <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.56GHz</deskribapena>
+                <balioa>663.54</balioa>
+                <salneurria>809.99</salneurria>
+                <kategoria id="2">Video Card</kategoria>
+            </produktua>
+        </item>
+    </lerroak>
+</eskaria>

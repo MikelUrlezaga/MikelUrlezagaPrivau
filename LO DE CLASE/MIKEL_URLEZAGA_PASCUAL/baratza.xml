@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<baratza xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="baratza.xsd">
+  <landarea code="01">
+    <izena>Izpilikua</izena>
+    <familia>Lamiazeoa</familia>
+    <jatorria>Mediterraneoa</jatorria>
+    <kolorea>Morea</kolorea>
+  </landarea>
+  <landarea code="02">
+    <izena>Menda</izena>
+    <familia>Lamiazeoa</familia>
+    <jatorria>Europa eta Asia</jatorria>
+    <kolorea>Berdea</kolorea>
+  </landarea>
+  <landarea code="03">
+    <izena>Erromeroa</izena>
+    <familia>Lamiazeoa</familia>
+    <jatorria>Mediterraneoa</jatorria>
+    <kolorea>Berdea</kolorea>
+  </landarea>
+  <barazkia code="04">
+    <izena>Tomatea</izena>
+    <familia>Solanazeoa</familia>
+    <jatorria>Erdi eta Hego Amerika</jatorria>
+    <kolorea>Gorria</kolorea>
+    <noiz_landatu>
+      <hilabetea>Maiatza</hilabetea>
+      <hilabetea>Ekaina</hilabetea>
+    </noiz_landatu>
+    <noiz_jaso>
+      <hilabetea>Uztaila</hilabetea>
+      <hilabetea>Abuztua</hilabetea>
+      <hilabetea>Iraila</hilabetea>
+      <hilabetea>Urria</hilabetea>
+      <hilabetea>Azaroa</hilabetea>
+    </noiz_jaso>
+  </barazkia>
+  <barazkia code="05">
+    <izena>Leka</izena>
+    <familia>Lekaduna</familia>
+    <jatorria>Erdi eta Hego Amerika</jatorria>
+    <kolorea>Berdea</kolorea>
+    <noiz_landatu>
+      <hilabetea>Maiatza</hilabetea>
+      <hilabetea>Ekaina</hilabetea>
+      <hilabetea>Uztaila</hilabetea>
+    </noiz_landatu>
+    <noiz_jaso>
+      <hilabetea>Maiatza</hilabetea>
+      <hilabetea>Ekaina</hilabetea>
+      <hilabetea>Uztaila</hilabetea>
+      <hilabetea>Abuztua</hilabetea>
+      <hilabetea>Iraila</hilabetea>
+      <hilabetea>Urria</hilabetea>
+      <hilabetea>Azaroa</hilabetea>
+    </noiz_jaso>
+  </barazkia>
+</baratza>

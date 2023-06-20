@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="baratza" type="TBaratza"/>
+
+    <xs:complexType name="TBaratza">
+        <xs:sequence>
+            <xs:element name="landarea" type="TLandarea" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element name="barazkia" type="TBarazkia" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TLandarea">
+            <xs:sequence>
+                <xs:element name="izena" type="xs:string" />
+                <xs:element name="familia" type="xs:string" />
+                <xs:element name="jatorria" type="xs:string" />
+                <xs:element name="kolorea" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="code" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="TBarazkia">
+        <xs:sequence>
+            <xs:element name="izena" type="xs:string" />
+            <xs:element name="familia" type="xs:string" />
+            <xs:element name="jatorria" type="xs:string" />
+            <xs:element name="kolorea" type="xs:string" />
+            <xs:element name="noiz_landatu" type="TLandatu" />
+            <xs:element name="noiz_jaso" type="TJaso" />
+        </xs:sequence>
+        <xs:attribute name="code" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="TLandatu">
+        <xs:sequence>
+            <xs:element name="hilabetea" type="THilabete" maxOccurs="unbounded" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TJaso">
+        <xs:sequence>
+            <xs:element name="hilabetea" type="THilabete" maxOccurs="unbounded" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="THilabete">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Urtarrila"/>
+            <xs:enumeration value="Otsaila"/>
+            <xs:enumeration value="Martzoa"/>
+            <xs:enumeration value="Apirila"/>
+            <xs:enumeration value="Maiatza"/>
+            <xs:enumeration value="Ekaina"/>
+            <xs:enumeration value="Uztaila"/>
+            <xs:enumeration value="Abuztua"/>
+            <xs:enumeration value="Iraila"/>
+            <xs:enumeration value="Urria"/>
+            <xs:enumeration value="Azaroa"/>
+            <xs:enumeration value="Abendua"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,147 @@
+/**
+ * (+ 0,75)
+ * Grid moduan biztarazi etiketa:
+ *  - 2 zutabe
+ *  - 2 errenkada
+ *  - 5px-eko tartea errenkada eta zutabe artean
+ *  5px-eko barne tartea.
+ *  Atzeko planoa zuriz.
+ */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
+    margin: 5px;
+    border: 5px solid white;
+    background-color: white;
+}
+
+body{
+
+    width: 80%;
+    margin: 0 auto;
+    background: darkkhaki;
+
+}
+
+a.active {
+    
+}
+
+#solanazeoak {
+
+    background-color: orange;
+    border-color: darkorange;
+
+}
+
+main h2{
+
+    text-align: center;
+
+}
+
+#liliazeoak {
+
+    background-color: coral;
+    border-color: chocolate;
+
+}
+
+div #lekadunak {
+
+    background-color: lightblue;
+    border-color: cadetblue;
+
+}
+
+div #kurkubitazeoak {
+
+    background-color: lightgreen;
+    border-color: grey;
+
+}
+
+#footer {
+
+    text-align: center;
+    margin: 5em;
+
+}
+
+/**
+ * (+ 0,15)
+ * Esteka guztiei hurrengo ezaugarriak ezarri
+ */
+a {
+    text-decoration: none;
+    color: darkred;
+}
+
+/**
+ * (+ 0,2)
+ * Esteka baten gainean sagua dagoenean hurrengo ezaugarria ezarri
+ */
+a:hover {
+    color: red;
+}
+
+/**
+ * (+ 0,15)
+ * Irudi guztiei hurrengo ezaugarriak ezarri
+ */
+img {
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
+.vegetables {
+    padding: 1em 0;
+}
+
+/**
+ * (+ 0,25)
+ * Zerrendatzen diren barazki item bakoitzari hurrengo ezaugarriak ezarri
+ */
+.vegetable {
+    width: 80%;
+    margin: 1em auto;
+    background-color: white;
+}
+
+/**
+ * (+ 0,5)
+ * Solanazeoak diren barazki item bakoitzari hurrengo ezaugarria ezarri
+ */
+#solanazeoak div {
+    border: 1px solid darkorange;
+    background-color: darkorange;
+}
+
+/**
+ * (+ 0,5)
+ * Liliazeoak diren barazki item bakoitzari hurrengo ezaugarria ezarri
+ */
+#liliazeoak {
+    border: 1px solid chocolate;
+    background-color: chocolate;
+}
+
+/**
+ * (+ 0,5)
+ * Lekadunak diren barazki item bakoitzari hurrengo ezaugarria ezarri
+ */
+#lekadunak {
+    border: 1px solid cadetblue;
+    background-color: lightblue;
+}
+
+/**
+ * (+ 0,5)
+ * Kurkubitazeoak diren barazki item bakoitzari hurrengo ezaugarria ezarri 
+ */
+#kurkubitazeoak {
+    border: 1px solid grey;
+    background-color: lightgreen;
+}
