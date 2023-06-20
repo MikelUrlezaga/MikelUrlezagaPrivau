@@ -23,6 +23,7 @@ public class Menu extends JFrame {
 
         jmenu.setText("Zereginak");
         item.setText("Eguneratu");
+        
         for(int i=0; i<=(dana.length-1); i++){
             if (i==0) {
                 txtarea.setText(dana[i]);
@@ -49,5 +50,6 @@ public class Menu extends JFrame {
     public void eguneratu(){
         dispose();
         Eguneratu e = new Eguneratu ();
+        
     }
 }

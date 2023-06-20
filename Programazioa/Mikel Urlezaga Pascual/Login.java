@@ -33,12 +33,10 @@ public class Login extends JDialog {
       setVisible(true);
       button.addActionListener(e -> Sartu());   
 }
-
       public static void main (String[] args){
 
          Login l = new Login ();
 
-         
       }
 
       public void Sartu(){
