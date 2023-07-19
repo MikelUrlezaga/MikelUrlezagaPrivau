@@ -1,5 +1,8 @@
 public class Hasiera {
     public static void main(String[] args) {
-        System.out.println("Kaixo");
+        String firstName = "John ";
+        String lastName = "Doe";
+        String fullName = firstName + lastName;
+        System.out.println(fullName);
     }
 }
