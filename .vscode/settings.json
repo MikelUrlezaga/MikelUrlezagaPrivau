@@ -1,6 +1,7 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "Programazioa\\AdibLorezaintza\\lib\\ojdbc8.jar"
+        "Programazioa\\AdibLorezaintza\\lib\\ojdbc8.jar",
+        "Programazioa\\Mikel Urlezaga Pascual\\ojdbc8.jar"
     ]
 }
