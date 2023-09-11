@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript-ekin irudiak aldatu</h1>
+
+        <img id="nireIrudia" onclick="aldatuIrudia()" src="Logo Principal.jpg">
+    
+        <p>Egin klik irudiaren gainean aldatzeko</p>
+
+        <script>
+            function aldatuIrudia()
+            {
+                var image = document.getElementById('nireIrudia');
+                if (image.src.match("Logo"))
+                {
+                    image.src ="pingueino-caballero-con-armadura-y-escudo-pegatina.webp";
+                }
+                else
+                {
+                    image.src = "Logo Principal.jpg";
+                }
+            }
+        </script>
+    </body>
+</html>
