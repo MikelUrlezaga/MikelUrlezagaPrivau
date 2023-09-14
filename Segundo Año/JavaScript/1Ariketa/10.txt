@@ -1,0 +1,6 @@
+1. Abiadura
+- Nabegatzaileak ejekutatzen denez, abiadura azkarragoa izanten soil da.
+2. Sinpletasuna
+- Java-n inspiratuta dagoenez, oso erreza da ulertzen beste programazio lenguaiekun konparatuta, adibidez C++.
+3. 
+https://www.freecodecamp.org/espanol/news/ventajas-y-desventajas-de-javascript/

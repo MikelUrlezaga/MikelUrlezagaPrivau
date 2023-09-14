@@ -1,0 +1,1 @@
+Java, programazio lenguai bat da eta Javascript script-erra. Java-n, makinan edo exploradore birtualean ejekutzaden diren programan sortzen dira eta JavaScripten sortzen diren aplikazioak, nabegatzailean.
