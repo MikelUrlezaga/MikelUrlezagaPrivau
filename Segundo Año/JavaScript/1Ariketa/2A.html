@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>2A</h1>
+
+        <img id="nireIrudia" onclick="aldatuIrudia()" src="Logo Principal.jpg">
+    
+        <p>Egin klik irudiaren gainean aldatzeko</p>
+
+        <script>
+            function aldatuIrudia()
+            {
+                var image = document.getElementById('nireIrudia');
+                if (image.src.match("Logo"))
+                {
+                    image.src ="pingueino-caballero-con-armadura-y-escudo-pegatina.webp";
+                }
+                else if(image.src.match("caballero"))
+                {
+                    image.src = "218381.jpg";
+                }
+                else if(image.src.match("218381"))
+                {
+                    image.src = "111111.jpg";
+                }
+                else if(image.src.match("111111"))
+                {
+                    image.src = "Logo Principal.jpg";
+                }
+            }
+        </script>
+    </body>
+</html>
