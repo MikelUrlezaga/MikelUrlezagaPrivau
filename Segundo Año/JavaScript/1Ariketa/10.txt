@@ -2,5 +2,15 @@
 - Nabegatzaileak ejekutatzen denez, abiadura azkarragoa izanten soil da.
 2. Sinpletasuna
 - Java-n inspiratuta dagoenez, oso erreza da ulertzen beste programazio lenguaiekun konparatuta, adibidez C++.
-3. 
-https://www.freecodecamp.org/espanol/news/ventajas-y-desventajas-de-javascript/
+3. Ospea
+- Edozein web-eko frontend-ean JavaScript daukagu eta gainera, modu askotako errekurtsoak ditugu hau ikasteko.
+4. Bateragarritasuna
+- Edozein webgunetan erabili daiteke eta gainera, Pearl eta PHP-ren laguntzarekin hobetuz.
+5. Server Load
+- Client-side denez, ez dira beharreskoak serbidore potenteak eta oso sinplea bada aplikazioa, ez da beharreskoa izango serbidorea ere.
+6. Interfaze sinpleak
+- JavaScript erabili daiteke diapositibekin eta funtzionalidade erabilgarriekin adibidez, arrastratzea eta soltaztea, erabiltzalearen experientzia asko hobetzen.
+7. Aldakortasuna
+- Erabiltzeko metodo asko daude. Gainera, aplikazio oso bat sortzeko posibilitatea ematen dizu.
+8. Aktualizazioak
+- ECMA International JavaScript eguneratuta egoteko lana hartu du eta 2017-tik aurrera soportea izan dugu.
