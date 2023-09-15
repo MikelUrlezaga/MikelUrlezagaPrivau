@@ -11,7 +11,7 @@
             echo " ";
 
             while ($a <= 9) {
-                //while honek, gehiuran gordetzen ditu aurreko baloreak eta zenbaki hausazko berriaren gehitura, gero erakusten du
+                //while honek, gehituran gordetzen ditu aurreko baloreak eta zenbaki hausazko berriaren gehitura, gero erakusten du
                 $gehitura = $gehitura + $zenbakia;
                 $zenbakia = rand(0,50);
                 echo $gehitura;
