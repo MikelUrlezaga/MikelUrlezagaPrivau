@@ -7,12 +7,12 @@
 
                     $gehitura = 0;
                     $array = array(array("ikaslea" => "Jon", "nota" => 8) ,array("ikaslea" => "Ane", "nota" => 9), array("ikaslea" => "Markel", "nota" => 7));
-                    
+                    $batas = 0;
                     foreach ($array as $value) {?>
                         <tr bgcolor="white">
                         <?php
                         $zenbakia = 0;
-                        $batas = 0;
+                        
                         foreach ($value as $key) {
                             $zenbakia++;
                             if ($zenbakia%2 == 0) {
