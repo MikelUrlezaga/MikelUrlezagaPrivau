@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="2A.css">
+        <script>
+            function Funtzioa1() {
+                var x=4;
+                var y=4;
+                for (let i = 0; i < 7; i++){
+                    
+                    for (let a = 1; a < 8; a++){
+                        document.write("<span>");
+                        if (a==x || a==y) {
+                            document.write("*");
+                        }
+                        else {
+                            document.write("&nbsp");
+                        }
+                        document.write("</span>");
+
+                    }
+
+                    document.write("<br>");
+                    
+                    if (i <= 2) {
+                        x=x-1;
+                        y=y+1;
+                    }
+                    else{
+                        x=x+1;
+                        y=y-1;
+                    }
+
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h1>2A</h1>
+
+        <button type="button" onclick="Funtzioa1()">1.Erantzuna</button>
+    
+        <p>Egin klik errombo bat ikusteko</p>
+
+
+    </body>
+</html>
