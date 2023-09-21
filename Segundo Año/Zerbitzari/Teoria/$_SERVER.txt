@@ -1,0 +1,19 @@
+$_SERVER['HTTP_USER_AGENT']: Contiene información sobre el agente de usuario del cliente (navegador web) que hizo la solicitud HTTP.
+
+$_SERVER['REMOTE_ADDR']: Muestra la dirección IP del cliente que realizó la solicitud.
+
+$_SERVER['REQUEST_METHOD']: Indica el método de solicitud HTTP utilizado (GET, POST, etc.).
+
+$_SERVER['SCRIPT_FILENAME']: Muestra la ruta completa al archivo del script que se está ejecutando.
+
+$_SERVER['SERVER_NAME']: Proporciona el nombre del servidor web.
+
+$_SERVER['SERVER_PORT']: Muestra el puerto del servidor web utilizado (por ejemplo, 80 para HTTP estándar).
+
+$_SERVER['QUERY_STRING']: Contiene la cadena de consulta (query string) de la URL si está presente.
+
+$_SERVER['HTTP_REFERER']: Indica la URL de la página desde la cual se hizo la solicitud (si está disponible en el encabezado HTTP Referer).
+
+$_SERVER['HTTP_HOST']: Contiene el nombre de host de la solicitud actual.
+
+$_SERVER['HTTP_ACCEPT_LANGUAGE']: Muestra los idiomas que el cliente acepta para respuestas.
