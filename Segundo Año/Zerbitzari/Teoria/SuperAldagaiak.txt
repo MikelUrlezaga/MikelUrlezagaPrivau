@@ -1,0 +1,79 @@
+$GLOBALS ['Izena']: Izena aldagai globala erabiltzeko
+--------------------------------------------------------------------------------------------------------
+$_SERVER['HTTP_USER_AGENT']: Contiene información sobre el agente de usuario del cliente (navegador web) que hizo la solicitud HTTP.
+
+$_SERVER['REMOTE_ADDR']: Muestra la dirección IP del cliente que realizó la solicitud.
+
+$_SERVER['REQUEST_METHOD']: Indica el método de solicitud HTTP utilizado (GET, POST, etc.).
+
+$_SERVER['SCRIPT_FILENAME']: Muestra la ruta completa al archivo del script que se está ejecutando.
+
+$_SERVER['SERVER_NAME']: Proporciona el nombre del servidor web.
+
+$_SERVER['SERVER_PORT']: Muestra el puerto del servidor web utilizado (por ejemplo, 80 para HTTP estándar).
+
+$_SERVER['QUERY_STRING']: Contiene la cadena de consulta (query string) de la URL si está presente.
+
+$_SERVER['HTTP_REFERER']: Indica la URL de la página desde la cual se hizo la solicitud (si está disponible en el encabezado HTTP Referer).
+
+$_SERVER['HTTP_HOST']: Contiene el nombre de host de la solicitud actual.
+
+$_SERVER['HTTP_ACCEPT_LANGUAGE']: Muestra los idiomas que el cliente acepta para respuestas.
+--------------------------------------------------------------------------------------------------------
+$REQUEST['X']:En PHP, $_REQUEST es una variable superglobal que se utiliza para recopilar datos enviados a través de formularios HTML o mediante solicitudes HTTP POST o GET. Esta variable contiene tanto los datos enviados a través de la superglobal $_POST como los datos enviados a través de la superglobal $_GET, lo que la hace útil para obtener datos de formularios y solicitudes sin importar la forma en que se enviaron.
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Accede a datos enviados por POST a través de $_REQUEST
+    $nombre = $_REQUEST["nombre"];
+    $email = $_REQUEST["email"];
+    
+    // Hacer algo con los datos recibidos
+    echo "Nombre: " . $nombre . "<br>";
+    echo "Email: " . $email . "<br>";
+}
+?>
+
+<form method="post" action="">
+    <input type="text" name="nombre" placeholder="Nombre">
+    <input type="email" name="email" placeholder="Email">
+    <input type="submit" value="Enviar">
+</form>
+--------------------------------------------------------------------------------------------------------
+$_POST['x']: Formularioak bidali eta gero data lortzeko erabilia, POST metodoa erabilita
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Accede a datos enviados por POST a través de $_POST
+    $nombre = $_POST["nombre"];
+    $email = $_POST["email"];
+    
+    // Hacer algo con los datos recibidos
+    echo "Nombre: " . $nombre . "<br>";
+    echo "Email: " . $email . "<br>";
+}
+?>
+
+<form method="post" action="">
+    <input type="text" name="nombre" placeholder="Nombre">
+    <input type="email" name="email" placeholder="Email">
+    <input type="submit" value="Enviar">
+</form>
+--------------------------------------------------------------------------------------------------------
+$_GET['x']: inprimakiaren datuak biltzeko erabiltzen da, metodo="get"-rekin HTML inprimakia bidali ondoren.
+
+<?php
+if (isset($_GET["nombre"]) && isset($_GET["email"])) {
+    // Accede a datos enviados por GET a través de $_GET
+    $nombre = $_GET["nombre"];
+    $email = $_GET["email"];
+    
+    // Hacer algo con los datos recibidos
+    echo "Nombre: " . $nombre . "<br>";
+    echo "Email: " . $email . "<br>";
+}
+?>
+
+<a href="ejemplo.php?nombre=Juan&email=juan@example.com">Enviar datos por GET</a>
+--------------------------------------------------------------------------------------------------------
+
