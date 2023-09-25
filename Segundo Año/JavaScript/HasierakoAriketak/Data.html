@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>DATA</h1>
+    
+        <p id="laHora"></p>
+
+        <script>
+            //var texto = document.getElementById("laHora").innerHTML= x7;
+            var texto = document.getElementById("laHora");
+            setInterval(tiempo,1000);
+
+            function tiempo() {
+                var x7 = new Date();
+                if (x7.getHours()>12) {
+                    texto.innerHTML = x7.getHours() + ":" + x7.getMinutes() + ":" + x7.getSeconds() + " pm";
+                }else{
+                texto.innerHTML = x7.getHours() + ":" + x7.getMinutes() + ":" + x7.getSeconds() + " am";
+                }
+            }
+            //Para sumarle el 0 del inicio, separar en variables distintas y si es menor a 10, sumarle un "0" al string
+        </script>
+    </body>
+</html>
