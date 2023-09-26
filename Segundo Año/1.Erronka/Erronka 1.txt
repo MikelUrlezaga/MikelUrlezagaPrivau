@@ -1,0 +1,26 @@
+- GitHub
+
+DAW
+
+- Zerbitzaria eta honen konfigurazioa zelan egingo den
+- Bi Virtual hosts, bat frontend eta bestea backend (bi domeinuak)
+- MySQL
+- Taulak azaldu
+- Bertsio kontrolak egin
+- SSH, FTP eta Apache-ren erabilerak (Ziurtagiri Autofirmatua)
+- HTTP, HTTPS-ra
+- Ikerketa Txostena (Zer da bertsioa kontrolatzeko sistema bat, funtzionamendua, zein motak) eta biltegiaren esteka. 
+
+
+Entorno Cliente
+
+- Zer egongo da Frontend-ean
+- JavaScript, BOM, DOM, Cookiak, AJAX, JQuery
+- Frontend eta Zerbitzari arteko konexioa zelan egingo den azaldu
+
+
+- Web orrialdearen Mock-up (AdobeXD)
+- HTML5 eta CSS3
+
+
+- PHP
