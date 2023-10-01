@@ -1,0 +1,17 @@
+4.Diapo
+- Gure aplikazioaren aurkezpenarekin hasteko, honek zer egingo duen azalduko dut oraindik espezifikazioetan sarturik gabe eta azalpen generiko bat ematen.
+
+Zuen eskakizuna kontuan izanda non informatikako mintegiko ekipamenduaren stock-a kudeatzeko web aplikazio bat eskatzen zeniguten, aplikazioaren aurpegia diseinatuko dugu. Geroago erakutsiko dizuegu zelako izango den mock-up batekin. Zati honi funtzionalitateak emango diegu eta beharresko datuak hartu edo erakutsi. 
+
+Datuak hartzerakoan, konexioa egingo da backend-go zatiarekin eta geroago azalduko dituluga konexio desberdinak zelan egiten diren, zati honetik eskatzen dena kudeatu eta zerbitzariari eskatu informazioa edo honen aldaketa. Zerbitzariak bueltatuko du beharresko informazioa, kudeatu eta frotend-ean bistaratu aldaketak.
+
+8.Diapo
+- Web-aren aurpegia frontend-ean dago eta helburu nagusia beti izango da garbitasuna eta ulergarritasuna web orrialde guztian.
+Gainera kontuan izan beharko da responsive izatea edozein gailutik sartzeko edo tamaina aldeketen aurrean ordena mantentzeko.
+Kode guztia, mundu guztian jakina eta erabilian dugun visual studio koden egingo da aplikazio honek ematen digun errestasunak arazoen aurrean eta fidagarritasuna izaten punturik garratzitsuenak gure aukera hartzerakoan.
+Orrialdearen forma emateko html 5 erabiliko da, css 3 honen diseinu aldaketentzat eta javaScript funtzionalitatea ematen edo mugikortasuna. css3 ren gehigarri moduan, SASS estentzioa erabiliko da diseinuak hobetzeko gaitasunak ematen dituelako.
+
+9.Diapo
+- Frontend-etik backend-era konexioa egiteko JavaScript-eko api bat erabiliko dugu, Fetch duena izena. Zertarako den jakitzeko azalpen bat izango litzateke interfaze bat dela sareko eskareak egiteko, HTTP esakerak. Gehien bat erabiltzen da datuak lortzeko (GET), bidaltzeko (POST, PUT, DELETE) eta horrelako operazioak egiteko promesa bidezko metodo batekin asincrono dela.
+
+Zerbitzariak izango dugun domeinua non frontend-a gordeko den ikusten den hau da, geroago azalduko dugu domeinuen eta zerbitzarien kontua.  
