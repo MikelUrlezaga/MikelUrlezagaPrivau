@@ -1,5 +1,5 @@
 4.Diapo
-- Gure aplikazioaren aurkezpenarekin hasteko, honek zer egingo duen azalduko dut oraindik espezifikazioetan sarturik gabe eta azalpen generiko bat ematen.
+- Gure web orrialdearen aurkezpenarekin hasteko, honek zer egingo duen azalduko dut oraindik espezifikazioetan sarturik gabe eta azalpen generiko bat ematen.
 
 Zuen eskakizuna kontuan izanda non informatikako mintegiko ekipamenduaren stock-a kudeatzeko web aplikazio bat eskatzen zeniguten, aplikazioaren aurpegia diseinatuko dugu. Geroago erakutsiko dizuegu zelako izango den mock-up batekin. Zati honi funtzionalitateak emango diegu eta beharresko datuak hartu edo erakutsi. 
 
@@ -14,4 +14,4 @@ Orrialdeari forma emateko html 5 erabiliko da, css 3 honen diseinu aldaketentzat
 9.Diapo
 - Frontend-etik backend-era konexioa egiteko JavaScript-eko api bat erabiliko dugu, Fetch duena izena. Zertarako den jakitzeko azalpen bat izango litzateke interfaze bat dela sareko eskareak egiteko, HTTP esakerak. Gehien bat erabiltzen da datuak lortzeko (GET), bidaltzeko (POST, PUT, DELETE) eta horrelako operazioak egiteko promesa bidezko metodo batekin asincrono dela.
 
-Zerbitzariak izango dugun domeinua non frontend-a gordeko den ikusten den hau da, geroago azalduko dugu domeinuen eta zerbitzarien kontua.  
+Zerbitzarian izango dugun domeinua non frontend-a gordeko den ikusten den hau da, geroago azalduko dugu domeinuen eta zerbitzarien kontua.  
