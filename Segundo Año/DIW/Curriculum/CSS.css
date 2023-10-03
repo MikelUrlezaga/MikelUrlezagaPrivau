@@ -9,12 +9,15 @@
     padding: auto;
     padding-right: 400px;
     padding-left: 200px;
-    
 }
 
 ul {
     list-style-type: disc; /* Tipo de viñeta */
     padding-left: 20px; /* Espacio entre la viñeta y el texto */
+}
+
+li {
+    
 }
 
 #brbigarren {
