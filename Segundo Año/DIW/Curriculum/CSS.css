@@ -1,0 +1,30 @@
+* {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+    padding-right: 400px;
+    padding-left: 200px;
+    
+}
+
+ul {
+    list-style-type: disc; /* Tipo de viñeta */
+    padding-left: 20px; /* Espacio entre la viñeta y el texto */
+}
+
+#brbigarren {
+    margin: 600px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+#brlehen {
+    margin-top: 100px;
+}
