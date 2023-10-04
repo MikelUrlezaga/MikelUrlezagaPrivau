@@ -1,4 +1,0 @@
-JavaScript Cookies
-Apache en Ubuntu
-PHP ejecicios
-
