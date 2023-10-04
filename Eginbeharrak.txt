@@ -1,4 +1,4 @@
-Galdetegia hedapen
+Parktika Individuala Git/GitHub
 JavaScript Strings, Kronometroa
 DIW Curriculum
 PHP Ariketak begiratu / Datu base prestatu / Ariketak egin
