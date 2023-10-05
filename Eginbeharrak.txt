@@ -1,2 +1,5 @@
 Parktika Individuala Git/GitHub
-PHP Ariketak begiratu / Datu base prestatu / Ariketak egin !!!!!!!!!!!!!!!!!!!
+PHP Teoria / Ariketak begiratu / Datu base prestatu / Ariketak egin !!!!!!!!!!!!!!!!!!!
+JavaScript Ariketa !!!!!!!
+
+Uso del SASS
