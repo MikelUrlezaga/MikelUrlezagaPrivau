@@ -1,5 +1,4 @@
 Parktika Individuala Git/GitHub
 PHP Teoria / Ariketak begiratu / Datu base prestatu / Ariketak egin !!!!!!!!!!!!!!!!!!!
 
-
 Uso del SASS
