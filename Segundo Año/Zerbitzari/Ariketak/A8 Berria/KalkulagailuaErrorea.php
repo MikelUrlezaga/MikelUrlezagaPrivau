@@ -44,23 +44,23 @@ class Kalkulagailua {
   }
 
   function eragiketaEgin(){
-    switch ($eragiketa) {
-        case +:
+    switch ($this->eragiketa) {
+        case "+":
             $this->total = $this->eragiketa1 + $this->eragiketa2;
             break;
-        case -:
+        case "-":
             $this->total = $this->eragiketa1 - $this->eragiketa2;
             break;
-        case *:
+        case "*":
             $this->total = $this->eragiketa1 * $this->eragiketa2;
             break;
-        case /:
+        case "/":
             $this->total = $this->eragiketa1 / $this->eragiketa2;
             break;
         default;
         }
     
-        echo $kalkulagailua->getEragiketa1() . " " . $kalkulagailua->getEragiketa() . " " . $kalkulagailua->getEragiketa2() . " = " . $kalkulagailua->getTotal();
+        echo $this->getEragiketa1() . " " . $this->getEragiketa() . " " . $this->getEragiketa2() . " = " . $this->getTotal();
 
     }
 }
