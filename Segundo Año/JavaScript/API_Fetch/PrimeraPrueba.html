@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Primer API Fetch</title>
+    </head>
+    <body>
+        <button id="boton">Mostrar Texto</button>
+        <div id="contenido"></div>
+        <script>
+            document.getElementById("boton").addEventListener("click",mostrarTexto);
+            var contenido = document.querySelector("#contenido");
+
+            function mostrarTexto() {
+                fetch("texto.txt")
+                .then(data => data.text())
+                .then(data2 => {
+                    contenido.innerHTML = data2;
+                })
+            }
+        </script>
+    </body>
+</html>

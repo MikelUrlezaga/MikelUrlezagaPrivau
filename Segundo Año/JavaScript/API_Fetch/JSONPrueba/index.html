@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabla de Personas</title>
+</head>
+<body>
+  <h1>Tabla de Personas</h1>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-body">
+    </tbody>
+  </table>
+
+  <script>
+    // URL del archivo JSON remoto
+    const url = 'personas.json';
+
+    // Selecciona el elemento de la tabla donde se agregarán los datos
+    const tablaBody = document.getElementById('tabla-body');
+
+    // Utiliza la API Fetch para obtener los datos del archivo JSON
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        data.forEach(persona => {
+          // Crea una fila en la tabla para cada persona
+          const row = document.createElement('tr');
+          const nombreCell = document.createElement('td');
+          const edadCell = document.createElement('td');
+
+          nombreCell.textContent = persona.nombre;
+          edadCell.textContent = persona.edad;
+
+          row.appendChild(nombreCell);
+          row.appendChild(edadCell);
+
+          tablaBody.appendChild(row);
+        });
+      })
+      .catch(error => {
+        console.error('Error al obtener los datos: ', error);
+      });
+  </script>
+</body>
+</html>
