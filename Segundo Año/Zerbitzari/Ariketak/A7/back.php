@@ -6,11 +6,11 @@
 
     if(!empty($_POST["email"]) && strstr($_POST["email"], "@")){ //Emaila hutsik ez dagoela eta @ daukala begiratzen du.
         echo "<p>EMAILA ONDO</p>";
-    } else{
+    } else {
         echo "<p>EMAILA TXARTO</p>";
         $txarto = true;
     }
-   
+
     $nan = $_POST["nan"]; //NAN-a gordetzeko
     $nanLetraBarik = substr($nan, 0, 8); //NAN-aren zenbakia bakarrik gordetzeko, letra barik
     $nanLetra = substr($nan, 8, 9); //NAN-aren letra gordetzeko, zenbaki barik

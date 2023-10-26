@@ -7,7 +7,7 @@ class Ikaslea {
   public $notak;
 
   function __construct($izena , $notak) {
-	$this->izena = $izena;
+	  $this->izena = $izena;
     $this->notak = $notak;
   }
   function batazbestekoNota() {

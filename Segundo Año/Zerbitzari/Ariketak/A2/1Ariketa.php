@@ -4,7 +4,7 @@
         <h1>Zein egun da?</h1>
         <?php
         // Lehenengo aldagaia sortu eta date() funtzioa erabilita "N" jarrita asteko eguna bueltatzen, esleituko dugu
-        // Gero balore hay jakinda String-a dela, int-era pasatuko dugu intval() funtzioa erabilita
+        // Gero balore hau jakinda String-a dela, int-era pasatuko dugu intval() funtzioa erabilita
             $data = date("N");
             $data = intval($data);
             
@@ -28,7 +28,7 @@
             elseif($data == 6){
                 echo "Larunbata";
             }
-            else($data == 7){
+            else {
                 echo "Domeka";
             }
         ?>

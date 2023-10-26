@@ -11,7 +11,7 @@
             if ($zenbakia < 11) {
                 echo "0-tik 10-era dago";
             }
-            elseif ($zenbakia < 21) {
+            elseif (11 >= $zenbakia && $zenbakia < 21) {
                 echo "11-tik 20-ra dago";
             }
             else {
