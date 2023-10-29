@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Nombres</title>
+</head>
+<body>
+    <h1>Lista de Nombres</h1>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <button onclick="agregarNombre()">Agregar</button>
+    <ul id="listaNombres"></ul>
+
+    <script>
+        function agregarNombre() {
+            const nombre = document.getElementById("nombre").value;
+
+            // Realizar una solicitud AJAX para enviar el nombre al backend
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "backend.php", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    const respuesta = JSON.parse(xhr.responseText);
+                    if (respuesta.success) {
+                        const lista = document.getElementById("listaNombres");
+                        const nuevoElemento = document.createElement("li");
+                        nuevoElemento.textContent = nombre;
+                        lista.appendChild(nuevoElemento);
+                    } else {
+                        alert("Error al agregar el nombre.");
+                    }
+                }
+            };
+            xhr.send("nombre=" + nombre);
+        }
+    </script>
+</body>
+</html>
