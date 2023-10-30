@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Fetch PHP</title>
+</head>
+<body>
+    <div id="resultado">
+        <!-- Aquí se mostrará el resultado -->
+    </div>
+
+    <script>
+        // Realizar una solicitud GET al backend PHP
+        fetch('http://localhost/DWES/datubaseak/ikasleAriketa/kudeatu.php')
+            .then(response => response.json())
+            .then(data => {
+                //faltaría el for para recorrer el array...
+
+
+                console.log(data);
+                // Manipular los datos JSON en JavaScript y mostrarlos en el resultado
+                const resultadoDiv = document.getElementById('resultado');
+                resultadoDiv.innerHTML = `
+                    <p>ID: ${data[1].id}</p>
+                    <p>Izena: ${data[1].izena}</p>
+                    <p>Deskribapena: ${data[1].deskribapena}</p>
+                `;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    </script>
+</body>
+</html>
