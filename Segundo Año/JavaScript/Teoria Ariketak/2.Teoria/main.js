@@ -1,11 +1,3 @@
-alert('Hola'); 
-alert('Mundo');
-
-/* Comentario
-en varias
-lineas */
-
-//El mas usado
 let numero = 5;
 let mensaje = "Hola";
 //Si no se quiere cambiar el valor de la variable
