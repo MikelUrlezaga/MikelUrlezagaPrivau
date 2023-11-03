@@ -3,6 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $database = "cifpsanjorge";
+$conn;
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
@@ -56,7 +57,7 @@ echo "Connected successfully <br>";
 // $sql = "DELETE FROM ikasleak WHERE abizena= ?";
 
 // $stmt = $conn->prepare($sql);
-// $abizena = "Txurro";
+// $abizena = "DonTxurro";
 //     $stmt->bind_param("s",$abizena);
 
 //     if ($stmt->execute()) {
@@ -68,6 +69,6 @@ echo "Connected successfully <br>";
 
 
 // Close connection
-$stmt->close();
+// $stmt->close();
 $conn->close();
 ?>
