@@ -6,9 +6,9 @@
     var_dump($ageJson);
     echo "<br>";
 
-    $ageDeco=json_decode($ageJson);
+    // $ageDeco=json_decode($ageJson);
     $ageDecoTrue=json_decode($ageJson,true);
-    var_dump($ageDeco);
+    // var_dump($ageDeco);
     echo "<br>";
     var_dump($ageDecoTrue);
 ?>

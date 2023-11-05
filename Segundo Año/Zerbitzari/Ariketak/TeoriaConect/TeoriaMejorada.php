@@ -68,7 +68,7 @@
 
         public function update(){
             $this->konektatu();
-            $sql = "UPDATE ikasleak SET abizena='DonTxurro' WHERE abizena='Txurro'";
+            $sql = "UPDATE ikasleak SET abizena='Txurro' WHERE abizena='DonTxurro'";
 
             if ($this->conn->query($sql) === TRUE) {
                 echo "Record updated successfully";
@@ -84,7 +84,7 @@
             $sql = "DELETE FROM ikasleak WHERE abizena= ?";
 
             $stmt = $this->conn->prepare($sql);
-            $abizena = "DonTxurro";
+            $abizena = "Txurro";
                 $stmt->bind_param("s",$abizena);
             
                 if ($stmt->execute()) {

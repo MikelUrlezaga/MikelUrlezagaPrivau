@@ -1,0 +1,11 @@
+{
+    "nombre": "Ejemplo JSON",
+    "descripcion": "Este es un JSON de ejemplo",
+    "fecha_creacion": "2023-11-05",
+    "activo": true,
+    "valores": [1, 2, 3, 4, 5],
+    "datos": {
+      "tipo": "Ejemplo",
+      "version": 1.0
+    }
+}
