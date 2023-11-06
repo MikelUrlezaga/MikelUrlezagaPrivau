@@ -1,6 +1,7 @@
 <?php
     function decode(){
-        $array=json_decode(file_get_contents(__DIR__.'/JSON.json'),true);
+        // $array=json_decode(file_get_contents(__DIR__.'/JSON.json'),true);
+        $array=json_decode(file_get_contents("php://input"),true);
         echo $array['nombre'];
         echo '<br>';
         echo $array ['descripcion'];
