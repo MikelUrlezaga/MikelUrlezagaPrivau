@@ -21,3 +21,13 @@ console.log(erantzuna);
 // escribir.innerHTML=erantzuna;
 var escribir = document.getElementById('2');
 escribir.innerHTML = erantzuna;
+
+var palabraBuscar = prompt("Por favor, ingresa una palabra:");
+var cuantos=0;
+for (let i = 0; i < palabras.length; i++){
+    if (palabras[i]==palabraBuscar) {
+        cuantos++
+    }
+}
+
+console.log(cuantos);
