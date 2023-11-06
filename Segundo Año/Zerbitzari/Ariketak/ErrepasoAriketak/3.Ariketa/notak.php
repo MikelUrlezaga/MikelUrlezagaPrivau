@@ -39,12 +39,13 @@
             $id = $_POST["izena"];
             $sql = "SELECT * FROM ikasi WHERE idikasle = $id";
             $emaitza=$this->conn->query($sql);
-
             if($emaitza->num_rows>0){
                 while ($lerroa = $emaitza->fetch_assoc()){
                     echo $lerroa["idikasle"]. " " . $lerroa["idikasgai"]. " " . $lerroa["nota"];
                     echo "<br>";
                 }
+                $bidali=json_encode($this->palJson);
+                echo($bidali);
             }
             $this->conn->close();
         }
