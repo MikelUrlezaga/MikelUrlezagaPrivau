@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="hasiera.js"></script>
+	</head>
+
+	<body>
+		<h1>Bienvenido al curso de Javascript</h1>
+        <button onclick="egin()">Cambiar</button>
+        <div id="div1">
+
+        </div>
+        <script>
+            //document.write("<p>Kaixo</p>");
+            var boton = document.createElement("button");
+            var textoBoton = document.createTextNode("Haz clic aquí");
+            boton.appendChild(textoBoton);
+            boton.setAttribute("onclick", "egin()");
+            boton.id = "10";
+
+            var diva = document.getElementById("div1");
+            diva.appendChild(boton);
+
+        </script>
+		<h1 id="1">Hasta luego</h1>
+        <script>
+			holamundo();
+            document.getElementById("1").innerHTML = "Hola";
+		</script>
+	</body>
+</html>

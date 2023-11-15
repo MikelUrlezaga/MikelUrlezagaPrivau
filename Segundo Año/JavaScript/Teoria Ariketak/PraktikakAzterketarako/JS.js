@@ -21,3 +21,11 @@ function crear() {
     miVentana.resizeBy(100,100);
     miVentana.moveBy(-650,400);
 }
+
+var cadena = "123";
+var numero = parseInt(cadena);
+
+
+var resultado = (x < 5 && y > 1); //Resultado true
+
+var resultado2 = (x > 5 || y > 1); //Resultado true
