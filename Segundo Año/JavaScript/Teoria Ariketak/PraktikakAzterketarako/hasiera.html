@@ -20,7 +20,21 @@
 
             var diva = document.getElementById("div1");
             diva.appendChild(boton);
+            console.log(resultado);
+            const jsonString = '{"nombre": "John", "edad": 30, "ciudad": "Ejemplo"}';
 
+            try {
+                var objetoJSON = JSON.parse(jsonString);
+                console.log(objetoJSON);
+            } catch (error) {
+                console.error('Error al analizar el JSON: ', error);
+            }
+
+            for (let propiedad in objetoJSON) {
+                if (objetoJSON.hasOwnProperty(propiedad)) {
+                    console.log(propiedad + ": " + objetoJSON[propiedad]);
+                }
+            }
         </script>
 		<h1 id="1">Hasta luego</h1>
         <script>

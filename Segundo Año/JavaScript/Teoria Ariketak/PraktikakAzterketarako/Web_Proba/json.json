@@ -1,0 +1,8 @@
+{
+    "nombre": "John",
+    "edad": 30,
+    "ciudad": "Ejemplo",
+    "activo": true,
+    "hobbies": ["lectura", "deporte", "viajes"]
+}
+  
