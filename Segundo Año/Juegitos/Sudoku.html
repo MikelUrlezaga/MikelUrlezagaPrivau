@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            
+            function hola() {
+                var combo1 = document.getElementById("1");
+                var value = combo1.value;
+                console.log(value);
+
+            }
+        </script>
+        <style>
+            table {
+                background-color: antiquewhite;
+                border-collapse: collapse;
+            }
+
+            td, th{
+                border: 3px solid rgb(183, 185, 17);
+                text-align: left;
+                padding: 20px;
+            }
+
+            div {
+                display: flex;
+                padding-left: 25%;
+            }
+
+            body{
+                padding-top: 5%;
+            }
+
+            option {
+            font-family: 'Arial', sans-serif;
+            font-size: 35px;
+            padding: 200px;
+            }
+
+            option:first-child {
+            font-size: 40px; 
+            }
+
+            select {
+                width: 50px;
+                height: 50px;
+            }
+
+            .verde{
+                background-color: green;
+            }
+
+            .rojo{
+                background-color: red;
+            }
+        </style>
+          <script>
+            // Obtén el elemento select y el párrafo
+            var selectElement = document.getElementById('1');
+            var resultadoElement = document.getElementById('zelda_1');
+        
+            // Agrega un event listener al cambio del select
+            selectElement.addEventListener('change', function() {
+              // Obtén el valor seleccionado
+              var selectedValue = selectElement.value;
+        
+              // Remueve todas las clases del párrafo
+              resultadoElement.classList.remove('clase1', 'clase2');
+        
+              // Agrega la clase seleccionada al párrafo
+              resultadoElement.classList.add('verde');
+            });
+          </script>
+    </head>
+    <body>
+        <div>
+        <table>
+            <tr>
+                <th id="zelda_1">
+                    <select onchange="hola()" id="1">
+                        <option value="N"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>    
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>    
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select> 
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>    
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+        </table>
+        </div>
+        <div>
+        <table>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select> 
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>    
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select> 
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>    
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select> 
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>    
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+        </table>
+        </div>
+        <div>
+        <table>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select> 
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select> 
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>    
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select> 
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>    
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select> 
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>    
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="N"></option>
+                        <option value="opcion1">1</option>
+                        <option value="opcion2">2</option>
+                        <option value="opcion3">3</option>
+                        <option value="opcion1">4</option>
+                        <option value="opcion2">5</option>
+                        <option value="opcion3">6</option>
+                        <option value="opcion1">7</option>
+                        <option value="opcion2">8</option>
+                        <option value="opcion3">9</option>
+                    </select>
+                </th>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>
