@@ -1,15 +1,16 @@
-use strict;
-const ongietorriMezua = Ongi etorri kalkulu-programara!;
-jarraitu = true;
+"use strict";
+const ongietorriMezua = "Ongi etorri kalkulu-programara!";
+var jarraitu = true;
+var sartutakoZenb = [];
 
 function zenbakiakLortu() {
   do {
-var sartutakoZenb = [];
-    	zenb = prompt("Mesedez, sartu zenbaki bat:");
+    	var zenb = prompt("Mesedez, sartu zenbaki bat:");
+      parseInt(zenb);
     	if (isNaN(zenb)) {
       alert("Hori ez da baliozko zenbakia. Saiatu berriro.");
     } else {
-      sartutakoZenb.push();
+      sartutakoZenb.push(zenb);
     }
     jarraitu = confirm("Beste zenbaki bat sartu nahi duzu?");
   } while (jarraitu);
@@ -18,14 +19,15 @@ var sartutakoZenb = [];
 zenbakiakLortu();
 
 function batazbestekoaKalkulatu() {
-  let gehiketa;
+  let gehiketa = 0;
   let batazbestekoa;
 
-  for (let i; i <= zenbakiak.length; i++) {
-    gehiketa =+ zenbakiak[i];
+  for (let i=0; i < sartutakoZenb.length; i++) {
+    gehiketa += parseInt(sartutakoZenb[i]);
+    console.log(sartutakoZenb[i]);
   }
-
-  batazbestekoa = gehiketa / zenbakiak.length;
+  console.log(gehiketa);
+  batazbestekoa = gehiketa / sartutakoZenb.length;
   return batazbestekoa;
 }
 
