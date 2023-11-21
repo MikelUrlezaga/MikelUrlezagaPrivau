@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Errekurtsibitatea</h1>
+        <form id="formu">
+            <label for="testua">Sartu aldatu nahi duzun string-a:</label>
+            <input type="text" id="testua" required>
+            <input type="button" value="Aldatu" onclick="aldatu()">
+        </form>
+        <br>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <script>
+            var loqueva;
+            var cambioVa = 0;
+            var textoSep;
+            var textoBase = document.getElementById("p1");
+            var textoCambio = document.getElementById("p2");
+
+            function aldatu() {
+                var texto = document.getElementById("testua").value;
+                textoBase.innerHTML = "<b>Jatorrizko karaktere-katea: </b>" + texto;
+                textoSep = texto.split("");
+                if (textoSep.length%2==0) {
+                    loqueva = (textoSep.length/2)-1;
+                } else {
+                    loqueva = (((textoSep.length-1)/2)-1);
+                }
+                cambio();
+            }
+
+            function cambio() {
+                var parametroDeCambio;
+                if (textoSep.length%2==0) {
+                    parametroDeCambio = textoSep[cambioVa]
+                    textoSep[cambioVa] = textoSep [(textoSep.length)-(1+cambioVa)]
+                    textoSep[(textoSep.length-(1+cambioVa))] = parametroDeCambio;
+                } else {
+                    parametroDeCambio = textoSep[cambioVa]
+                    textoSep[cambioVa] = textoSep [(textoSep.length)-(1+cambioVa)]
+                    textoSep[(textoSep.length-(1+cambioVa))] = parametroDeCambio;
+                }
+                if (cambioVa == loqueva) {
+
+                    textoCambio.innerHTML = "<b>String alderantzizkatua: </b>";
+                    for(let i = 0; i < textoSep.length;i++){
+                        textoCambio.innerHTML += textoSep[i];
+                    }
+
+                } else {
+                    cambioVa++;
+                    cambio();
+                }
+            }
+        </script>
+    </body>
+</html>
