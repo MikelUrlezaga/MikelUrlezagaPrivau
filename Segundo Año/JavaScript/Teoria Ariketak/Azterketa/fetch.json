@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "bulbasaur",
+        "height": 7,
+        "weight": 69,
+        "species":{
+            "color": {
+                "name": "green",
+                "url": "https://pokeapi.co/api/v2/pokemon-color/5/"
+            },
+            "varieties": [
+                {
+                    "is_default": true,
+                    "pokemon": {
+                        "name": "bulbasaur",
+                        "url": "https://pokeapi.co/api/v2/pokemon/1/"
+                    }
+                }
+            ]
+        }
+    }
+]
