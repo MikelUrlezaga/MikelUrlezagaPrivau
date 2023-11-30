@@ -11,9 +11,10 @@
 
 ///Servidor///
 
-- (Laravel) - /Spring/
+- (Laravel)(Video 1h44mins Curso -> https://youtu.be/a-4923Uyu54?feature=shared)
+- /Spring/ (Video 5mins Curso -> https://youtu.be/3vN2R00YUq4?feature=shared)
 - Api Restful (Laravel, Spring)
-- Docker
+- Docker (Video 6 mins Curso -> https://youtu.be/Uu49ID0NBRQ?feature=shared)
 
 ///Hedapen///
 
