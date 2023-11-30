@@ -1,0 +1,52 @@
+///JavaScript///
+
+- JavaScript (Pagina del Curso -> https://es.javascript.info/)
+(Video 1h curso -> https://youtu.be/bmGPv687toc?si=sKd-vjGN2qiKjVec )
+- Api Fetch (Video 12mins -> https://youtu.be/eLqMkQf4Qks?si=96DGHXoymsDxrN0i )
+- VUE (Video 14mins -> https://youtu.be/9AHMihFhrzw?feature=shared)
+
+///Diseño///
+
+- Bootstrap (Pagina Oficial -> https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+
+///Servidor///
+
+- (Laravel) - /Spring/
+- Api Restful (Laravel, Spring)
+- Docker
+
+///Hedapen///
+
+- Spring Boot
+- Apache Tomcat
+- AWS / EC2 / RDS
+
+///Mecanografia///
+
+( https://www.typingclub.com/mecanografia )
+( https://www.ratatype.es/typing-test/ )
+
+
+///Cocinar///
+
+ (distintas recetas que ire guardando en el drive)
+
+///Mercado///
+
+- Trading INFORMARME (Videos de youtube) -> Cursos mas orientaus
+( https://youtu.be/QPbpQ1wgvF0 )
+- Errores de novato ( https://youtu.be/8xhCKRZbbIU )
+- Aprender sobre el mercado
+- Otros metodos para ganar dinero con el mercado
+--------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
