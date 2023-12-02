@@ -4,3 +4,8 @@ Un servlet es un componente Java que extiende la funcionalidad de un servidor we
 
 Configuración: La configuración de Tomcat se realiza a través de archivos de configuración, como server.xml y web.xml. Estos archivos permiten ajustar la configuración del servidor, como la asignación de puertos, la configuración del conector HTTP, la configuración de los contextos de la aplicación, entre otros.
 
+Conectores: Tomcat utiliza conectores para gestionar las solicitudes y respuestas. Por ejemplo, el conector HTTP se encarga de las solicitudes HTTP, mientras que el conector AJP (Apache JServ Protocol) se utiliza para la comunicación entre Tomcat y un servidor web frontal, como Apache HTTP Server.
+
+Administración y Monitoreo: Tomcat proporciona una interfaz web llamada Tomcat Manager que permite administrar y desplegar aplicaciones de forma remota. También incluye funcionalidades para el monitoreo y la administración de recursos.
+
+
