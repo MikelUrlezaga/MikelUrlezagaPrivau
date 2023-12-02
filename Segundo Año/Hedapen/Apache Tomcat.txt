@@ -1,0 +1,6 @@
+Apache Tomcat es un contenedor de servlets y servidor web de código abierto desarrollado por la Apache Software Foundation. Su función principal es implementar las tecnologías de Java Servlet y JavaServer Pages (JSP) para proporcionar un entorno de ejecución para aplicaciones web Java.
+Un servlet es un componente Java que extiende la funcionalidad de un servidor web para generar respuestas dinámicas en lugar de respuestas estáticas tradicionales. 
+
+
+Configuración: La configuración de Tomcat se realiza a través de archivos de configuración, como server.xml y web.xml. Estos archivos permiten ajustar la configuración del servidor, como la asignación de puertos, la configuración del conector HTTP, la configuración de los contextos de la aplicación, entre otros.
+

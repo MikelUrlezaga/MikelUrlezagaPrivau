@@ -18,9 +18,11 @@
 
 ///Hedapen///
 
-- Spring Boot
-- Apache Tomcat
-- AWS / EC2 / RDS
+- Spring Boot (TXT)
+- Apache Tomcat (TXT)
+- AWS (Plataforma de servicios para ejecutar aplicaciones y almacenar datos)
+- EC2 (Maquinas Virtuales)
+- RDS (Servicio para configuracion de Base de Datos)
 
 ///Mecanografia///
 
@@ -40,10 +42,9 @@
 - Aprender sobre el mercado
 - Otros metodos para ganar dinero con el mercado
 --------------------------------------------------------------------------------------------------------
+(Inside me lives a fearless LEGEND -> https://youtu.be/v68HfWkCqDI)
 
-
-
-
+- Acabar de mirar las ariketas del exam de PHP
 
 
 

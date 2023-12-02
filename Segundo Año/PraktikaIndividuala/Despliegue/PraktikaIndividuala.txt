@@ -1,4 +1,0 @@
-restringir usuarios
-https://www.mundodeportivo.com/urbantecno/linux/instalar-servidor-ftp-y-restringir-permisos-a-los-usuarios
-oracle ayuda
-https://docs.oracle.com/cd/E24842_01/html/E22524/wuftp-29.html#wuftp-31

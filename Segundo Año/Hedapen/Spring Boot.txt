@@ -1,0 +1,29 @@
+Independencia del servidor: No necesitas instalar ni configurar un servidor web por separado. Spring Boot se encarga de embeber el servidor web que elijas en el archivo JAR o WAR generado, lo que hace que tu aplicación sea autocontenida.
+
+Configuración predeterminada sensible: Spring Boot proporciona configuraciones predeterminadas sensatas para el servidor web embebido, pero también te da la flexibilidad de personalizar la configuración según tus necesidades.
+
+Arranque rápido: Al embeber un servidor web, el tiempo de arranque de la aplicación se reduce significativamente, lo que es beneficioso para el desarrollo rápido y la implementación en entornos de producción.
+
+Integración con Spring MVC: Spring Boot facilita la creación de aplicaciones web mediante la integración con Spring MVC (Model-View-Controller), un marco de desarrollo para construir aplicaciones web y servicios RESTful.
+
+Para usar un servidor embebido con Spring Boot, simplemente incluyes la dependencia correspondiente en tu proyecto y Spring Boot se encarga del resto. A continuación, un ejemplo de cómo se ve esto en un archivo de configuración de Maven, utilizando Tomcat como servidor embebido:
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+
+Después de agregar esta dependencia, puedes crear una clase principal con el método main y anotarla con @SpringBootApplication. Spring Boot detectará automáticamente la dependencia agregada y configurará un servidor web embebido para tu aplicación.
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MiAplicacion {
+
+    public static void main(String[] args) {
+        SpringApplication.run(MiAplicacion.class, args);
+    }
+}
+
+En este ejemplo, se utiliza @SpringBootApplication para indicar que esta es la clase principal de la aplicación y se utiliza SpringApplication.run() para iniciar la aplicación. Spring Boot se encargará de configurar y ejecutar el servidor web embebido.
