@@ -31,15 +31,9 @@
 
             function cambio() {
                 var parametroDeCambio;
-                if (textoSep.length%2==0) {
                     parametroDeCambio = textoSep[cambioVa]
                     textoSep[cambioVa] = textoSep [(textoSep.length)-(1+cambioVa)]
                     textoSep[(textoSep.length-(1+cambioVa))] = parametroDeCambio;
-                } else {
-                    parametroDeCambio = textoSep[cambioVa]
-                    textoSep[cambioVa] = textoSep [(textoSep.length)-(1+cambioVa)]
-                    textoSep[(textoSep.length-(1+cambioVa))] = parametroDeCambio;
-                }
                 if (cambioVa == loqueva) {
 
                     textoCambio.innerHTML = "<b>String alderantzizkatua: </b>";
