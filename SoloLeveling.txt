@@ -44,7 +44,7 @@
 --------------------------------------------------------------------------------------------------------
 (Inside me lives a fearless LEGEND -> https://youtu.be/v68HfWkCqDI)
 
-- Apuntes Propios de JS
+- Apuntes Propios de JS ( https://es.javascript.info/while-for )
 - Curso y Video
 - Ariketa Fetch
 - Repositorio de GitHub Egoitz
