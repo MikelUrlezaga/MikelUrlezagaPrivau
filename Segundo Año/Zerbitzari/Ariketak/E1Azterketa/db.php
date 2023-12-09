@@ -16,7 +16,7 @@
         private function konektatu (){
             $this->conn = new mysqli ($this->servername, $this->user, $this->pass, $this->dbname);
             if ($this->conn->connect_error){
-                die("Konexioak huts egin du".$conn->connect_error);
+                die("Konexioak huts egin du".$this->conn->connect_error);
             }
         }
 
