@@ -15,3 +15,11 @@ for(let valor of losDatos){
 	</tr>
 	`
 }
+
+<form>
+	<input type="text" id="id">
+</form>
+
+var texto = document.querySelector("#id").value
+(Esto pillara el valor q tiene el input)
+
