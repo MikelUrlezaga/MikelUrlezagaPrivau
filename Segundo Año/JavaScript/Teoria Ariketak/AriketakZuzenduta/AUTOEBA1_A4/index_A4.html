@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Creamos un objeto llamado Cuenta
+        class Cuenta {
+            constructor(titular, cantidad = 0) {
+                this._titular = titular;
+                this._cantidad = cantidad;
+            }
+
+            //Getters
+            get titular() {
+                return this._titular;
+            }
+            get cantidad() {
+                return this._cantidad;
+            }
+
+            //Setter
+            set titular(valor) {
+                this._titular = valor;
+            }
+
+            //Método mostrar
+            mostrar() {
+                return "Cuenta\n" + "Titular:" + this.titular + " - Cantidad:" + this.cantidad;
+            }
+
+            //Método ingresar
+            ingresar(cant) {
+                if (cant > 0)
+                    this._cantidad += cant
+            }
+
+            //Método retirar
+            retirar(cant) {
+                if (this._cantidad - cant > 0)
+                    this._cantidad -= cant;
+                else
+                    alert("No se puede retirar esa cantidad. Saldo insuficiente");
+            }
+
+        }
+
+        var cuenta1 = new Cuenta("Jose", 1000);
+        var cuenta2 = new Cuenta("2dw3", 500);
+        var cuentas = [cuenta1, cuenta2];
+        console.log(cuenta1.mostrar());
+        alert(cuentas[0].mostrar())
+        cuenta1.ingresar(100);
+        console.log(cuenta1.mostrar());
+        cuenta1.retirar(500);
+        console.log(cuenta1.mostrar());
+
+    </script>
+</body>
+
+</html>
