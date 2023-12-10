@@ -23,3 +23,7 @@ for(let valor of losDatos){
 var texto = document.querySelector("#id").value
 (Esto pillara el valor q tiene el input)
 
+elemento.addEventListener('click',funcion);
+
+
+
