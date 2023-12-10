@@ -1,0 +1,17 @@
+var contenido= document.querySelector('#id')
+
+fetch('JSON.json')
+	.then(respuesta => respuesta.json())
+	.then(datos => {
+		console.log(datos);
+		var losDatos = datos;
+	})
+
+contenido.innerHTML = '' (para dejar vacio)
+for(let valor of losDatos){
+	contenido.innerHTML += `
+	<tr>
+		<td>${ valor.nombre }</td>
+	</tr>
+	`
+}
