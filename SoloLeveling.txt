@@ -50,6 +50,7 @@
 - Ariketas de Repaso JS
 - Repositorio de GitHub Egoitz
 - Docker en casa
+- Ariketa Docker eta Apache (Miercoles)
 
 
 
