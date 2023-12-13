@@ -1,4 +1,5 @@
 <?php
+if (isset($_SESSION["b"])) {
 if(($_SESSION["b"])){
      header("Location: crearUsuario.php");
      exit();
@@ -8,7 +9,7 @@ $_SESSION["a"] = true;
 if ($tiempoDeSesionGei>120){
     $_SESSION["a"] = false;
 }
-
+}
 ?>
 <!DOCTYPE html>
 <html>
