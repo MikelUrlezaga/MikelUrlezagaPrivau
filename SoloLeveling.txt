@@ -2,7 +2,6 @@
 
 - JavaScript (Pagina del Curso -> https://es.javascript.info/)
 (Video 1h curso -> https://youtu.be/bmGPv687toc?si=sKd-vjGN2qiKjVec )
-- Api Fetch (Video 12mins -> https://youtu.be/eLqMkQf4Qks?si=96DGHXoymsDxrN0i )
 - VUE (Video 14mins -> https://youtu.be/9AHMihFhrzw?feature=shared)
 
 ///Diseño///
@@ -47,8 +46,12 @@
 - Apuntes Propios de JS ( https://es.javascript.info/arrow-functions-basics )
 - Curso y Video
 - Repositorio de GitHub Egoitz
+- Docker Video
 - DockerFile (Lunes)
-- 
+- Laravel Apuntes
+- Vue Apuntes
+- Vue Curso y Video
+
 
 
 
