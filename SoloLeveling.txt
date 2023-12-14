@@ -46,11 +46,9 @@
 
 - Apuntes Propios de JS ( https://es.javascript.info/arrow-functions-basics )
 - Curso y Video
-- Ariketa Fetch
-- Ariketas de Repaso JS
 - Repositorio de GitHub Egoitz
-- Docker en casa
-- Ariketa Docker eta Apache (Miercoles)
+- DockerFile (Lunes)
+- 
 
 
 

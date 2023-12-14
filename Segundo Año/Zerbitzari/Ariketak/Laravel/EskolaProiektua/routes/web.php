@@ -13,13 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/ikasleak',function(){
-    return view('ikasleak_view');
-});
+Route::get('/','App\Http\Controllers\Welcome_Controller@welcome');
+
+// Route::get('/ikasleak',function(){
+//     return view('ikasleak_view');
+// });
+
+Route::get('/ikasleak','App\Http\Controllers\Ikasleak_Controller@ikasleak');
 
 Route::get('/irakasleak',function(){
     return view('irakasleak_view');
