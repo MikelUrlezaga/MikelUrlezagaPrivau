@@ -51,6 +51,7 @@
 - Laravel Apuntes
 - Vue Apuntes
 - Vue Curso y Video
+- Vue Ariketa
 - Laravel Ariketak (4,5)
 - Ariketa Bootstrap
 
