@@ -43,7 +43,7 @@
 --------------------------------------------------------------------------------------------------------
 (Inside me lives a fearless LEGEND -> https://youtu.be/v68HfWkCqDI)
 
-- Apuntes Propios de JS ( https://es.javascript.info/arrow-functions-basics )
+- Apuntes Propios de JS ( https://es.javascript.info/debugging-chrome )
 - Curso y Video
 - Repositorio de GitHub Egoitz
 - Docker Video
