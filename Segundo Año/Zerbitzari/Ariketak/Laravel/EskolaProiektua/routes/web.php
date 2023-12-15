@@ -25,6 +25,8 @@ Route::get('/','App\Http\Controllers\Welcome_Controller@welcome');
 
 Route::get('/ikasleak','App\Http\Controllers\Ikasleak_Controller@ikasleak');
 
+Route::get('froga','App\Http\Controllers\nuevo_Controller@erakutsi');
+
 Route::get('/irakasleak',function(){
     return view('irakasleak_view');
 });
