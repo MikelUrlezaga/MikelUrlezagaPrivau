@@ -43,6 +43,7 @@
 --------------------------------------------------------------------------------------------------------
 (Inside me lives a fearless LEGEND -> https://youtu.be/v68HfWkCqDI)
 
+- Estudiar PHP
 - Apuntes Propios de JS ( https://es.javascript.info/garbage-collection )
 - Curso y Video
 - Repositorio de GitHub Egoitz
