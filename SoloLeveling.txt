@@ -47,7 +47,6 @@
 - Curso y Video
 - Repositorio de GitHub Egoitz
 - Docker Video
-- DockerFile (Lunes)
 - Laravel Apuntes
 - Vue Apuntes
 - Vue Curso y Video
