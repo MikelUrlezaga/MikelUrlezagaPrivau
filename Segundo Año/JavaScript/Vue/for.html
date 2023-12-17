@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>  
+    </head>
+    <body>
+        <div id="app">
+            <h1>Zereginen zerrenda</h1>
+            <ul>
+                <!-- <li v-for="zeregina in zereginak">{{ zeregina }}</li> -->
+                <li v-for="zeregina in zereginak" v-text="zeregina"></li>
+            </ul>
+        </div>
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    zereginak: [
+                        "VueJs ikasi",
+                        "Spring ikasi",
+                        "Laravel ikasi"
+                    ]
+                }
+            })
+        </script>
+    </body>    
+</html>

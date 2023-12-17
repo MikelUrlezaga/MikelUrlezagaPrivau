@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pruebas Vue</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h1 v-show="message"><span v-text="message"></span></h1>
+            <input type="text" v-model="message">
+            <button v-on:click="message = message.split('').reverse().join('')">Atzekoz aurrera</button>
+        </div>
+        <script>
+            var app = new Vue ({
+                el: '#app',
+                data: {
+                    message: 'Hola Vue!'
+                }
+            })
+        </script>
+    </body>
+</html>
