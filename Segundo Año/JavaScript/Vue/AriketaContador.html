@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador con Vue.js</title>
+  <!-- Incluye Vue.js desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+
+    <div id="app" :class="{'positive': count > 0, 'negative': count < 0, 'zero': count === 0}">
+  <p>{{ count }}</p>
+  <button @click="increment">Gehitu</button>
+  <button @click="decrement">Kendu</button>
+  <button @click="aZero">Berrabiarazi</button>
+</div>
+<style>
+    .positive {
+      color: green;
+    }
+
+    .negative {
+      color: red;
+    }
+
+    .zero {
+      color: black;
+    }
+</style>
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+      count: 0
+    },
+    methods: {
+      increment() {
+        this.count++;
+      },
+      decrement() {
+        this.count--;
+      },
+      aZero(){
+        this.count = 0;
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
