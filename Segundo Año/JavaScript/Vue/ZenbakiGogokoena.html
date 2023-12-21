@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js Array Sum Example</title>
+  <!-- Incluye Vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+
+<div id="app">
+  <ul>
+    <li v-for="item in items" :key="item.id">{{ item.name }}</li>
+  </ul>
+
+  <label for="newNumber">Ingrese un número:</label>
+  <input type="number" v-model="newNumber" id="newNumber">
+
+  <button @click="sumarNumero">Sumar</button>
+</div>
+
+<script>
+new Vue({
+  el: '#app',
+  data: {
+    items: [
+      { id: 1, name: 'Elemento 1' },
+      { id: 2, name: 'Elemento 2' },
+      { id: 3, name: 'Elemento 3' }
+    ],
+    newNumber: 0 // Nuevo número que se ingresará
+  },
+  methods: {
+    sumarNumero() {
+      // Convierte el nuevo número a un entero y agrega un nuevo elemento al array
+      const nuevoElemento = newNumber;
+      ;
+      this.items.push(nuevoElemento);
+
+      // Restablece el campo de entrada a cero después de agregar el elemento
+      this.newNumber = 0;
+    }
+  }
+});
+</script>
+
+</body>
+</html>
