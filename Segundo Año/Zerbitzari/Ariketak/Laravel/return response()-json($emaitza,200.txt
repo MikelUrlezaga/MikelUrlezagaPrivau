@@ -1,0 +1,3 @@
+return response()->json($emaitza,200)
+
+public/api/ruta

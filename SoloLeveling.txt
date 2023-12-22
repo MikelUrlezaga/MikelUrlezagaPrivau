@@ -54,6 +54,7 @@
 - Vue Ariketa
 - Laravel Ariketak (4,5)
 - Ariketa Bootstrap
+- Docker Compose Ariketa
 
 
 
