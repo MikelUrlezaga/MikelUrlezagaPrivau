@@ -52,7 +52,6 @@
 - Vue Curso y Video (.)
 - Vue Ariketa (.) obligatorio
 - Laravel Ariketak (4,5) (.) obligatorio
-- Ariketa Bootstrap (.) obligatorio
 - Docker Compose Ariketa (.) obligatorio
 
 --------------------------------------------------------------------------------------------------------
