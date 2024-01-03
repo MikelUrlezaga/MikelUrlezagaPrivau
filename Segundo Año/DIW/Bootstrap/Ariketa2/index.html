@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ariketa2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/Txurdi_logo1.png" alt="logo" width="150" height="50" class="d-inline-block align-top ms-5">  <!--Para poner una imagen-->
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">  <!--me-auto a ms-auto (para dar un margen a la izquierda)-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Carrousel-->
+      
+      <div id="carouselExampleIndicators" class="carousel slide ms-5 me-5">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/oficina1r.jpg" class="d-block w-100 h-300" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/oficina2r.jpg" class="d-block w-100 h-300" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/oficina3r.jpg" class="d-block w-100 h-300" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--Titulo con trozo de texto-->
+
+    <br><br><br>
+    <h1 style="text-align: center;">SIGUIENTE TROZO</h1>
+    <br><br>
+    <!-- Texto -->
+    <div class="container">
+        <p class="lead text-primary">Este es un ejemplo de texto con Bootstrap. Para escribir un texto simple y que este rechulin con tipografia bien de guapa.</p>
+    </div>
+    <!-- Las cards en un container -->
+    <div class="container text-center">
+        <div class="row flex-row">
+            <div class="col">
+                <div class="card mb-2" style="max-width: 20rem;">
+                    <img src="imagenes/oficina1r.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Marte</h5>
+                        <p class="card-text">Lugar paradisiaco donde los vegetales toman el sol y las bebidas tienen alas para poder llegar a servirte sin moverte.</p>
+                        <div><a href="#" class="btn btn-primary">Viaja YA</a>&nbsp;<a href="">Kaixo</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-2" style="max-width: 20rem;">
+                    <img src="imagenes/oficina2r.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Adubidxe</h5>
+                        <p class="card-text">La mejor calle de Bermeo y el lugar donde reside el rey del mundo Don Mikel Urlezaga</p>
+                        <div><a href="#" class="btn btn-primary">Alquilar parcela</a>&nbsp;<a href="">Kaixo</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-2" style="max-width: 20rem;">
+                    <img src="imagenes/oficina4r.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Basauri</h5>
+                        <p class="card-text">Pueblo sombrio donde lo que mas brilla es el brillo del filo de las navajas</p>
+                        <div><a href="#" class="btn btn-primary">Alquilar paseo "seguridad"</a>&nbsp;<a href="">Kaixo</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!-- El jumbotron -->
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3 ms-5 me-5">
+        <h1>Jumbotron</h1>
+        <p>Esto es un Jumbotron</p>
+        <hr>
+        <p>Un poco mas de texto</p>
+        <div><a href="#" class="btn btn-primary">Alquilar paseo "seguridad"</a></div>
+    </div>
+    <!-- Titulo con texto -->
+    <br><br><br>
+    <h1 style="text-align: center;">SIGUIENTE TROZO</h1>
+    <br><br>
+    <div class="container">
+        <p class="lead text-primary">Este es un ejemplo de texto con Bootstrap. Para escribir un texto simple y que este rechulin con tipografia bien de guapa.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

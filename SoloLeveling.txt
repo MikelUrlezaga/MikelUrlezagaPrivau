@@ -55,7 +55,13 @@
 - Ariketa Bootstrap (.) obligatorio
 - Docker Compose Ariketa (.) obligatorio
 
+--------------------------------------------------------------------------------------------------------
 
+Dudas:
+
+- DIW:
+	- Como se ajustan los bordes mas de las clases que te dan?
+	- Que es el ultimo trozo del ejercicio?
 
 
 
