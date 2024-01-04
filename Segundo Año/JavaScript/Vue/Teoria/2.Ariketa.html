@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>  
+    </head>
+    <body>
+        <div id="errepi">
+            <h1>Zereginen zerrenda</h1>
+            <ul>
+                <!-- <li v-for="zeregina in zereginak">{{ zeregina }}</li> -->
+                <li v-for="zeregina in listaZ">
+                    <span v-text="zeregina.title"></span>
+                    <br>
+                    <span v-text="zeregina.completed"></span>
+                    <small v-if="zeregina.completed">Valee</small>
+                    <small v-else>Ps ok</small>
+                </li>
+            </ul>
+        </div>
+        <script>
+            var errepi = new Vue({
+                el: '#errepi',
+                data: {
+                    listaZ: [
+                        {title: "VueJs ikasi", completed: true},
+                        {title: "Spring ikasi", completed: true},
+                        {title: "Laravel ikasi", completed: false}
+                    ]
+                }
+            })
+        </script>
+    </body>    
+</html>

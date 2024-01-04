@@ -46,13 +46,12 @@
 - Apuntes Propios de JS ( https://es.javascript.info/garbage-collection )
 - Curso y Video
 - Repositorio de GitHub Egoitz (.)
-- Docker Video (.)
+- Docker Video (.) ( https://youtu.be/4Dko5W96WHg?si=JH5syORQgDK_DSPF  min 31)
 - Laravel Apuntes (.)
+- Laravel Ariketak (4,5) (.) obligatorio
 - Vue Apuntes (.)
 - Vue Curso y Video (.)
 - Vue Ariketa (.) obligatorio
-- Laravel Ariketak (4,5) (.) obligatorio
-- Docker Compose Ariketa (.) obligatorio
 
 --------------------------------------------------------------------------------------------------------
 
@@ -61,6 +60,10 @@ Dudas:
 - DIW:
 	- Como se ajustan los bordes mas de las clases que te dan?
 	- Que es el ultimo trozo del ejercicio?
+
+
+- Hedapen:
+	- Donde me tengo que meter para usar las cosas (no entiendo del todo)
 
 
 
