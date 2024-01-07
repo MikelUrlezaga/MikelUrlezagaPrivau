@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ariketa5</title>
+    </head>
+    <body>
+              <p>{{ mensaje }}</p>
+              <p>{{ mensajeEnMayusculas }}</p>
+          <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+          <script>
+          export default {
+            data() {
+              return {
+                mensaje: 'Hola, Vue.js'
+              };
+            },
+            computed: {
+              mensajeEnMayusculas() {
+                // Esta propiedad calculada depende de la propiedad 'mensaje'
+                return this.mensaje.toUpperCase();
+              }
+            }
+          };
+          </script>          
+    </body>
+</html>
