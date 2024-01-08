@@ -19,3 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('erakutsi','App\Http\Controllers\benetan@index');
+
+Route::get('kaixo/{id}','App\Http\Controllers\benetan@erakutsi');
