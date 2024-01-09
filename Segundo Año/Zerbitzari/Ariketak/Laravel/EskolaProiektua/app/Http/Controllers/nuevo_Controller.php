@@ -10,6 +10,6 @@ class nuevo_Controller extends Controller
     //funtzioa bat datu basetik informazioa lortzeko
     public function erakutsi(){
     $emaitza=nuevo::all();
-    return view('froga_bista',compact('emaitza'));
+    return view('froga_bista',com act('emaitza'));
     }
 }
