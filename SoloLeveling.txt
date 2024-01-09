@@ -48,10 +48,11 @@
 - Repositorio de GitHub Egoitz (.)
 - Docker Video (.) ( https://youtu.be/4Dko5W96WHg?si=JH5syORQgDK_DSPF  min 31)
 - Laravel Apuntes (.)
-- Laravel Ariketak (4,5) (.) obligatorio
+- Laravel Ariketak (4,5) (.)
 - Vue Apuntes (.)
 - Vue Curso y Video (.)
-- Vue Ariketa (.) obligatorio
+- Vue Ariketa (.)
+- Buscar la manera para conectar cosas de Laravel con Vue
 
 --------------------------------------------------------------------------------------------------------
 
@@ -62,8 +63,6 @@ Dudas:
 	- Que es el ultimo trozo del ejercicio?
 
 
-- Hedapen:
-	- Donde me tengo que meter para usar las cosas (no entiendo del todo)
 
 
 
