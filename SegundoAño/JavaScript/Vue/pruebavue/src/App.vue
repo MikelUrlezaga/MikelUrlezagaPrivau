@@ -9,6 +9,7 @@
       <img alt="Vue logo" src="./assets/logo.png">
       <Contador />
       <FooterSection />
+      <ButtonC />
     </main>
   </div>
 </template>
@@ -19,6 +20,7 @@ import HeaderSection from './components/HeaderSection.vue';
 import FooterSection from './components/FooterSection.vue';
 import MenuSection from './components/MenuSection.vue';
 import Contador from './components/ContadorComponent.vue';
+import ButtonC from './components/ButtonCounter.vue';
 import '@/CSS/styles.css';
 
 export default {
@@ -27,7 +29,8 @@ export default {
     HeaderSection,
     FooterSection,
     MenuSection,
-    Contador
+    Contador,
+    ButtonC
   }
 }
 </script>
