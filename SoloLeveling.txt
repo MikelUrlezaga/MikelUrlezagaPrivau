@@ -64,18 +64,13 @@
 Dudas:
 
 - DIW:
-<<<<<<< Updated upstream
 	- Como se ajustan los bordes mas de las clases que te dan?
 	- Que es el ultimo trozo del ejercicio?
 	- Problema del texto con los acordeones
 
-
-=======
-	- Como se ajustan los bordes mas de las clases que te dan
-
 - Hedapen:
 	- Donde me tengo que meter para usar las cosas (no entiendo del todo)
->>>>>>> Stashed changes
+
 
 
 
