@@ -51,13 +51,11 @@
 - Laravel Ariketak (4,5) (.)
 - Vue Apuntes (.)
 - Vue Curso y Video (.)
-<<<<<<< Updated upstream
 - Vue Ariketa (.)
 - Buscar la manera para conectar cosas de Laravel con Vue
-=======
 - Vue Ariketa (.) obligatorio
 - Wordpress
->>>>>>> Stashed changes
+- Probar proyecto en casa
 
 --------------------------------------------------------------------------------------------------------
 
