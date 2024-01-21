@@ -54,8 +54,7 @@
 - Vue Ariketa (.)
 - Buscar la manera para conectar cosas de Laravel con Vue
 - Vue Ariketa (.) obligatorio
-- Wordpress
-- Probar proyecto en casa
+- Wordpress ( http://localhost/wordpress/wp-admin/ ) 
 
 --------------------------------------------------------------------------------------------------------
 
