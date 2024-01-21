@@ -48,12 +48,11 @@
 - Repositorio de GitHub Egoitz (.)
 - Docker Video (.) ( https://youtu.be/4Dko5W96WHg?si=JH5syORQgDK_DSPF  min 31)
 - Laravel Apuntes (.)
-- Laravel Ariketak (4,5) (.)
 - Vue Apuntes (.)
 - Vue Curso y Video (.)
-- Vue Ariketa (.)
-- Buscar la manera para conectar cosas de Laravel con Vue
 - Vue Ariketa (.) obligatorio
+
+
 - Wordpress ( http://localhost/wordpress/wp-admin/ ) 
 
 --------------------------------------------------------------------------------------------------------
