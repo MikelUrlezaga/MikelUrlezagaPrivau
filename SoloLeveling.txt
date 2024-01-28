@@ -52,10 +52,8 @@
 - Vue Apuntes (.)
 - Vue Curso y Video (.)
 
-- Pruebas con los componentes
-- Hacer un buscador de prueba, q filtre los datos por lo escrito
-- Paginacion
-- Pruebas pillando datos y sacandolos
+
+- Preparar lo que hay que llevar
 
 --------------------------------------------------------------------------------------------------------
 
