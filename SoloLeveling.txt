@@ -48,24 +48,19 @@
 - Repositorio de GitHub Egoitz (.)
 - Docker Video (.) ( https://youtu.be/4Dko5W96WHg?si=JH5syORQgDK_DSPF  min 31)
 - Laravel Apuntes (.)
+
 - Vue Apuntes (.)
 - Vue Curso y Video (.)
-- Vue Ariketa (.) obligatorio
 
-
-- Wordpress ( http://localhost/wordpress/wp-admin/ ) 
+- Pruebas con los componentes
+- Hacer un buscador de prueba, q filtre los datos por lo escrito
+- Paginacion
+- Pruebas pillando datos y sacandolos
 
 --------------------------------------------------------------------------------------------------------
 
 Dudas:
 
-- DIW:
-	- Como se ajustan los bordes mas de las clases que te dan?
-	- Que es el ultimo trozo del ejercicio?
-	- Problema del texto con los acordeones
-
-- Hedapen:
-	- Donde me tengo que meter para usar las cosas (no entiendo del todo)
 
 
 
