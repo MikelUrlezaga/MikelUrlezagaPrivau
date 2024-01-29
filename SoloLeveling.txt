@@ -47,13 +47,10 @@
 - Curso y Video
 - Repositorio de GitHub Egoitz (.)
 - Docker Video (.) ( https://youtu.be/4Dko5W96WHg?si=JH5syORQgDK_DSPF  min 31)
+
 - Laravel Apuntes (.)
-
-- Vue Apuntes (.)
-- Vue Curso y Video (.)
-
-
-- Preparar lo que hay que llevar
+- Hacer algo parecido a los ejercicios
+- Dejar todo bien preparado para el exam
 
 --------------------------------------------------------------------------------------------------------
 
