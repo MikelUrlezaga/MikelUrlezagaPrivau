@@ -49,10 +49,6 @@
 - Docker Video (.) ( https://youtu.be/4Dko5W96WHg?si=JH5syORQgDK_DSPF  min 31)
 
 - Laravel Apuntes (.)
-- Hacer algo parecido a los ejercicios
-- Dejar todo bien preparado para el exam
-
-- extends y section explicar
 
 --------------------------------------------------------------------------------------------------------
 
