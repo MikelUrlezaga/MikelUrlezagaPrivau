@@ -52,6 +52,8 @@
 - Hacer algo parecido a los ejercicios
 - Dejar todo bien preparado para el exam
 
+- extends y section explicar
+
 --------------------------------------------------------------------------------------------------------
 
 Dudas:
