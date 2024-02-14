@@ -48,7 +48,9 @@
 - Repositorio de GitHub Egoitz (.)
 - Docker Video (.) ( https://youtu.be/4Dko5W96WHg?si=JH5syORQgDK_DSPF  min 31)
 
-- Laravel Apuntes (.)
+- Dar permisos a los usuarios al crear el docker
+- Docker build
+- Dockerfile
 
 --------------------------------------------------------------------------------------------------------
 
