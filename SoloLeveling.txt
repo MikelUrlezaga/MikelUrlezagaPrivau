@@ -45,16 +45,12 @@
 
 - Apuntes Propios de JS ( https://es.javascript.info/garbage-collection )
 - Curso y Video
-- Repositorio de GitHub Egoitz (.)
-- Docker Video (.) ( https://youtu.be/4Dko5W96WHg?si=JH5syORQgDK_DSPF  min 31)
 
-- Dar permisos a los usuarios al crear el docker
-- Docker build
-- Dockerfile
+- Microsoft SharePoint
+- 365 (Que es)
 
 --------------------------------------------------------------------------------------------------------
 
-Dudas:
 
 
 
