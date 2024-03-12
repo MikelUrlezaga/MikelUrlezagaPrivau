@@ -2,32 +2,20 @@
 
 - JavaScript (Pagina del Curso -> https://es.javascript.info/)
 (Video 1h curso -> https://youtu.be/bmGPv687toc?si=sKd-vjGN2qiKjVec )
-- VUE (Video 14mins -> https://youtu.be/9AHMihFhrzw?feature=shared)
 
-///Diseño///
+///PHP///
 
-- Bootstrap (Pagina Oficial -> https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- ( https://programadorwebvalencia.com/cursos/php/base/ )
+- Aplicacion de Prueba con PHP
 
-///Servidor///
+///Base de Datos///
 
-- (Laravel)(Video 1h44mins Curso -> https://youtu.be/a-4923Uyu54?feature=shared)
-- /Spring/ (Video 5mins Curso -> https://youtu.be/3vN2R00YUq4?feature=shared)
-- Api Restful (Laravel, Spring)
-- Docker (Video 6 mins Curso -> https://youtu.be/Uu49ID0NBRQ?feature=shared)
-
-///Hedapen///
-
-- Spring Boot (TXT)
-- Apache Tomcat (TXT)
-- AWS (Plataforma de servicios para ejecutar aplicaciones y almacenar datos)
-- EC2 (Maquinas Virtuales)
-- RDS (Servicio para configuracion de Base de Datos)
+- (MySQL) Conectar por PHP, Laravel
 
 ///Mecanografia///
 
 ( https://www.typingclub.com/mecanografia )
 ( https://www.ratatype.es/typing-test/ )
-
 
 ///Cocinar///
 
@@ -40,14 +28,30 @@
 - Errores de novato ( https://youtu.be/8xhCKRZbbIU )
 - Aprender sobre el mercado
 - Otros metodos para ganar dinero con el mercado
+
+///GIM///
+
+- Pecho
+	(Flexiones, Press con Mancuerna, Aperturas)
+- Abdomen
+	(Abdominales en banca, Burpees)
+- Biceps
+	(Curl, Curl de martillo, Dominadas)
+- Triceps
+	(Banco, Polea)
+- Hombros
+	(Elevacion frontal, Press de hombro, Elevaciones laterales, Remo vertical)
+- Espalda
+	(Remo, Fly, Dominadas)
+
 --------------------------------------------------------------------------------------------------------
+
 (Inside me lives a fearless LEGEND -> https://youtu.be/v68HfWkCqDI)
 
 - Apuntes Propios de JS ( https://es.javascript.info/garbage-collection )
 - Curso y Video
 
-- Microsoft SharePoint
-- 365 (Que es)
+- Trabajo de Fin de Grado
 
 --------------------------------------------------------------------------------------------------------
 
